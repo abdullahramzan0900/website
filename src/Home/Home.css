@@ -1,3 +1,207 @@
-.a{
-    background-color: red;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    overflow-y: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+  .img{
+
+    height: 100vh;
+    background-image: url("../image/bannerr.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+  } 
+  .centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+.btn_contact{
+    
+border-radius: 10px;
+font-size: 10px;
+padding: 15px;
+background-color:#229958;
+width: 150px;
+color: white;
+border: none;
+  }
+.btn_learn{
+  margin: 10px;
+    border-radius: 10px;
+  border: 1px solid #229958;
+font-size: 10px;
+padding: 15px;
+background-color: #229958;
+width: 150px;
+background-color: transparent;
+color: white;
+  }
+  .btns{
+margin-top: 30px;
+  }
+  @media screen and (max-height:520px) {
+    .height{
+      /* margin-top: 40px; */
+        font-size: 10px;
+     }
+     .height2{
+         font-size: 10px;
+       
+      }
+  }
+  
+
+  @media (max-width:767px) {
+    .img {
+     height:969px !important;
+       
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+}  
+.img::before{
+    background-color: rgba(0, 0, 0, 0.79);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .line{
+   margin-top: 40px;
+  }
+  .height{
+  font-size: 75px;
+  color: white;
+  }
+  .height2{
+    font-size: 75px;
+    color: white;
+    }
+
+  @media screen and (max-width: 1661px ) {
+   .height{
+    font-size: 60px;
+   }
+   .img{
+    width: 100vw;
+    background-image: url("../image/bannerr.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+    position: center;
+   }
+  }
+  
+  @media screen and (max-width: 900px ) {
+    .height{
+     font-size: 50px;
+    }
+    .height2{
+      font-size: 50px;
+     }
+ 
+
+  
+  }
+    @media screen and (min-width: 100px ) {
+    .height{
+     font-size: 40px;
+    }
+    .height2{
+      font-size: 40px;
+     }
+    .img{
+      width: 100vw;
+      background-image: url("../image/bannerr.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity:1;
+      background-position: center;
+     }
+  }  
+  @media screen and (max-width: 400px ) {
+    .height{
+       font-size: 30px;
+    }
+    .height2{
+      font-size: 30px;
+   }
+  }
+  @media screen and (max-width: 450px ) {
+   .img{
+    height:max-content;
+   }
+  }
+  @media screen and (max-width: 375px ) {
+    .height{
+     margin-top: 40px;
+       font-size: 25px;
+    }
+    .height2{
+        font-size: 25px;
+      
+     }
+
+  }
+  
+
+
+
+
+
+ 
+ 
+
+
+  

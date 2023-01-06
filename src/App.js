@@ -1,21 +1,23 @@
 
 import './App.css';
 import Home from './Home/Home';
+import About from './ABOUT/About';
+import Nav from './Nav';
+import Blogs from './Blogs/Blogs';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Services from './Services/Services';
 
 function App() {
   return (
     <div className="App">
     <BrowserRouter>
+    <Nav/>
       <Routes>
-      <Route path="/abc" element={<Home/>}>
-        {/* <Route index element={<Home />} />
-        <Route path="blogs" element={<Blogs />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<NoPage />} /> */}
-
-        </Route>
+      <Route path="/" element={<Home/>}></Route>
+      <Route path="/abc" element={<About/>}></Route>
+         <Route path='/Services' element={<Services/>}> </Route>
+        <Route path="/blogs" element={<Blogs />} ></Route>
       </Routes>
     </BrowserRouter>
    
