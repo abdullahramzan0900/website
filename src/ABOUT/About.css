@@ -48,7 +48,7 @@
 
 
 
-     width: 100%;
+     width: 100vw;
   background-color: white;
   height: auto;
 }
@@ -56,16 +56,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 800px;  
-  /* background-color: red; */
+  width: 95vw;
+  height:90vh;
+
 }
 .about_img{
- margin-top: 20px;
+ /* margin-top: 20px; */
  display: flex;
  flex-direction: column;
  justify-content: center;
- width:50%;
+ width:50vw;
  /* background-color: black; */
 }
 .aboutus{
@@ -75,32 +75,30 @@ flex-direction: column;
  /* align-items: center; */
   justify-content:space-around;
   text-align: left;
-  height: 600px;
+  height: 70vh;
   /* background-color: blue; */
-  width: 45%; 
+  width: 45vw; 
 }
 .about_img1{
-width: 80%;
-height: 600px;
+width: 40vw ;
+height: 60vh;
 border-radius: 20px;
 opacity: 1;
 }
 .about_img2{
- width: 80%;
- height: 76px;
+ width: 40vw;
+ height: 7vh;
 }
 .about_btn{
-  margin-top: 20px;
+ font-size: 2vh;
  align-items:flex-start;
- width:182px;
- height:58px;
+ width:15vw;
+ height:10vh;
  background-color: #72818b;
  color: white;
  border-radius: 20px;
 }
-.about_btn_div{
-  width: 400px;
-}
+
 @media screen and (max-width: 1139px ) {
 .about{
   /* display: flex;

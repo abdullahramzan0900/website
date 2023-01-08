@@ -1,0 +1,239 @@
+ .app{
+  
+}
+.main{
+    width:100%;  
+
+
+}
+ .service_main{
+    width:100vw;
+  display:flex;
+  background-color: #229958;
+ 
+  
+/* align-items: center; */
+
+}
+/* .Service_button{
+    width:160px;
+    font-size: 20px;
+    border-radius: 22px;
+    margin: 20px;
+    align-self: center;
+   
+} */
+
+.Services{
+  
+    width:100%;
+ 
+    background-color: #229958;
+
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+ /* background-color: blue; */
+ text-align: center;
+}
+.Services_image{
+    /* width:50vw; */
+    /* height:100vh; */
+}
+
+/* .cloud{
+    display:flex;
+    justify-content: space-between;
+    background-color: blue;;
+} */
+.image-grid {
+
+    /* Arrange children using flexbox */
+    display: flex;
+    /* ALlow images to display on multiple lines rather than a single line */
+    flex-wrap: wrap;
+    /* Container should take up only 90% of the browser, leave 5% space on each side */
+    width: 90vw;
+    /* Center container */
+    margin: 0 auto;
+  }
+  .grid-image {
+    width: 20vw;
+    /* images display inline by default and act like text. We want them to act like divs, so display block */
+    display: block;
+    border-radius: 22px;
+    /* our width setting for mobile, one image per line */
+    flex-basis: 100%;
+    /* provide some space between our images */
+    padding: 10px;
+    /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+    box-sizing: border-box;
+  }
+   
+  /* increase images per line as browser gets larger using media queries
+     this first query makes two images per line at 640px width */
+  @media only screen and (min-width: 640px) {
+    .grid-image {
+      flex-basis: 50%;
+    }
+  }
+   
+  /* three images per line when browser width exceeds 960px */
+  @media only screen and (min-width: 960px) {
+    .grid-image {
+      flex-basis: 33.333%;
+    }
+  }
+   
+  /* four images per line when browser width exceeds 1280px */
+  @media only screen and (min-width: 1280px) {
+    .grid-image {
+      flex-basis: 25%;
+    }
+  }
+   
+  /* five images per line when browser width exceeds 1600px */
+  @media only screen and (min-width: 1600px) {
+    .grid-image {
+      flex-basis: 20%;
+    }
+  }
+  .card {
+    background-color: dodgerblue;
+    color: white;
+    padding: 1rem;
+    height: 4rem;
+  }
+  .cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 10px;
+    background-color: #72818b;
+    padding: 10px;
+   
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  }
+
+  
+  .item {
+    background-color:#229958;
+    color: white;
+    text-align: center;
+    width:30vw;
+
+
+   
+    /* font-size: 30px; */
+  }
+
+  .grid-container > div {
+    background-color:#229958;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    width:30vw;
+  
+  }
+
+  
+  .item1 {
+    grid-row-end: span 3;
+    background-color:  #72818b;
+     
+      /* height:30vh */
+   
+  }
+  /* .item2{
+ 
+    grid-row-end: span 2;
+ 
+  }
+  .item3{
+ 
+    grid-row-end: span 2;
+  
+
+  } */
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 10px;
+    background-color: #72818b;
+    padding: 10px;
+ 
+  }
+  
+  .grid-container2 > div {
+    background-color:#229958;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    width:30vw;
+  
+  }
+  
+  .itm1 {
+background-color: #72818b;
+    grid-row-end: span 3;
+
+  
+  }
+  .grid-container3 {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 10px;
+    background-color:  #72818b;
+    padding: 10px;
+  }
+  
+  .grid-container3 > div {
+    background-color:#229958;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    width:30vw; 
+   
+  }
+  
+  .itm31 {
+    grid-row-end: span 3;
+  }
+  .grid-container4 {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 10px;
+    background-color:  #72818b;
+    padding: 10px;
+  }
+  
+  .grid-container4 > div {
+    background-color:#229958;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    width:30vw; 
+   
+  }
+  
+  .itm41 {
+    grid-row-end: span 3;
+  }
+
+
+  
+
+
+  

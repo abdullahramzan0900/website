@@ -10,12 +10,12 @@ function Nav()
     return(
       <>
 <nav className="navigation">
-  <img src={Logo} alt="loading"/>
+  <img className='logo_img' src={Logo} alt="loading"/>
   
         <div onClick={()=>{
                  setIsNavExpanded(!isNavExpanded)
         }}  className="menunav">
-          <img style={{
+          <img  style={{
             width:'20px'
           }} src={menubar} alt="" />
         </div>

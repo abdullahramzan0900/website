@@ -9,35 +9,28 @@ function About()
     return(
         <>
 <div className="contain">
- 
 
 <div className="about">
 
 
 <div className="about_img">
-
 <img className="about_img1" src={about}alt="" />
 <img  className="about_img2"  src={about2} alt="" />
-
-
 </div>
 
 <div className="aboutus">
 <div>
    
 <h1 style={{
-    fontSize:"55px",
+    fontSize:"4vh",
     color:"#229958"
 }}>About Us</h1>
 <img style={{
   
 }} src={line8} alt="" />
 <p style={{
-    fontSize:'30px',
+    fontSize:'2.2vh',
     textAlign:"justify",
-    marginTop:'40px' 
-    
-
 }}>
 
 The Vyadom Group is a collection of multifaceted businesses created with 
