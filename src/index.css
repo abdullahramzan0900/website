@@ -16,6 +16,7 @@ code {
 }
 .Nav{
   margin-top:0;
+  
 padding:0px;
     margin:0px;
    
@@ -66,12 +67,13 @@ background-color: #FFFFF9;
   margin: 0 1rem;
 }
 .navigation-menu li a {
+  font-family:backslash;
 
   text-decoration: none;
   display: block;
   width: 100%;
   color:black;
-  font-size: 2.4vh;
+  font-size: 1.9vh;
 }
 .menunav {
   border: 0;

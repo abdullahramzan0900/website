@@ -1,7 +1,7 @@
 .case_div{
     width:100%;
      /* height:60vh; */
-    background-color:#131313;
+    background-color:#444545;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,9 @@
   
   }
   .Case_containers{
-   background-color:#131313;
+   background-color:#444545;
+
+  
     display: flex;
     justify-content: center;
     width: 100%;
@@ -21,22 +23,29 @@
   .inner_box2
   {  display: flex;
     flex-direction: column;
-   justify-content: center;
+   justify-content: space-evenly;
    align-items: center;
-    height:40vh;
+    height:25vh;
+    
+    
   
   }
   .case_height{
-  background-color: #131313;
+
+  background-color: #444545;
     width:100%;
 
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: white;
+
   }
   
   .box2{
-    width: 30%;
+    width: 20%;
+   
   
     border: 1px solid #ccc;
     margin-right: 1%;
@@ -71,3 +80,5 @@
         margin-bottom: 4%;
     }
   }
+
+  

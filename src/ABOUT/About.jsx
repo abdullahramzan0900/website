@@ -22,14 +22,14 @@ function About()
 <div>
    
 <h1 style={{
-    fontSize:"4vh",
+    fontSize:"40px",
     color:"#229958"
 }}>About Us</h1>
 <img style={{
   
 }} src={line8} alt="" />
 <p style={{
-    fontSize:'2.2vh',
+    fontSize:'1.7vh',
     textAlign:"justify",
 }}>
 

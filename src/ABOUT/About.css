@@ -48,7 +48,7 @@
 
 
 
-     width: 100vw;
+     width: 100%;
   background-color: white;
   height: auto;
 }
@@ -56,7 +56,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95vw;
+  width: 100%;
   height:90vh;
 
 }
@@ -65,7 +65,7 @@
  display: flex;
  flex-direction: column;
  justify-content: center;
- width:50vw;
+ width:50%;
  /* background-color: black; */
 }
 .aboutus{
@@ -75,12 +75,12 @@ flex-direction: column;
  /* align-items: center; */
   justify-content:space-around;
   text-align: left;
-  height: 70vh;
+  height: 38vh;
   /* background-color: blue; */
-  width: 45vw; 
+  width: 30%; 
 }
 .about_img1{
-width: 40vw ;
+width: 82% ;
 height: 60vh;
 border-radius: 20px;
 opacity: 1;
@@ -92,11 +92,11 @@ opacity: 1;
 .about_btn{
  font-size: 2vh;
  align-items:flex-start;
- width:15vw;
- height:10vh;
+ width:120px;
+ height: 60px;
  background-color: #72818b;
  color: white;
- border-radius: 20px;
+ border-radius: 16px;
 }
 
 @media screen and (max-width: 1139px ) {

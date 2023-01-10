@@ -21,6 +21,8 @@ import Blogs from '../Blogs/Blogs'
 import line8 from '../image/Line8.png'
 import '../ABOUT/About.css'
 import CaseStudies from '../CaseStudies/CaseStudies'
+import Contact from '../Contact/Contact'
+
 
 
 function Home()
@@ -34,55 +36,59 @@ function Home()
    
   <div class="centered">
       <h1  className='height' style={{
-        fontSize:'5vh'
+        fontSize:'5vh',
+        fontFamily:'backslash'
         
       }} >Delivering <span style={{
       color:'#229958',
-      fontSize:'5vh'
+      fontSize:'5vh',
+      fontFamily:'backslash'
       
       }}>IT Solutions</span> That </h1>
       <h1 className='height2' style={{
-             fontSize:'5vh'
+             fontSize:'5vh',
+             fontFamily:'backslash'
       }}> enable you To<span style={{
         color:'#229958',
-        fontSize:'5vh'
+        fontSize:'5vh',
+        fontFamily:'backslash'
       
       }}>Work Smarter</span> </h1>
       <p className='p1' style={{
          color:'#72818b',
          marginTop:"40px",
-         fontSize:'4vh'
-      }}>Connecting industry needs innovations,Excellence,& IT solution that are easy to use,easy to manage</p>
-      <p className='p2' style={{
-          color:'#72818b',
-          fontSize:'4vh'
-         
-      }}>and easy to trust</p>
+         fontSize:'2vh',
+         fontFamily:'backslash'
+      }}>Connecting industry needs with Innovation, Excellence, & IT .We create IT solutions that are easy to use, easy to manage, and easy to trust.</p>
+     
       <div className='btns'>
         <button className='btn_contact'>Contact us</button>
          <button className='btn_learn'>Learn more</button>         
       </div>
-      <div className='line'>
+      <div style={{
+     
+      }} className='line'>
    <img  src={line4} alt="" />
    <img style={{
     width:'2vh',
-    marginLeft:"10px"
+ 
    }} src={line5} alt="" />
    <img style={{
     width:'2vh',
-    marginLeft:"10px"
+   
    }}  src={line6} alt="" />
     <img style={{
         width:'2vh',
-    marginLeft:"10px"
+     alignSelf:'center'
    }}  src={line7} alt="" />
     </div>
    
         </div>
    <About/>
-   
+   <Services/>
    <Blogs/>
    <CaseStudies/>
+   <Contact/>
 
     </div>
         </>

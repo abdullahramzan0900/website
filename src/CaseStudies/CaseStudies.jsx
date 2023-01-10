@@ -1,5 +1,9 @@
 import React from 'react'
 import './CaseStudies.css'
+import path26 from '../image/Path26.png';
+import path27 from '../image/Path27.png';
+import line8 from '../image/Line8.png'
+
 
 function  CaseStudies()
 {
@@ -39,94 +43,98 @@ function  CaseStudies()
         }}>
 
          <h1 style={{
-           fontSize:'8vh'
+           fontSize:'5vh'
           }}>Case Studies</h1>
+          <img style={{
+            marginTop:'20px'
+          }} src={line8} alt="" />
           </div>
     <div className='case_div'>
 
     
-<div class="Case_containers">
+<div style={{
+     marginTop:'10px'
+}} class="Case_containers">
       <div style={{
-     background:'#229958'
+     background:'#229958',
+     textAlign:'center'
       }} class="box2">
       
       <h1 style={{
-            fontSize:'4vh',
-            color:'white'
+            fontSize:'3vh',
+            color:'white',
+            alignSelf:'center'
         }}>ERP for Restaurant</h1>
              <div className='inner_box2'>
 
           <p style={{
-              fontSize:'2vh',
+              fontSize:'1.6vh',
+              
               color:'white'
-            }}>there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
+            }}>There are many variations of passages of Lorem Ipsum available, but the majority
+             have suffered alteration in some form, by injected humour, or
+              randomised words which don't look even slightly believable. 
       
         </p>
-        <button style={{
-            width:'20vh',
-            heigth:'20vh',
+        <div style={{
+              color:'white'
             
-        }}>Read more </button>
+        }}>Readmore</div>
         </div>
 
 
       
       </div>
-      <div class="box2">
+      <div style={{
+             textAlign:'center',
+             background:' #626363',
+      }} class="box2">
        
       <h1 style={{
-            fontSize:'4vh',
+            fontSize:'3vh',
             color:'white'
-        }}>ERP for Restaurant</h1>
+        }}>Odoo SME</h1>
               <div className='inner_box2'>
 
           <p style={{
-              fontSize:'2vh',
+              fontSize:'1.6vh',
         color:'white'
-          }}>there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
+          }}>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
       
         </p>
-        <button>Read more </button>
+        <div style={{
+          color:'white',
+    
+        }}>Readmore</div>
               </div>
     
       </div>
-      <div class="box2">
+      <div style={{
+             textAlign:'center',
+             background:' #626363',
+            
+      }} class="box2">
       
         
       <h1 style={{
-            fontSize:'4vh',
+            fontSize:'3vh',
             color:'white'
-        }}>ERP for Restaurant</h1>
+        }}>Dynamics</h1>
         <div className='inner_box2'>
 
           <p style={{
-              fontSize:'2vh',
+              fontSize:'1.6vh',
               color:'white'
-            }}>there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-        there are many passengers avalible
-      
+            }}>
+              There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
         </p>
-        <button>Read more </button>
+        <div style={{
+       color:'white'
+      
+
+        
+        }}>Readmore</div>
             </div>
 
     
@@ -134,10 +142,36 @@ function  CaseStudies()
   
     
     </div>
-  
-    
+ 
 
     </div>
+    <div style={{
+      height:'150px',
+     
+      display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    backgroundColor:'#444545'
+    
+    }}>
+    <div style={{
+      width:'30px',
+    
+    }}>
+    <img src={path27} alt="" />
+
+    </div>
+    <div style={{
+      width:'30px',
+      
+
+    }}>
+    <img src={path26} alt="" />
+
+    </div>
+    </div>
+  
+    
         </>
     )
 }

@@ -7,10 +7,9 @@
 
 }
  .service_main{
-    width:100vw;
+    width:100%;
   display:flex;
-  background-color: #229958;
- 
+  background-color:#229958;
   
 /* align-items: center; */
 
@@ -26,15 +25,18 @@
 
 .Services{
   
-    width:100%;
- 
-    background-color: #229958;
-
-    display: flex;
+    width:50%;
+    background-color:#229958;
+   display: flex;
     flex-direction: column;
- justify-content: center;
+    justify-content: center;
+     align-items: center;
+      text-align: left;
+
+
+
  /* background-color: blue; */
- text-align: center;
+
 }
 .Services_image{
     /* width:50vw; */
@@ -53,12 +55,13 @@
     /* ALlow images to display on multiple lines rather than a single line */
     flex-wrap: wrap;
     /* Container should take up only 90% of the browser, leave 5% space on each side */
-    width: 90vw;
+    width: 50%;
     /* Center container */
     margin: 0 auto;
   }
   .grid-image {
     width: 20vw;
+    position: relative;
     /* images display inline by default and act like text. We want them to act like divs, so display block */
     display: block;
     border-radius: 22px;
@@ -68,6 +71,18 @@
     padding: 10px;
     /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
     box-sizing: border-box;
+  }
+  .detail{
+
+    position: relative;
+    z-index: 3;
+    width:11vw;
+    font-size: 1vw;
+    
+   
+    bottom: 3.4vh;
+    left: 6vw;
+    right:left;
   }
    
   /* increase images per line as browser gets larger using media queries
@@ -121,7 +136,7 @@
     display: grid;
     grid-template-columns: auto auto auto ;
     grid-gap: 10px;
-    background-color: #72818b;
+    background-color:#626363;;
     padding: 10px;
    
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
@@ -138,11 +153,14 @@
    
     /* font-size: 30px; */
   }
+  .service_background{
+ 
+  }
 
   .grid-container > div {
     background-color:#229958;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     font-size: 30px;
     width:30vw;
   
@@ -171,7 +189,8 @@
     display: grid;
     grid-template-columns: auto auto auto ;
     grid-gap: 10px;
-    background-color: #72818b;
+    background-color: #626363;
+
     padding: 10px;
  
   }
@@ -179,7 +198,7 @@
   .grid-container2 > div {
     background-color:#229958;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     font-size: 30px;
     width:30vw;
   
@@ -195,14 +214,14 @@ background-color: #72818b;
     display: grid;
     grid-template-columns: auto auto auto ;
     grid-gap: 10px;
-    background-color:  #72818b;
+    background-color:  #626363;
     padding: 10px;
   }
   
   .grid-container3 > div {
     background-color:#229958;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     font-size: 30px;
     width:30vw; 
    
@@ -215,22 +234,86 @@ background-color: #72818b;
     display: grid;
     grid-template-columns: auto auto auto ;
     grid-gap: 10px;
-    background-color:  #72818b;
+    background-color: #626363;
     padding: 10px;
   }
   
   .grid-container4 > div {
     background-color:#229958;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     font-size: 30px;
     width:30vw; 
-   
+    
+  }
+  .inner__text{
+    position: absolute;
+    bottom: 19vh;
+    left:12vw;
   }
   
   .itm41 {
     grid-row-end: span 3;
   }
+  @media only screen and (max-width: 912px) {
+    .grid-image {
+      width:30vw;
+      margin-left: 20px;
+    }
+    .detail{
+
+      position: relative;
+      z-index: 3;
+      width:10vw;
+      font-size: 1vw;
+      
+     
+      bottom:1.9vh;
+      left: 1vw;
+      right:left;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .grid-image {
+      width:30vw;
+      margin-left: 20px;
+    }
+    .detail{
+
+      position: relative;
+      z-index: 3;
+      width:10vw;
+      font-size: 1vw;
+      
+     
+      bottom:2.7vh;
+      left: 14vw;
+      right:left;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .grid-image {
+      width:30vw;
+      margin-left: 20px;
+    }
+    .detail{
+
+      position: relative;
+      z-index: 3;
+      width:10vw;
+      font-size: 1vw;
+      
+     
+      bottom: 3.4vh;
+      left: 16vw;
+      right:left;
+    }
+  }
+.background_img_div{
+  background-color: 'black';
+}
+
 
 
   
