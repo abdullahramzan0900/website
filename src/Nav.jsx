@@ -4,13 +4,17 @@ import {Link} from 'react-router-dom'
 import { useState } from 'react'
 import Logo from "./image/Logo.svg"
 import menubar from './image/menu-bar.png'
+import "@fontsource/roboto"
 
 function Nav()
 {  const [isNavExpanded, setIsNavExpanded] = useState(false)
     return(
       <>
 <nav className="navigation">
-  <img className='logo_img' src={Logo} alt="loading"/>
+  <img style={{
+    margin:'20px',
+    marginLeft:'60px'
+  }} className='logo_img' src={Logo} alt="loading"/>
   
         <div onClick={()=>{
                  setIsNavExpanded(!isNavExpanded)
@@ -22,6 +26,7 @@ function Nav()
       <div
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+
         }
       >
         <ul>

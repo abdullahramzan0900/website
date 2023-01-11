@@ -26,17 +26,20 @@
 }
 
 .box{
-  width: 15%;
+  width: 22%;
   height: auto;
-  border: 1px solid #ccc;
+  border: none;
+  /* border: 1px solid #ccc; */
   margin-right: 1%;
   background: white;
   border-radius: 10px;
   transition: 0.9;
+  font-family: "roboto";
 }
 .box:hover{
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
   cursor: pointer;
+  
 }
 .img_blog{
   width: 100%;
@@ -44,7 +47,7 @@
   border-top-right-radius: 10px;
 }
 .h3{
-  font-size: 3vh;
+  font-size: 24px;
   text-align: center;
   color: rgb(104, 92, 92);
 }
@@ -63,6 +66,10 @@
       width: 100%;
       margin-bottom: 4%;
   }
+}
+.services_hr{
+  border: 1px solid green;
+  width:110px;
 }
 
 

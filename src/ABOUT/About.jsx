@@ -19,18 +19,20 @@ function About()
 </div>
 
 <div className="aboutus">
-<div>
+<div style={{
+ 
+
+    
+}}>
    
-<h1 style={{
-    fontSize:"40px",
-    color:"#229958"
+<h1 className="H_aboutus" style={{
+  
 }}>About Us</h1>
 <img style={{
   
 }} src={line8} alt="" />
-<p style={{
-    fontSize:'1.7vh',
-    textAlign:"justify",
+<p className="p_aboutus" style={{
+ 
 }}>
 
 The Vyadom Group is a collection of multifaceted businesses created with 

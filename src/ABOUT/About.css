@@ -66,6 +66,8 @@
  flex-direction: column;
  justify-content: center;
  width:50%;
+
+
  /* background-color: black; */
 }
 .aboutus{
@@ -75,35 +77,111 @@ flex-direction: column;
  /* align-items: center; */
   justify-content:space-around;
   text-align: left;
-  height: 38vh;
+  height: 59vh;
   /* background-color: blue; */
   width: 30%; 
 }
 .about_img1{
 width: 82% ;
 height: 60vh;
-border-radius: 20px;
-opacity: 1;
+
+
+opacity: 1.9;
+border-top-left-radius: 22px;
+border-top-right-radius: 22px;
 }
 .about_img2{
- width: 40vw;
+ width: 41vw;
  height: 7vh;
 }
 .about_btn{
- font-size: 2vh;
+ font-size: 20px;
  align-items:flex-start;
- width:120px;
+ width: 150px;
  height: 60px;
  background-color: #72818b;
  color: white;
- border-radius: 16px;
+border-radius: 10px;
+}
+.H_aboutus{
+  font-size:40px;
+  text-align: justify;
+  font-family: "roboto";
+}
+.p_aboutus{
+  font-size:18px;
+  text-align: justify;
+  font-family: "roboto";
 }
 
-@media screen and (max-width: 1139px ) {
-.about{
-  /* display: flex;
-  flex-direction: column; */
+@media screen and (max-width: 425px ) {
+
+  .H_aboutus
+  {
+    font-size:30px;
+    font-family: "roboto";
+  }
+  .p_aboutus{
+   font-size:10px;
+    text-align: justify;
+  }
+  .about_btn{
+    font-size: 15px;
+    align-items:flex-start;
+    width: 100px;
+    height: 40px;
+    background-color: #72818b;
+    color: white;
+   border-radius: 10px;
+   }
 
 }
+
+@media screen and (max-width: 375px ) {
+
+  .H_aboutus
+  {
+    font-size:20px;
+    font-family: "roboto";
+  }
+  .p_aboutus{
+   font-size:10px;
+    text-align: justify;
+  }
+  .about_btn{
+    font-size: 15px;
+    align-items:flex-start;
+    width: 100px;
+    height: 40px;
+    background-color: #72818b;
+    color: white;
+   border-radius: 10px;
+   }
+
+}
+@media screen and (max-width: 280px ) {
+
+  .H_aboutus
+  {
+    font-size:10px;
+    font-family: "roboto";
+  }
+  .p_aboutus{
+   font-size:8px;
+    text-align: justify;
+  }
+  .about_btn{
+    font-size: 10px;
+    justify-content: center;
+    align-items:center;
+    width: 80px;
+    height: 40px;
+    background-color: #72818b;
+    color: white;
+   border-radius: 10px;
+   
+
+   }
+
 }
 

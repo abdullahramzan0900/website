@@ -3,9 +3,13 @@
   box-sizing:border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif ,'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto";
+  font-family: "backslash";
+
+  
 
 }
 
@@ -15,10 +19,7 @@ code {
     monospace;
 }
 .Nav{
-  margin-top:0;
-  
-padding:0px;
-    margin:0px;
+ 
    
     border:solid black 0px;
     text-decoration:none;
@@ -49,7 +50,7 @@ background-color: #FFFFF9;
 
 }
 .logo_img{
-  height: 6vh;
+ 
 }
 
 .navigation-menu {
@@ -67,7 +68,7 @@ background-color: #FFFFF9;
   margin: 0 1rem;
 }
 .navigation-menu li a {
-  font-family:backslash;
+  font-family:"Roboto";
 
   text-decoration: none;
   display: block;

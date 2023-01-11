@@ -14,18 +14,27 @@ import { width } from "@mui/system";
 function Contact() {
   return (
     <>
-      <div className="contact_main">
+      <div style={{
+       fontFamily:'roboto'
+      }} className="contact_main">
         <div>
-          <img src={partner} alt="" />
+          <img style={{
+            width:'200px',
+         
+          }} src={partner} alt="" />
 
-          <div>
+          {/* <div>
             <img src={line8} alt="" />
-          </div>
+          </div> */}
+       <hr className="contact_hr" style={{
+          
+       }}/>
         </div>
 
         <p
           style={{
             fontSize: "2vh",
+            fontFamily:'roboto'
           }}
         >
           Trusted by more than 5,000 businesses in 122 countries.
@@ -33,18 +42,18 @@ function Contact() {
         <div className="contact_images">
           <img
             style={{
-              marginTop: "20px",
+              marginTop: "31px",
               width: "17vw",
-              height: "8vh",
+              height: "6vh",
             }}
             src={Oracle}
             alt=""
           />
           <img
             style={{
-              marginTop: "20px",
+            
               width: "30vw",
-              height: "10vh",
+              height: "14vh",
             }}
             src={microsoft}
             alt=""
@@ -59,10 +68,7 @@ function Contact() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-         
-        
-         
-
+            marginTop:'20px'
           }}
         >
           <img style={{
@@ -71,6 +77,8 @@ function Contact() {
           <p style={{
            
             fontSize:'1.6vh',
+            marginTop:'20px',
+            fontFamily:'roboto'
          
           }}>
             We provide IT services with the goal of delivering business
@@ -80,6 +88,7 @@ function Contact() {
           </p>
           <p style={{
             fontSize:'1.6vh',
+            marginTop:'20px'
           
           }}>Dubai Silicon Oasis, DDP Building A2, Dubai UAE</p>
         </div>
@@ -154,14 +163,8 @@ function Contact() {
       
             
             }}>
-          <p style={{
-            color:'white',
-            fontSize:"2vh",
-           
-        
-         
-        
-          }}></p>
+
+      
           <div
             style={{
               display: "flex",
@@ -171,6 +174,7 @@ function Contact() {
             
             }}
           >
+           
             <img
               style={{
                 width: "15px",
@@ -221,21 +225,23 @@ function Contact() {
             justifyContent:'center'
           }}
         >
-          <p>Send mail</p>
+          <p style={{
+            marginLeft:'20px'
+          }}>Send Mail</p>
           
           <div>
        <input placeholder="email" style={{
-        width:'7vw',
+        width:'120px',
         marginTop:'20px'
        }}/>
        <div>
 
             <button style={{
-                width:'7vw',
-                height:'4vh',
+                width:'120px',
+                height:'40px',
                textAlign:'center',
                background:'#229958',
-               borderRadius:'22px',
+               borderRadius:'14px',
                marginTop:'20px'
             }}>Subscribe</button>
        </div>
@@ -250,7 +256,8 @@ function Contact() {
            display:'flex',
            justifyContent:'center',
            color:'white',
-           fontSize:'1vw'
+           fontSize:'13px',
+           fontFamily:'roboto'
         
 
       }}>
