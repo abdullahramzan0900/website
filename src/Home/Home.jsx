@@ -17,7 +17,6 @@ import  about from '../image/about.png'
 import  about2 from '../image/about2.png'
 import Services from '../Services/Services'
 import Blogs from '../Blogs/Blogs'
-
 import line8 from '../image/Line8.png'
 import '../ABOUT/About.css'
 import CaseStudies from '../CaseStudies/CaseStudies'
@@ -107,7 +106,7 @@ Setbackground('img');
 
    </div>
    <About/>
-   <Services/>
+   {/* <Services/> */}
    <Blogs/>
    <CaseStudies/>
    <Contact/>
