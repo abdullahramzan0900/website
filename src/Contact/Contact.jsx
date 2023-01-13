@@ -23,9 +23,6 @@ function Contact() {
          
           }} src={partner} alt="" />
 
-          {/* <div>
-            <img src={line8} alt="" />
-          </div> */}
        <hr className="contact_hr" style={{
           
        }}/>
@@ -42,8 +39,8 @@ function Contact() {
         <div className="contact_images">
           <img
             style={{
-              marginTop: "31px",
-              width: "17vw",
+              marginTop: "37px",
+              width: "14vw",
               height: "6vh",
             }}
             src={Oracle}
@@ -96,7 +93,7 @@ function Contact() {
           style={{
             display: "flex",
             flexDirection: "column",
-          alignItems:'center',
+         
           justifyContent:'center',
             color: "white",
             
@@ -207,7 +204,8 @@ function Contact() {
             <img
               style={{
                 width: "20px",
-                marginTop:'10px'
+                marginTop:'10px',
+               
                
 
               }}
@@ -225,13 +223,12 @@ function Contact() {
             justifyContent:'center'
           }}
         >
-          <p style={{
-            marginLeft:'20px'
+          <p style={{           
           }}>Send Mail</p>
           
           <div>
        <input placeholder="email" style={{
-        width:'120px',
+        width:'150px',
         marginTop:'20px'
        }}/>
        <div>

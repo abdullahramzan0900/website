@@ -56,10 +56,6 @@ function  CaseStudies()
      h2:'read more'
    }
 ]
-
-
-
-
 const [Array,Setarray]=useState(array1);
 const [id,Setid]=useState(z);
 
@@ -68,12 +64,12 @@ const [id,Setid]=useState(z);
         <>
        <div>
         <div style={{
-        
+         
         }}>
 
 
          <div className='case_height' style={{
-
+           
         }}>
 
          <h1 style={{

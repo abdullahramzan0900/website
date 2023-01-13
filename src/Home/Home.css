@@ -75,6 +75,40 @@ table {
     position: absolute;
     width: 100%;
   }
+  .img3
+{
+    height: 89vh;
+    background-image: url("../image/background_img3.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+    width:100%;
+  } 
+  .img3::before{
+    background-color: rgba(0, 0, 0, 0.79);
+    content: '';
+    display: block;
+    height: 89vh;
+    position: absolute;
+    width: 100%;
+  }
+  .img4
+  {
+      height: 89vh;
+      background-image: url("../image/background_img4.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity:1;
+      width:100%;
+    } 
+    .img4::before{
+      background-color: rgba(0, 0, 0, 0.79);
+      content: '';
+      display: block;
+      height: 89vh;
+      position: absolute;
+      width: 100%;
+    }
   .centered {
     display: flex;
     flex-direction: column;
@@ -85,7 +119,6 @@ table {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
   }
 
 .btn_contact{

@@ -28,8 +28,8 @@ function About()
 <h1 className="H_aboutus" style={{
   
 }}>About Us</h1>
-<img style={{
-  
+<img className="img_line" style={{
+
 }} src={line8} alt="" />
 <p className="p_aboutus" style={{
  

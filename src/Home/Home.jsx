@@ -4,31 +4,42 @@ import Nav from '../Nav'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import banner from "../image/banner.svg"
-import Gbutton from '../image/Gbutton.svg'
-import line4 from '../image/Line 4.png'
-import line5 from '../image/Line 5.png'
-import line6 from '../image/Line 6.png'
-import line7 from '../image/Line 7.png'
+
 import About from '../ABOUT/About'
-import menubar from '../image/menu-bar.png'
-import chaticon from '../image/chat-icon.svg'
-import  about from '../image/about.png'
-import  about2 from '../image/about2.png'
+
 import Services from '../Services/Services'
 import Blogs from '../Blogs/Blogs'
 import line8 from '../image/Line8.png'
-import '../ABOUT/About.css'
+
 import CaseStudies from '../CaseStudies/CaseStudies'
 import Contact from '../Contact/Contact'
-import { imageListClasses } from '@mui/material'
+import background_img_1 from '../image/banner.svg'
+import background_img_2 from '../image/background_img3.svg'
+import background_img_3 from '../image/bannerr.svg'
+import background_img_4 from '../image/background_img4.svg'
 
 
 
 
+
+let x=0;
 
 function Home()
 {    const [background,Setbackground]=useState('img');
+const array=[
+  
+'img1','img2','img4','img3'
+]
+setTimeout(() => {
+   Setbackground(array[x]);
+   if(x==3)
+   {
+    x=0;
+
+   }
+  x++;
+}, 8000);
+
   
     return(
         <>    
@@ -40,7 +51,7 @@ function Home()
   <div class="centered">
       <h1  className='height' style={{
         fontSize:'40px',
-        fontFamily:'backslash'
+        fontFamily:'roboto'
         
       }} >Delivering <span style={{
       color:'#229958',
@@ -63,20 +74,22 @@ function Home()
      
       <div className='btns'>
         <button className='btn_contact'>Contact us</button>
-         <button className='btn_learn'>Learn more</button>         
-      </div>
-      <div>
-    
+         <button className='btn_learn'>Learn more</button>  
 
+      </div>
+      <div style={{
+   
+      }}>
  <button onClick={()=>{
 Setbackground('img');
  }} style={{
     background:'rgb(34, 153, 88)',
+
     marginTop:'50px',
     width:'45px',
     height:'10px',
     borderRadius:'22px',
-    border:'none'
+    border:'none',
  }}></button>
  <button onClick={()=>{
       Setbackground('img2');
@@ -85,28 +98,34 @@ Setbackground('img');
     width:'20px',
     height:'10px',
     borderRadius:'22px',
-    border:'none'
+    border:'none',
+    marginLeft:'10px',
  }}></button>
- <button  style={{
+ <button onClick={()=>{
+   Setbackground('img3');
+ }}  style={{
     background:'rgb(34, 153, 88)',
     height:'10px',
     width:'20px',
     borderRadius:'22px',
-    border:'none'
+    border:'none',
+    marginLeft:'10px',
  }}></button>
- <button  style={{
+ <button onClick={()=>{
+      Setbackground('img4');
+ }}  style={{
     background:'rgb(34, 153, 88)',
-    height:'10px',
-   
+    height:'10px',  
     width:'20px',
     borderRadius:'22px',
-    border:'none'
+    border:'none',
+    marginLeft:'10px',
  }}></button>
       </div>
 
    </div>
    <About/>
-   {/* <Services/> */}
+   <Services/>
    <Blogs/>
    <CaseStudies/>
    <Contact/>

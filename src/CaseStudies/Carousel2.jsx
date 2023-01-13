@@ -73,12 +73,14 @@ function Carousel2() {
           breakPoints={breakPoints}
         >
           {array1 &&
-            array1.map((item) => {
+            array1?.map((item) => {
               return (
                 <div key={item.id} className="itemm2">
                   <h1>{item.h1}</h1>
                   <p>{item.p}</p>
                   <h4>{item.h2}</h4>
+                  
+              
                 </div>
               );
             })}
