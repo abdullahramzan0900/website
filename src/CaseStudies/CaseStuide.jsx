@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import Contact from "../Contact/Contact";
+import { useNavigate } from "react-router-dom";
 let x=0;
 function CaseeStuide()
-{ const array1=[
+{ const navigate=useNavigate();
+  const array1=[
     { id:1,
   
      h1:'ERP for Restaurant',
@@ -156,7 +158,7 @@ Setbackground('img');
         fontSize:'28px'
         }}>Case-Studies</h1>
         <hr className="Case-Studies_detail_line" style={{
-
+      
         
         }}></hr>
 
@@ -169,7 +171,7 @@ Setbackground('img');
        return(
       <>
 
-        <div class="card3">
+        <div key={item.id} class="card3">
 
         <h1 style={{         
             color:'white',
@@ -186,7 +188,9 @@ Setbackground('img');
             }}>{item.p}
       
         </p>
-        <div style={{
+        <div onClick={()=>{
+          navigate(`/CaseStudies/${item.id}`);
+        }} style={{
           color:'white',
           fontFamily: "Roboto"          
         }}>{item.h2}</div>
@@ -201,8 +205,7 @@ Setbackground('img');
    
    
   }
-
-          </div>
+    </div>
     </div>
 
 
