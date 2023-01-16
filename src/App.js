@@ -10,6 +10,8 @@ import Services from './Services/Services';
 import Test from './Blogs/Test';
 import CaseeStuide from './CaseStudies/CaseStuide';
 import CaseStudiesDetail from './CaseStudies/CaseStudiesDetail'
+import MainBlog from './Blogs/MainBlog';
+import Blogs_detail from './Blogs/Blogs_detaill';
 
 
 function App() {
@@ -19,8 +21,9 @@ function App() {
     <Nav/>
       <Routes>
       <Route path="/" element={<Home/>}></Route>
-      <Route path="/about" element={<About/>}></Route>
+      <Route path="/about" element={<Blogs_detail/>}></Route>
          <Route path='/Services' element={<Services/>}> </Route>
+        <Route path="/Blogs" element={<MainBlog/>} ></Route>
         <Route path="/CaseStudies" element={<CaseeStuide/>} ></Route>
         <Route path="/CaseStudies/:id" element={<CaseStudiesDetail/>} ></Route>
 

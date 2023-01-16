@@ -12,43 +12,43 @@ function CaseeStuide()
      p:'There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
      h2:'read more'
     },
-    { id:1,
+    { id:2,
       h1:'Odoo SME',
       p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
       h2:'read more'
     },
-    { id:1,
+    { id:3,
       h1:'Dynamics',
       p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
   
       h2:'read more'
     },
-     {id:2,
+     {id:4,
       h1:'API Integration',
       p:'There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
       h2:'read more'
      },
-     { id:2,
+     { id:5,
        h1:'Customized reporting  with SAP ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
        h2:'readmore'
      },
-     { id:2,
+     { id:6,
        h1:'Oracle Deployment ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
        h2:'read more'
      },
-     {id:3,
+     {id:7,
       h1:'API Integration',
       p:'There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
       h2:'read more'
      },
-     { id:3,
+     { id:8,
        h1:'Customized P ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
        h2:'readmore'
      },
-     { id:3,
+     { id:9,
        h1:'Oracle Deployment ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
        h2:'read more'
@@ -72,7 +72,7 @@ function CaseeStuide()
         <>
         <div className="main_detail_casestudies">
      
-        <div  className={background}>
+        <div  className="background_casestudies">
         </div>
         {/* <img src={banner} alt="loading"/> */}
    
@@ -81,18 +81,18 @@ function CaseeStuide()
         fontSize:'40px',
         fontFamily:'roboto'
         
-      }} >Delivering <span style={{
+      }} >Examples of <span style={{
       color:'#229958',
       fontSize:'40px',
          fontFamily:'roboto'
-     }}>IT Solutions</span> That 
-    enable you To<span style={{
+     }}>Client Success</span> That 
+    ,Powered   by<span style={{
         color:'#229958',
-        fontSize:'40px',
+        fontSize:'36px',
          fontFamily:'roboto'
      
       
-      }}>Work Smarter</span> </h1>
+      }}> Vyadom</span> </h1>
       <p className='p1' style={{
          color:'#72818b',
          marginTop:"40px",
@@ -100,56 +100,9 @@ function CaseeStuide()
          fontFamily:'roboto'
       }}>Connecting industry needs with Innovation, Excellence, & IT .We create IT solutions that are easy to use, easy to manage, and easy to trust.</p>
      
-      <div className='btns'>
-        <button className='btn_contact'>Contact us</button>
-         <button className='btn_learn'>Learn more</button>  
-
-      </div>
-      <div style={{
+     
    
-      }}>
- <button onClick={()=>{
-Setbackground('img');
- }} style={{
-    background:'rgb(34, 153, 88)',
 
-    marginTop:'50px',
-    width:'45px',
-    height:'10px',
-    borderRadius:'22px',
-    border:'none',
- }}></button>
- <button onClick={()=>{
-      Setbackground('img2');
- }}  style={{
-    background:'rgb(34, 153, 88)',
-    width:'20px',
-    height:'10px',
-    borderRadius:'22px',
-    border:'none',
-    marginLeft:'10px',
- }}></button>
- <button onClick={()=>{
-   Setbackground('img3');
- }}  style={{
-    background:'rgb(34, 153, 88)',
-    height:'10px',
-    width:'20px',
-    borderRadius:'22px',
-    border:'none',
-    marginLeft:'10px',
- }}></button>
- <button onClick={()=>{
-      Setbackground('img4');
- }}  style={{
-    background:'rgb(34, 153, 88)',
-    height:'10px',  
-    width:'20px',
-    borderRadius:'22px',
-    border:'none',
-    marginLeft:'10px',
- }}></button>
-      </div>
 
    </div>
 
@@ -159,7 +112,8 @@ Setbackground('img');
         }}>Case-Studies</h1>
         <hr className="Case-Studies_detail_line" style={{
       
-        
+      
+      
         }}></hr>
 
          <div className="cards3">
