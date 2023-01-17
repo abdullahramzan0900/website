@@ -86,9 +86,10 @@ function Home() {
           </div>
           <div style={{}}>
             <button
-              onClick={() => {
-                Setbackground("img");
-              }}
+              // onClick={() => {
+              //   Setbackground("img");
+              //   x=0;
+              // }}
               style={{
                 background: "rgb(34, 153, 88)",
 
@@ -100,9 +101,10 @@ function Home() {
               }}
             ></button>
             <button
-              onClick={() => {
-                Setbackground("img2");
-              }}
+              // onClick={() => {
+              //   Setbackground("img2");
+              //   x=1;
+              // }}
               style={{
                 background: "rgb(34, 153, 88)",
                 width: "20px",
@@ -113,9 +115,11 @@ function Home() {
               }}
             ></button>
             <button
-              onClick={() => {
-                Setbackground("img3");
-              }}
+              // onClick={() => {
+              //   Setbackground("img3");
+              //   x=2;
+                
+              // }}
               style={{
                 background: "rgb(34, 153, 88)",
                 height: "10px",
@@ -126,9 +130,10 @@ function Home() {
               }}
             ></button>
             <button
-              onClick={() => {
-                Setbackground("img4");
-              }}
+              // onClick={() => {
+              //   Setbackground("img4");
+              //   x=3;
+              // }}
               style={{
                 background: "rgb(34, 153, 88)",
                 height: "10px",
