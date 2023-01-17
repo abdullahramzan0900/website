@@ -8,23 +8,12 @@ import background_img_1 from '../image/banner.svg'
 import background_img_2 from '../image/background_img3.svg'
 import background_img_3 from '../image/bannerr.svg'
 import background_img_4 from '../image/background_img4.svg'
+
+
 let x=0;
 
 function CaseStudiesDetail()
-{    const [background,Setbackground]=useState('img');
-const array=[
-  
-'img1','img2','img4','img3'
-]
-setTimeout(() => {
-   Setbackground(array[x]);
-   if(x==3)
-   {
-    x=0;
-
-   }
-  x++;
-}, 8000);
+{    
     const param=useParams();
     console.log(param.id,"param");
     const array1=[
@@ -111,7 +100,7 @@ setTimeout(() => {
       
       
 <div className='main_CaseStudies_detail'>
-<div  className={background}>
+<div  className='detail_case-st-background'>
         </div>
         {/* <img src={banner} alt="loading"/> */}
    
@@ -139,6 +128,7 @@ setTimeout(() => {
          if(item.id==param.id)
          { <h1>aaa</h1>
              return(
+
            
                  <div className='Case_Studies_detail'>
            

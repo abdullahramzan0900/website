@@ -94,7 +94,7 @@ border-top-left-radius: 22px;
 border-top-right-radius: 22px;
 }
 .about_img2{
- width: 40.7vw;
+ width: 40.99vw;
  height: 7vh;
 }
 .about_btn{
@@ -102,7 +102,7 @@ border-top-right-radius: 22px;
  align-items:flex-start;
  width: 120px;
  height: 45px;
- background-color: #72818b;
+ background-color:#444545;
  color: white;
 border-radius: 10px;
 border: none;
@@ -111,12 +111,14 @@ border: none;
   font-size:40px;
   text-align: justify;
   font-family: "roboto";
+  color:#229958;
 }
 .p_aboutus{
   margin-top: 20px;
   font-size:18px;
   text-align: justify;
   font-family: "roboto";
+  color: #5F5E5E;
 }
 
 @media screen and (max-width: 425px ) {

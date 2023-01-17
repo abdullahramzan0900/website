@@ -14,24 +14,28 @@ import { width } from "@mui/system";
 function Contact() {
   return (
     <>
-      <div style={{
-       fontFamily:'roboto'
-      }} className="contact_main">
+      <div
+        style={{
+          fontFamily: "roboto",
+        }}
+        className="contact_main"
+      >
         <div>
-          <img style={{
-            width:'200px',
-         
-          }} src={partner} alt="" />
+          <img
+            style={{
+              width: "200px",
+            }}
+            src={partner}
+            alt=""
+          />
 
-       <hr className="contact_hr" style={{
-          
-       }}/>
+          <hr className="contact_hr" style={{}} />
         </div>
 
         <p
           style={{
             fontSize: "2vh",
-            fontFamily:'roboto'
+            fontFamily: "roboto",
           }}
         >
           Trusted by more than 5,000 businesses in 122 countries.
@@ -40,17 +44,16 @@ function Contact() {
           <img
             style={{
               marginTop: "37px",
-              width: "14vw",
-              height: "6vh",
+              width: "13vw",
+              height: "5vh",
             }}
             src={Oracle}
             alt=""
           />
           <img
             style={{
-            
               width: "30vw",
-              height: "14vh",
+              height: "13vh",
             }}
             src={microsoft}
             alt=""
@@ -60,58 +63,73 @@ function Contact() {
       <div className="contact2">
         <div
           style={{
-            width: "20vw",       
+            width: "20vw",
             color: "white",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            marginTop:'20px'
+            marginTop: "20px",
           }}
         >
-          <img style={{
-            width:'15vw'
-          }} src={Logo} alt="" />
-          <p style={{
-           
-            fontSize:'1.6vh',
-            marginTop:'20px',
-            fontFamily:'roboto'
-         
-          }}>
+          <img
+            style={{
+              width: "15vw",
+            }}
+            src={Logo}
+            alt=""
+          />
+          <p
+            style={{
+              fontSize: "1.6vh",
+              marginTop: "20px",
+              fontFamily: "roboto",
+            }}
+          >
             We provide IT services with the goal of delivering business
             solutions to customers worldwide. We aim to meet the expectations of
             our clients and explain the best strategies that take their projects
             to a higher level.
           </p>
-          <p style={{
-            fontSize:'1.6vh',
-            marginTop:'20px'
-          
-          }}>Dubai Silicon Oasis, DDP Building A2, Dubai UAE</p>
+          <p
+            style={{
+              fontSize: "1.6vh",
+              marginTop: "20px",
+            }}
+          >
+            Dubai Silicon Oasis, DDP Building A2, Dubai UAE
+          </p>
         </div>
         <div
           style={{
             display: "flex",
             flexDirection: "column",
-         
-          justifyContent:'center',
+           textAlign:'justify',
+            justifyContent: "center",
             color: "white",
-            
+            fontFamily:'roboto'
           }}
         >
-          <p style={{
+          <p
+            style={{
               color: "white",
-              textDecoration:'none',
-              fontSize:'2vh',
-              marginTop:'15px'
-            }}>Services</p>
+              textDecoration: "none",
+              fontSize: "2vh",
+              marginTop: "15px",
+              fontWeight:'bold  ',
+              
+            }}
+          >
+            Services
+          </p>
           <a
             style={{
               color: "white",
-              textDecoration:'none',
-              fontSize:'2vh',
-              marginTop:'15px'
+              textDecoration: "none",
+              fontSize: "2vh",
+              
 
+              marginTop: "15px",
+          
             }}
             href=""
           >
@@ -120,9 +138,9 @@ function Contact() {
           <a
             style={{
               color: "white",
-              textDecoration:'none',
-              fontSize:'2vh',
-              marginTop:'15px'
+              textDecoration: "none",
+              fontSize: "2vh",
+              marginTop: "15px",
             }}
             href=""
           >
@@ -131,9 +149,9 @@ function Contact() {
           <a
             style={{
               color: "white",
-              textDecoration:'none',
-              fontSize:'1.5vh',
-              marginTop:'15px'
+              textDecoration: "none",
+              fontSize: "1.5vh",
+              marginTop: "15px",
             }}
             href=""
           >
@@ -142,41 +160,32 @@ function Contact() {
           <a
             style={{
               color: "white",
-              textDecoration:'none',
-              fontSize:'1.5vh',
-              marginTop:'15px'
-              
-
+              textDecoration: "none",
+              fontSize: "2vh",
+              marginTop: "15px",
             }}
             href=""
           >
             Salesforce
           </a>
         </div>
-        <div  style={{
-              display: "flex",
-              flexDirection: "column",
-           justifyContent:'center'
-      
-            
-            }}>
-
-      
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
           <div
             style={{
               display: "flex",
               flexDirection: "column",
               backgroundColor: "black",
-      
-            
             }}
           >
-           
             <img
               style={{
                 width: "15px",
-           
-              
               }}
               src={fb}
               alt=""
@@ -184,9 +193,7 @@ function Contact() {
             <img
               style={{
                 width: "20px",
-                marginTop:'10px'
-              
-               
+                marginTop: "10px",
               }}
               src={insta}
               alt=""
@@ -194,9 +201,7 @@ function Contact() {
             <img
               style={{
                 width: "20px",
-                marginTop:'10px'
-              
-               
+                marginTop: "10px",
               }}
               src={tw}
               alt=""
@@ -204,10 +209,7 @@ function Contact() {
             <img
               style={{
                 width: "20px",
-                marginTop:'10px',
-               
-               
-
+                marginTop: "10px",
               }}
               src={lk}
               alt=""
@@ -217,49 +219,61 @@ function Contact() {
         <div
           style={{
             color: "white",
-            margin:'5px',
-            display:'flex',
-            flexDirection:'column',
-            justifyContent:'center'
+            margin: "5px",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
           }}
         >
-          <p style={{           
+          <p style={{
+         marginLeft:'4px'
           }}>Send Mail</p>
-          
-          <div>
-       <input placeholder="email" style={{
-        width:'150px',
-        marginTop:'20px'
-       }}/>
-       <div>
 
-            <button style={{
-                width:'120px',
-                height:'40px',
-               textAlign:'center',
-               background:'#229958',
-               borderRadius:'14px',
-               marginTop:'20px'
-            }}>Subscribe</button>
-       </div>
+          <div>
+            <input
+              placeholder="email"
+              style={{
+                width: "150px",
+                marginTop: "5px",
+             
+                borderRadius:'7px',
+                height:'33px'
+              }}
+            />
+            <div>
+              <button
+                style={{
+                  width: "80px",
+                  height: "30px",
+                  textAlign: "center",
+                  background: "#229958",
+                  borderRadius: "7px",
+                  marginTop: "5px",
+                  marginLeft:'2px'
+                
+                }}
+              >
+                Subscribe
+              </button>
+            </div>
           </div>
         </div>
-
       </div>
-      <div style={{
-           background:'black',
-           width:'100%',
-           height:'5vh',
-           display:'flex',
-           justifyContent:'center',
-           color:'white',
-           fontSize:'13px',
-           fontFamily:'roboto'
-        
-
-      }}>
+      <div
+        style={{
+          background: "black",
+          width: "100%",
+          height: "5vh",
+          display: "flex",
+          justifyContent: "center",
+          color: "white",
+          fontSize: "13px",
+          fontFamily: "roboto",
+        }}
+      >
         <p>CopyrightⒸ2022,Vyadom</p>
       </div>
+
     </>
   );
 }

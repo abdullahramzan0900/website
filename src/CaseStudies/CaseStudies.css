@@ -2,20 +2,17 @@
   border-radius: 0;
   background-color: green;
 }
-/* round buttons on hover */
-/* .rec.rec-arrow:hover {
-  border-radius: 50%;
-  background-color: green;
-} */
-/* hide disabled buttons */
+
 .rec.rec-arrow:disabled {
   visibility: hidden;
 }
-/* disable default outline on focused items */
-/* add custom outline on focused items */
 
+.rec.rec-dot{
+  visibility: hidden;
+}
 
 .rec.rec-dot_active {
+  visibility: hidden;
   background: green;
   border: #444545;
   box-shadow: none;
@@ -62,6 +59,7 @@
   padding: 1rem;
   height: 250px;
   display: flex;
+  border-radius: 8px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -86,8 +84,7 @@ padding: 50px;
 .Case-Studies_detail_line{
   margin-top: 20px;
 width:100px;
-    border: 1px solid rgb(34, 153, 88);
-  
+    border: 1px solid rgb(34, 153, 88); 
 }
 .cards3 {
   max-width: 1200px;
@@ -561,9 +558,7 @@ font-size: 15px;
       border-radius: 46px;
       align-self: center;
     }
-    .Case_Studies_detail{
-
-    }
+   
     .p_div{
       display: flex;
       flex-direction: column;
@@ -574,6 +569,23 @@ font-size: 15px;
   font-size:10px ;
     }
 
+  }
+  .detail_case-st-background{
+
+    height: 89vh;
+    background-image: url("../image/detail_case_backgrond.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+    width:100%;
+  } 
+  .detail_case-st-background:before{
+    background-color: rgba(0, 0, 0, 0.79);
+    content: '';
+    display: block;
+    height: 89vh;
+    position: absolute;
+    width: 100%;
   }
 
 

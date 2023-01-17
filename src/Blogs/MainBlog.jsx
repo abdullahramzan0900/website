@@ -2,6 +2,7 @@ import { background } from "material-paper/build/lib/styles/paper.stl";
 import React from "react";
 import CaseStudies from "../CaseStudies/CaseStudies";
 import Contact from "../Contact/Contact";
+import { Navigate, useNavigate } from "react-router-dom";
 
 import Blog1 from "../image/Blog1.png";
 import Blog2 from "../image/Blog2.png";
@@ -9,18 +10,19 @@ import Blog3 from "../image/Blog3.png";
 import Blog4 from "../image/Blog4.png";
 import line8 from '../image/Line8.png';
 function MainBlog() {
+  const navigate=useNavigate()
   const array1 = [
     { id: 1, img: Blog1, h1: "Cloud Computing & its Benefits",p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud'
 
 
 },
-    { id: 1, img: Blog2, h1: "Impact of ERP in SME",p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud'},
-    { id: 1, img: Blog3, h1: "Digital Transformation & IoT" ,p:"If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud"},
-    { id: 1, h1: "Technology in 2023", img: Blog4,p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud' },
-    { id: 2, h1: "Technology in 2023", img: Blog4,p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud' },
-    { id: 2, img: Blog3, h1: "Digital Transformation & IoT",p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud' },
-    { id: 2, img: Blog1, h1: "Cloud Computing & its Benefits",p:"If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud" },
-    { id: 2, img: Blog2, h1: "Impact of ERP in SME",p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud' },
+    { id: 2, img: Blog2, h1: "Impact of ERP in SME",p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud'},
+    { id: 3, img: Blog3, h1: "Digital Transformation & IoT" ,p:"If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud"},
+    { id: 4, h1: "Technology in 2023", img: Blog4,p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud' },
+    { id: 5, h1: "Technology in 2023", img: Blog4,p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud' },
+    { id: 6, img: Blog3, h1: "Digital Transformation & IoT",p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud' },
+    { id: 7, img: Blog1, h1: "Cloud Computing & its Benefits",p:"If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud" },
+    { id: 8, img: Blog2, h1: "Impact of ERP in SME",p:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud' },
 
   ];
   return (
@@ -76,12 +78,15 @@ function MainBlog() {
            
           }}>Blogs</h1>
 <img style={{
-  width:'120px',
-  padding:'15px'
+  width:'120px', 
+  marginTop:'15px' 
   
 }} src={line8} alt="" />
           </div>
-          <div>
+          <div style={{
+      
+  backgroundColor:'#23A55B'
+          }}>
 
       <div class="MainBlog-grid">
            {
@@ -106,16 +111,19 @@ function MainBlog() {
                     src={item.img}
                     />
                     <div style={{
-                        padding:'30px'               
+                        padding:'30px',
+                                    
                     }}>
                   <p className="h_mainblog" style={{
                       
-                      
+                      marginLeft:'30px'
                 }}>{item.h1}</p>
                     <p className="p_mainblog" style={{
-                        
+                       
                     }}>{item.p}</p>
-                    <button className="mainblog_button_read" style={{
+                    <button onClick={()=>{
+                       navigate(`/Blogs/${item.id}`);
+                    }} className="mainblog_button_read" style={{
                         
                     }}>Readmore</button>
                   
@@ -132,6 +140,7 @@ function MainBlog() {
             </div>
             <CaseStudies/>
             <Contact/>
+
 
     </>
   );

@@ -12,6 +12,7 @@ import CaseeStuide from './CaseStudies/CaseStuide';
 import CaseStudiesDetail from './CaseStudies/CaseStudiesDetail'
 import MainBlog from './Blogs/MainBlog';
 import Blogs_detail from './Blogs/Blogs_detaill';
+import Services_detail from './Services/Services_detail';
 
 
 function App() {
@@ -21,11 +22,13 @@ function App() {
     <Nav/>
       <Routes>
       <Route path="/" element={<Home/>}></Route>
-      <Route path="/about" element={<Blogs_detail/>}></Route>
-         <Route path='/Services' element={<Services/>}> </Route>
+      {/* <Route path="/about" element={<Blogs_detail/>}></Route> */}
+         {/* <Route path='/Services' element={<Services_detail/>}> </Route> */}
         <Route path="/Blogs" element={<MainBlog/>} ></Route>
+        <Route path="/Blogs/:id" element={<Blogs_detail/>} ></Route>
         <Route path="/CaseStudies" element={<CaseeStuide/>} ></Route>
         <Route path="/CaseStudies/:id" element={<CaseStudiesDetail/>} ></Route>
+        
 
       </Routes>
     </BrowserRouter>

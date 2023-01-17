@@ -186,7 +186,6 @@
     grid-template-columns: auto auto auto ;
     grid-gap: 10px;
     background-color: rgb(68, 69, 69);
-
     padding: 10px;
  
   }
@@ -341,6 +340,11 @@ background-color: #72818b;
   margin-top: 10px;
   
 }
+.line_Services{
+  margin-top: 10px;
+  border: 1px solid #229958;
+  width: 200px;
+}
 .Service1_div
 {
   height: 180px;
@@ -355,8 +359,8 @@ background-color: #72818b;
   background: white;
   width: 150px;
   height: 40px;
-border-top-left-radius: 22px;
-border-top-right-radius: 2px;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
   padding: 15px;
  padding-left: 20;
 font-size: 15px;
@@ -378,8 +382,8 @@ color: black;
   background: white;
   width: 150px;
   height: 40px;
-border-top-left-radius: 22px;
-border-top-right-radius: 2px;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
   padding: 15px;
  padding-left: 20;
 font-size: 15px;
@@ -400,8 +404,8 @@ color: black;
   background: white;
   width: 150px;
   height: 50px;
-border-top-left-radius: 22px;
-border-top-right-radius: 2px;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
   padding: 15px;
  padding-left: 20;
 font-size: 15px;
@@ -423,10 +427,10 @@ color: black;
   background: white;
   width: 150px;
   height: 40px;
-border-top-left-radius: 22px;
-border-top-right-radius: 2px;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
   padding: 15px;
- padding-left: 20;
+ padding-left: 22;
 font-size: 15px;
 font-family: 'roboto';
 color: black;
@@ -446,8 +450,8 @@ color: black;
     background: white;
     width: 130px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+  /* border-top-left-radius: 22px;
+  border-top-right-radius: 2px; */
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -467,8 +471,7 @@ color: black;
     background: white;
     width: 150px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -487,8 +490,7 @@ color: black;
     background: white;
     width: 150px;
     height: 50px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -508,8 +510,7 @@ color: black;
     background: white;
     width: 150px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -545,8 +546,7 @@ color: black;
     background: white;
     width: 130px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -566,8 +566,7 @@ color: black;
     background: white;
     width: 130px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -586,8 +585,7 @@ color: black;
     background: white;
     width: 130px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -607,8 +605,7 @@ color: black;
     background: white;
     width: 130px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -641,8 +638,7 @@ color: black;
     background: white;
     width: 100px;
     height: 50px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -663,8 +659,7 @@ color: black;
     background: white;
     width: 100px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -684,8 +679,7 @@ color: black;
     background: white;
     width: 90px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 13px;
@@ -705,8 +699,7 @@ color: black;
     background: white;
     width: 110px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -730,8 +723,7 @@ color: black;
     background: white;
     width: 100px;
     height: 50px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+ 
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -752,8 +744,7 @@ color: black;
     background: white;
     width: 100px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -773,8 +764,7 @@ color: black;
     background: white;
     width: 90px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 13px;
@@ -794,8 +784,7 @@ color: black;
     background: white;
     width: 110px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -828,8 +817,7 @@ color: black;
     background: white;
     width: 100px;
     height: 50px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -850,8 +838,7 @@ color: black;
     background: white;
     width: 100px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+ 
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -871,8 +858,7 @@ color: black;
     background: white;
     width: 90px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 13px;
@@ -892,8 +878,7 @@ color: black;
     background: white;
     width: 110px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -926,8 +911,7 @@ color: black;
     background: white;
     width: 100px;
     height: 50px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -948,8 +932,7 @@ color: black;
     background: white;
     width: 100px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -969,8 +952,7 @@ color: black;
     background: white;
     width: 90px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 13px;
@@ -990,8 +972,7 @@ color: black;
     background: white;
     width: 110px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 23px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -1025,8 +1006,7 @@ color: black;
     background: white;
     width: 80px;
     height: 50px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -1047,8 +1027,7 @@ color: black;
     background: white;
     width: 80px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 12px;
@@ -1068,8 +1047,7 @@ color: black;
     background: white;
     width: 70px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 9px;
@@ -1141,8 +1119,7 @@ font-size: 30px;
     background: white;
     width: 80px;
     height: 50px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
+  
     padding: 15px;
    padding-left: 20;
   font-size: 15px;
@@ -1163,8 +1140,7 @@ font-size: 30px;
 
     width: 80px;
     height: 44px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 12px;
@@ -1184,8 +1160,7 @@ font-size: 30px;
 
     width: 80px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
+  
     padding: 15px;
    padding-left: 20;
   font-size: 9px;
@@ -1204,8 +1179,7 @@ font-size: 30px;
     left: 20px;
     width: 80px;
     height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 2px;
+
     padding: 15px;
    padding-left: 20;
   font-size: 12px;
@@ -1256,8 +1230,7 @@ font-size: 30px;
 
       width: 80px;
       height: 50px;
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
+  
       padding: 15px;
      padding-left: 20;
     font-size: 15px;
@@ -1278,8 +1251,7 @@ font-size: 30px;
   
       width: 80px;
       height: 44px;
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
+ 
       padding: 15px;
      padding-left: 20;
     font-size: 12px;
@@ -1300,8 +1272,7 @@ font-size: 30px;
     
       width: 80px;
       height: 40px;
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
+
       padding: 15px;
      padding-left: 20;
     font-size: 9px;
@@ -1321,8 +1292,7 @@ font-size: 30px;
     
       width: 80px;
       height: 40px;
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
+
       padding: 15px;
      padding-left: 20;
     font-size: 12px;
@@ -1385,8 +1355,7 @@ font-size: 30px;
     background: white;
     width: 60px;
     height: 30px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
+
     padding: 10px;
    padding-left: 20;
   font-size: 8px;
@@ -1407,8 +1376,7 @@ font-size: 30px;
     background: white;
     width: 50px;
     height: 25px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
+
     padding: 10px;
    padding-left: 20;
   font-size: 6px;
@@ -1430,8 +1398,6 @@ font-size: 30px;
     height: 25px;
     width: 50px;
 
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
     padding: 10px;
    padding-left: 20;
   font-size: 7px;
@@ -1457,6 +1423,479 @@ font-size: 30px;
 
 }
 }
+.Services_detail{
+  width:100%;
+  background-color:#444545 ;
+  font-family: 'roboto';
+ 
+}
+.CloudServices{
+  width: 100%;
+  display: flex;
+  padding: 30px;
+
+padding: 50px;
+  padding-left: 160px;
+
+}
+.ERPIntegration{
+  width: 100%;
+  display: flex;
+  padding: 30px;
+
+padding: 50px;
+  padding-left: 160px;
+}
+.CloudServices_div1
+{ 
+  width: 35%;
+  background-color: red;
+}
+.img_service_detail{
+ 
+  width: 400px;
+  height: 280px;
+  border-radius: 20px;
+}
+.img_service_detail::before{
+  background-color: black;
+}
+
+
+
+.CloudServices_div2{
+  display: flex;
+  /* ALlow images to display on multiple lines rather than a single line */
+  flex-wrap: wrap;
+  /* Container should take up only 90% of the browser, leave 5% space on each side */
+  width: 90%;
+  /* Center container */
+  margin: 0 auto;
+ 
+}
+.CloudServices_div2_1{
+  display: block;
+
+  /* our width setting for mobile, one image per line */
+  flex-basis: 100%;
+  /* provide some space between our images */
+  padding: 40px;
+  /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
+  box-sizing: border-box;
+}
+
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 11px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+
+
+@media only screen and (max-width: 2560px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width:350px;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+}
+@media only screen and (max-width: 1600px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width: 320px;
+    height:290px;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width:290px;
+    height:260px;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 1286px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width:270px;
+    height:260px;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 1286px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width:250px;
+    height:240px;
+    border-radius: 19px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width:220px;
+    height:220px;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 1093px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width:190px;
+    height:190px;
+    border-radius: 20px;
+  }
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+
+
+}
+@media only screen and (max-width: 1029px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width:150px;
+    height:190px;
+    border-radius: 20px;
+  }
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+
+
+}
+@media only screen and (max-width: 978px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 100%;
+  }
+  .img_service_detail{
+    width: 400px;
+    border-radius: 20px;
+  }
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+
+}
+
+
+}
+@media only screen and (max-width: 705px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 100%;
+  }
+  .img_service_detail{
+    width: 350px;
+    border-radius: 20px;
+  }
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+.CloudServices{
+  width: 100%;
+  display: flex;
+  padding: 30px;
+align-self: center;
+padding: 50px;
+/* padding-left: 160px; */
+
+}
+
+
+}
+@media only screen and (max-width: 631px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 100%;
+  }
+  .img_service_detail{
+    width: 300px;
+    border-radius: 20px;
+  }
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+
+
+}
+@media only screen and (max-width: 571px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 100%;
+  }
+  .img_service_detail{
+    width: 250px;
+    border-radius: 20px;
+  }
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+.CloudServices{
+  width: 100%;
+  display: flex;
+  padding: 30px;
+align-self: center;
+padding: 50px;
+/* padding-left: 160px; */
+
+}
+
+
+}
+@media only screen and (max-width: 505px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 100%;
+  }
+  /* .img_service_detail{
+    width: 200px;
+    border-radius: 20px;
+  } */
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+
+
+}
+@media only screen and (max-width: 459px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 100%;
+  }
+  /* .img_service_detail{
+    width: 170px;
+    border-radius: 20px;
+  } */
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+
+
+}
+@media only screen and (max-width: 401px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 100%;
+  }
+  .img_service_detail{
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+.h1_servcies_detail{
+  font-size: 30px;
+ color: white;
+}
+.line_Services-detail{
+  border: 1px solid green;
+  width: 100px;
+  margin-top: 20px;
+}
+.p_servcies_detail{
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: justify;
+  color: #C8C8C8 ;
+  word-spacing: 2px;
+  
+}
+
+
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+/* five images per line when browser width exceeds 1600px */
+
+
+@media only screen and (max-width: 640px) {
+  .grid-image {
+    flex-basis: 50%;
+  }
+}
+ 
+/* three images per line when browser width exceeds 960px */
+/* @media only screen and (max-width: 960px) {
+  .CloudServices_div2_1 {
+    flex-basis: 20%;
+  }
+} */
+ 
+/* four images per line when browser width exceeds 1280px */
+
+
+
+
+
 
 
 

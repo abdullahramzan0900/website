@@ -41,7 +41,7 @@ function Nav()
             <a href="/Services">Services</a>
           </li>
           <li>
-            <a href="/Blog">Blog</a>
+            <a href="/Blogs">Blog</a>
           </li>
           <li>
             <a href="/CaseStudies">Case Studies</a>

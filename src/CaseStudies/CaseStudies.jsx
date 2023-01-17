@@ -74,7 +74,7 @@ const [id,Setid]=useState(z);
 
          <h1 style={{
            fontSize:'3vh',
-           padding:'20px',
+           paddingTop:'25px',
            fontFamily:"roboto"
           }}>Case Studies</h1>
           <hr className='services_hr' style={{

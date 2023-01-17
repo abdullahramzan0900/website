@@ -36,11 +36,8 @@ function Services() {
                 >
                 Our Services
                 </h1>
-                <img className="sevicesimg_1"
-                 
-                  src={line8}
-                  alt=""
-                />
+                <hr className="line_Services">
+                  </hr>
               </div>
 
               <p className="service_p"

@@ -86,8 +86,8 @@ function Blogs()
         <>
         <div >
          <div className='blog_height' style={{  
-          padding:'24px',
-          fontFamily:'roboto'
+      
+          paddingTop:'30px'
         }}>
 
          <h1 style={{
@@ -96,7 +96,7 @@ function Blogs()
            
           }}>Blogs</h1>
 <img style={{
-  width:'120px',
+  width:'130px',
   padding:'15px'
   
 }} src={line8} alt="" />
@@ -104,135 +104,14 @@ function Blogs()
     <div className='Main_div'>  
 <div class="containers">
 <Test/>
-    
-  {/* {  Array && Array?.map((item)=>{
-    if(item.id===id)
-    {
 
-      return(
-        <div class="box">
-        <img style={{
-          height:'34vh'
-        }}  className='img_blog' src={item.img} />
-        <h3 className='h3'>{item.h1}</h3>
-      </div>    
-     )
-    }
-  })
-  
-  } */}
-      {/* <div class="carousel-wrapper">
-            <Carousel>
-                <div>
-                    <img src={Blog1} />
-                </div>
-                <div>
-                    <img src={Blog2} />
-                </div>
-                <div>
-                    <img src={Blog3} />
-                </div>
-            </Carousel>
-        </div> */}
-
-  
-      
-    
-      {/* <div class="box">
-        <img  style={{
-          height:'34vh',
-        }}     className='img_blog' src={Blog2} />
-        <h3 className='h3'>Impact of ERP in SME</h3>
-    
-      </div>
-      <div class="box">
-        <img style={{
-          height:'34vh'
-        }}  className='img_blog' src={Blog3} />
-        <h3 className='h3'>Digital Transformation
-& IoT</h3>
-    
-      </div>
-    <div class="box">
-        <img style={{
-          height:'34vh'
-        }} className='img_blog' src={Blog4} />
-        <h3 className='h3'>Technology in 2023</h3>
-     
-      </div> */}
-  
     
     </div>
-  
   
     
 
     </div>
-    {/* <div style={{
-      height:'150px',
-      backgroundColor:'#229958',
-      display:'flex',
-      justifyContent:'center',
-      alignItems:'center'
-      
-    }}>
-    <div style={{
-      width:'30px',
-      backgroundColor:'#229958',
-      margin:'20px'
-    }}>
-      <div style={{
-        width:'40px',      
-        height:"40px",
-        background:'#444545',
-        padding:'6px',
-        opacity:'0.7'
-     
-      
-      }}>
 
-    <img onClick={()=>{
-      if(x>1)
-      {
-        x--;
-        Setid(x);
-
-      }
-    }} src={path27} alt="" />
-      </div>
-
-    </div>
-  
-    <div style={{
-      width:'80px',
-      backgroundColor:'#229958',
-      
-    }}>
-      <div style={{
-           width:'40px',  
-           height:"40px",
-           background:'#444545',
-           padding:'8px',
-           paddingLeft:'10px'
-      }}>
-
-    <img onClick={()=>{
-      if(x<3)
-      {
-        x++;
-        Setid(x);
-       
-
-      }
-    }} style={{
-      
-    }} src={path26} alt="" />
-
-    </div>
-   
-    </div>
-
-    </div> */}
       <div>
 
 

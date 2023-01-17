@@ -7,7 +7,6 @@ function CaseeStuide()
 { const navigate=useNavigate();
   const array1=[
     { id:1,
-  
      h1:'ERP for Restaurant',
      p:'There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
      h2:'read more'
@@ -92,7 +91,7 @@ function CaseeStuide()
          fontFamily:'roboto'
      
       
-      }}> Vyadom</span> </h1>
+      }}>Vyadom</span> </h1>
       <p className='p1' style={{
          color:'#72818b',
          marginTop:"40px",
@@ -113,7 +112,7 @@ function CaseeStuide()
         <hr className="Case-Studies_detail_line" style={{
       
       
-      
+
         }}></hr>
 
          <div className="cards3">
