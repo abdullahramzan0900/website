@@ -52,6 +52,10 @@
   position: absolute;
   width: 100%;
 }
+
+.background_casestudies{
+  background-position: center;
+ }
 .card3{
   
   margin: 15px;
@@ -589,6 +593,10 @@ font-size: 15px;
     position: absolute;
     width: 100%;
   }
+  .detail_case-st-background{
+    background-position: center;
+  }
+  
 
 
 

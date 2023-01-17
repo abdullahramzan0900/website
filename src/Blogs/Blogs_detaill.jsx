@@ -42,7 +42,7 @@ function Blogs_detail()
 <p className="Blogdetail_para">Numerous businesses, from established corporations to fresh startups, are embracing cloud technology because of its many advantages. So cloud computing can be helpful whether you want to reduce the carbon footprint of your company or you need to preserve sensitive data.</p>
 <h1 className="BlogDetail_height" >More flexible</h1>
 <p className="Blogdetail_para" >Flexible Flexibility is the keyword in today’s corporate world. Businesses need to be flexible enough to adapt as client and customer needs change frequently. Cloud computing can offer you the flexibility you need to gain a competitive edge. Businesses can free up resources—including financial and human resources—for use in other areas with the help of cloud computing. This frees them up from having to manage and maintain their own IT resources so they can focus more on pleasing clients and customers.</p>
-<h1>Reduce Costs</h1>
+<h1 className="BlogDetail_height">Reduce Costs</h1>
 
 <p className="Blogdetail_para">Many companies used their own internal computing resources prior to the development of cloud computing. This required hiring IT team members to oversee those resources and make sure sensitive information was kept secure. Without a doubt, all of this was expensive. Businesses can potentially achieve significant cost savings by switching from internal IT infrastructure to remote servers provided by third-party cloud platforms.</p>
 <h1 className="BlogDetail_height">Fast simple and easy</h1>

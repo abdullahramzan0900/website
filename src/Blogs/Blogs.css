@@ -886,12 +886,13 @@ transition: all 0.8s ease;
   font-size: 20px;
   margin-top: 20px;
   font-weight: bold;
-
 }
 .Blogdetail_para{
+  margin-top: 5px;
   color:#FFFFFF;
-  font-size: 13px;
+  font-size: 12px;
   text-align: justify;
+  font-weight:lighter;
 }
 .Blog_img{
   width: 500px;
@@ -918,6 +919,10 @@ padding-left: 160px;
   position: absolute;
   width: 100%;
 }
+.background_Blogdetail_img{
+
+background-position: center;
+} 
 
 
 
