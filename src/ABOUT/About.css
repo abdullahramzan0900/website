@@ -92,9 +92,10 @@ height: 500px;
 opacity: 1.9;
 border-top-left-radius: 22px;
 border-top-right-radius: 22px;
+
 }
 .about_img2{
- width: 40.99vw;
+ width: 41vw;
  height: 7vh;
 }
 .about_btn{
@@ -121,6 +122,7 @@ border: none;
   color: #5F5E5E;
 }
 
+
 @media screen and (max-width: 425px ) {
 
   .H_aboutus
@@ -144,6 +146,7 @@ border: none;
    .img_line{
     width: 120px;
    }
+   
 
 }
 

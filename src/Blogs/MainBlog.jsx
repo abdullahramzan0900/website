@@ -121,10 +121,11 @@ function MainBlog() {
                     <p className="p_mainblog" style={{
                        
                     }}>{item.p}</p>
-                    <button onClick={()=>{
+                    <button  onClick={()=>{
                        navigate(`/Blogs/${item.id}`);
                     }} className="mainblog_button_read" style={{
-                        
+                        cursor:'pointer',
+                        background:'none'
                     }}>Readmore</button>
                   
                     </div>

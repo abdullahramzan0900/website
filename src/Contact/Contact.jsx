@@ -186,6 +186,7 @@ function Contact() {
             <img
               style={{
                 width: "15px",
+                cursor:'pointer'
               }}
               src={fb}
               alt=""
@@ -194,6 +195,7 @@ function Contact() {
               style={{
                 width: "20px",
                 marginTop: "10px",
+                cursor:'pointer'
               }}
               src={insta}
               alt=""
@@ -202,6 +204,7 @@ function Contact() {
               style={{
                 width: "20px",
                 marginTop: "10px",
+                cursor:'pointer'
               }}
               src={tw}
               alt=""
@@ -210,6 +213,7 @@ function Contact() {
               style={{
                 width: "20px",
                 marginTop: "10px",
+                cursor:'pointer'
               }}
               src={lk}
               alt=""
@@ -223,6 +227,7 @@ function Contact() {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
+            
           }}
         >
           <p style={{

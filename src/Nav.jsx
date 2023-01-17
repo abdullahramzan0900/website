@@ -34,9 +34,7 @@ function Nav()
              color:'#229958'
             }} href="/">Home</a>
           </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
+       
           <li>
             <a href="/Services">Services</a>
           </li>

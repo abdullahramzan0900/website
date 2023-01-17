@@ -1,7 +1,9 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import "./CaseStudies.css";
+import { Navigate, useNavigate } from "react-router-dom";
 function Carousel2() {
+  const navigate=useNavigate();
   const array1 = [
     {
       id: 1,
@@ -78,7 +80,11 @@ function Carousel2() {
                 <div key={item.id} className="itemm2">
                   <h1>{item.h1}</h1>
                   <p>{item.p}</p>
-                  <h4>{item.h2}</h4>
+                  <h4 onClick={()=>{
+                       navigate('/CaseStudies')
+                  }} style={{
+                    cursor:'pointer'
+                  }}>{item.h2}</h4>
                   
               
                 </div>
