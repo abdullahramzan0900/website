@@ -64,6 +64,7 @@ function Home() {
               marginTop: "40px",
               fontSize: "2vh",
               fontFamily: "roboto",
+              lineHeight:'30px'
             }}
           >
             Connecting industry needs with Innovation, Excellence, & IT .We

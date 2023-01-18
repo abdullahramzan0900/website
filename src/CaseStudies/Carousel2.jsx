@@ -10,26 +10,26 @@ function Carousel2() {
 
       h1: "ERP for Restaurant",
       p: "There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
-      h2: "read more",
+      h2: "readmore",
     },
     {
       id: 1,
       h1: "Odoo SME",
       p: " There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ",
-      h2: "read more",
+      h2: "readmore",
     },
     {
       id: 1,
       h1: "Dynamics",
       p: " There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ",
 
-      h2: "read more",
+      h2: "readmore",
     },
     {
       id: 2,
       h1: "API Integration",
       p: "There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
-      h2: "read more",
+      h2: "readmore",
     },
     {
       id: 2,
@@ -41,13 +41,13 @@ function Carousel2() {
       id: 2,
       h1: "Oracle Deployment ",
       p: " There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ",
-      h2: "read more",
+      h2: "readmore",
     },
     {
       id: 3,
       h1: "API Integration",
       p: "There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
-      h2: "read more",
+      h2: "readmore",
     },
     {
       id: 3,
@@ -59,7 +59,7 @@ function Carousel2() {
       id: 3,
       h1: "Oracle Deployment ",
       p: " There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ",
-      h2: "read more",
+      h2: "readmore",
     },
   ];
   const breakPoints = [
@@ -78,8 +78,12 @@ function Carousel2() {
             array1?.map((item) => {
               return (
                 <div key={item.id} className="itemm2">
-                  <h1>{item.h1}</h1>
-                  <p>{item.p}</p>
+                  <h1 style={{
+                    
+                  }}>{item.h1}</h1>
+                  <p style={{
+                    lineHeight:'22px'
+                  }}>{item.p}</p>
                   <h4 onClick={()=>{
                        navigate('/CaseStudies')
                   }} style={{

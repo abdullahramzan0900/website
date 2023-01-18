@@ -84,6 +84,7 @@ function Contact() {
               fontSize: "1.6vh",
               marginTop: "20px",
               fontFamily: "roboto",
+              lineHeight:'20px'
             }}
           >
             We provide IT services with the goal of delivering business
@@ -151,7 +152,7 @@ function Contact() {
             style={{
               color: "white",
               textDecoration: "none",
-              fontSize: "1.5vh",
+              fontSize: "2vh",
               marginTop: "15px",
             }}
             href=""
@@ -186,7 +187,7 @@ function Contact() {
           >
             <img
               style={{
-                width: "15px",
+                width: "12px",
                 cursor:'pointer'
               }}
               src={fb}

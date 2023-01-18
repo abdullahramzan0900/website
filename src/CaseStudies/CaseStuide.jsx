@@ -96,7 +96,8 @@ function CaseeStuide()
          color:'#72818b',
          marginTop:"40px",
          fontSize:'2vh',
-         fontFamily:'roboto'
+         fontFamily:'roboto',
+         lineHeight:'25px'
       }}>Connecting industry needs with Innovation, Excellence, & IT .We create IT solutions that are easy to use, easy to manage, and easy to trust.</p>
      
      
@@ -131,6 +132,7 @@ function CaseeStuide()
             color:'white',
             alignSelf:'center',
             fontFamily: "Roboto",
+            fontSize:'20px'
             
           }}>{item.h1}</h1>
              
@@ -138,7 +140,10 @@ function CaseeStuide()
           <p style={{
                       
               color:'white',
-              fontFamily: "Roboto"
+              fontFamily: "Roboto",
+              lineHeight:'20px',
+              textAlign:'justify',
+              fontSize:'13px '
             }}>{item.p}
       
         </p>

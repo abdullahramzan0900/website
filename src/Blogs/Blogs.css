@@ -818,6 +818,7 @@
   font-size: 12px;
   text-align: justify;
   margin-top: 20px;
+  line-height: 15px;
 }
 .h_mainblog{
   background-color: white;
@@ -893,6 +894,7 @@ transition: all 0.8s ease;
   font-size: 12px;
   text-align: justify;
   font-weight:lighter;
+  line-height: 20px;
 }
 .Blog_img{
   width: 500px;

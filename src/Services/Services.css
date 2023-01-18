@@ -25,6 +25,7 @@
     justify-content: center;
      align-items: center;
       text-align: left;
+      padding-left: 13%;
 
 }
 .Services_image{
@@ -44,7 +45,8 @@
     /* ALlow images to display on multiple lines rather than a single line */
     flex-wrap: wrap;
     /* Container should take up only 90% of the browser, leave 5% space on each side */
-    width: 30%;
+    width: 50%;
+    padding-left: 2%;
     /* Center container */
     /* margin: 0 auto; */
   }
@@ -76,16 +78,17 @@
   }
   .service_p{
     font-size: 15px;
-    text-align: left;
+    text-align:justify;
     color: white;
  font-family: "roboto";
     padding-top:20px ;
+    line-height: 20px;
   }
   .sevicesimg_1{
     padding-top: 20px;
   }
   .services_h1{
-  font-size: 40px;
+  font-size: 30px;
     color: white;
     padding-top: 20px;
     font-family: 'roboto';
@@ -342,7 +345,8 @@ background-color: #72818b;
 }
 .line_Services{
   margin-top: 10px;
-  border: 1px solid #229958;
+  margin-left: 2px;
+  /* border: 1px solid #229958; */
   width: 120px;
 }
 .Service1_div
@@ -394,6 +398,7 @@ color: black;
 .Service3_div{
   height: 150px;
   padding: 10px;
+  width: 290px;
   border-radius: 22px;
   border: none;
 }
@@ -416,7 +421,7 @@ color: black;
 .Service4_div{
   height: 152px;
   padding: 10px;
-  width: 250px;
+  width: 256px;
   border-radius: 22px;
   border: none;
 }
@@ -1516,7 +1521,7 @@ padding: 50px;
   color: white;
 }
 .line_Services-detail{
-  order: 1px solid green;
+  border: 1px solid #229958;
   width: 100px;
   margin-top: 20px;
 }

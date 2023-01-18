@@ -13,6 +13,7 @@ import search from '../image/search_services.png'
 
 function Services_detail() {
   return (
+    
     <>
       <div className="Services_detail">
         <div className="CloudServices">
