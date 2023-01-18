@@ -9,6 +9,7 @@ import fb from "../image/fb.png";
 import insta from "../image/insta.png";
 import tw from "../image/tw.png";
 import lk from "../image/lk.png";
+import logoicon from '../image/Logo-icon.svg'
 
 
 function Contact() {
@@ -74,9 +75,9 @@ function Contact() {
         >
           <img
             style={{
-              width: "15vw",
+              width: "60px",
             }}
-            src={Logo}
+            src={logoicon}
             alt=""
           />
           <p
