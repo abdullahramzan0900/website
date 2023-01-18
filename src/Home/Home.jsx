@@ -1,22 +1,13 @@
 import React from "react";
 import "./Home.css";
-import Nav from "../Nav";
 import { useState } from "react";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
-
 import About from "../ABOUT/About";
-
 import Services from "../Services/Services";
 import Blogs from "../Blogs/Blogs";
-import line8 from "../image/Line8.png";
-
 import CaseStudies from "../CaseStudies/CaseStudies";
 import Contact from "../Contact/Contact";
-import background_img_1 from "../image/banner.svg";
-import background_img_2 from "../image/background_img3.svg";
-import background_img_3 from "../image/bannerr.svg";
-import background_img_4 from "../image/background_img4.svg";
+import Services_detail from "../Services/Services_detail";
+
 
 let x = 0;
 
@@ -146,7 +137,8 @@ function Home() {
           </div>
         </div>
         <About />
-        <Services />
+        <Services/>
+        <Services_detail/>
         <Blogs />
         <CaseStudies />
         <Contact />

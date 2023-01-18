@@ -19,7 +19,6 @@ import { styled } from "@mui/material/styles";
 import "./Services.css";
 
 function Services() {
-
   return (
     <>
       <div className="main">
@@ -31,18 +30,11 @@ function Services() {
               }}
             >
               <div style={{}}>
-                <h1 className="services_h1"
-               
-                >
-                Our Services
-                </h1>
-                <hr className="line_Services">
-                  </hr>
+                <h1 className="services_h1">Our Services</h1>
+                <hr className="line_Services"></hr>
               </div>
 
-              <p className="service_p"
-            
-              >
+              <p className="service_p">
                 We provide quality services to out client that support bussniess
                 in developing and implementing ovations solution for performance
                 ,growth and relevance
@@ -57,7 +49,6 @@ function Services() {
                   border: "none",
                   marginTop: "40px",
                   fontFamily: "roboto",
-
                 }}
               >
                 Learn more
@@ -76,36 +67,21 @@ function Services() {
                   display: "flex",
                 }}
               >
-                <div 
+                <div
                   style={{
                     position: "relative",
                   }}
                 >
-                  <img className="Service1_div"
-                   
-                    src={Service1}
-                    alt=""
-                  />
-                  <div className="Service1_button"
-                
-                  >
-                    Cloud Services
-                  </div>
+                  <img className="Service1_div" src={Service1} alt="" />
+                  <div className="Service1_button">Cloud Services</div>
                 </div>
                 <div
                   style={{
                     position: "relative",
                   }}
                 >
-                  <img className="Service2_div"
-                 
-                    src={Service2}
-                    alt=""
-                  />
-                  <div className="Service2_button"               
-                  >
-                    ERP Integration
-                  </div>
+                  <img className="Service2_div" src={Service2} alt="" />
+                  <div className="Service2_button">ERP Integration</div>
                 </div>
               </div>
               <div
@@ -118,38 +94,21 @@ function Services() {
                     position: "relative",
                   }}
                 >
-                  <img className="Service3_div"
-                 
-                    src={Service3}
-                    alt=""
-                  />
-                  <div className="Service3_button"
-                
-                  >
-                    Digital Transformation
-                  </div>
+                  <img className="Service3_div" src={Service3} alt="" />
+                  <div className="Service3_button">Digital Transformation</div>
                 </div>
                 <div
                   style={{
                     position: "relative",
                   }}
                 >
-                  <img className="Service4_div"
-                    src={Servcies4}
-                    alt=""
-                  />
-                  <div className="Service4_button"
-                
-                  >
-                   Salesforce
-                  </div>
+                  <img className="Service4_div" src={Servcies4} alt="" />
+                  <div className="Service4_button">Salesforce</div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
-        
       </div>
     </>
   );

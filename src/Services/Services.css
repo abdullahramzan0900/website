@@ -11,7 +11,7 @@
   
     height: 600px;
   display:flex;
-  background-color:#444545;
+  background-color:#229958;
   
 
 }
@@ -19,7 +19,7 @@
   
     width:50%;
     
-    background-color:#444545;
+    background-color:#229958;
    display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1424,19 +1424,30 @@ font-size: 30px;
 }
 }
 .Services_detail{
-  width:100%;
-  background-color:#444545 ;
+  width: 100%;
+  background-color: #444545;
   font-family: 'roboto';
+  padding-top: 50px;
  
 }
 .CloudServices{
   width: 100%;
+  display: block;
+  padding-bottom:50px;
+
+
+}
+.outer_upper_div{
+  width: 40%;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+.upper_second_div{
+  width: 60%;
   display: flex;
-  padding: 30px;
-
-padding: 50px;
-  padding-left: 160px;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
 }
 .ERPIntegration{
   width: 100%;
@@ -1452,11 +1463,14 @@ padding: 50px;
   background-color: red;
 }
 .img_service_detail{
- 
+  
   width: 400px;
   height: 280px;
   border-radius: 20px;
+  opacity: 0.4;
 }
+
+
 .img_service_detail::before{
   background-color: black;
 }
@@ -1465,74 +1479,103 @@ padding: 50px;
 
 .CloudServices_div2{
   display: flex;
-  /* ALlow images to display on multiple lines rather than a single line */
   flex-wrap: wrap;
-  /* Container should take up only 90% of the browser, leave 5% space on each side */
-  width: 90%;
-  /* Center container */
+  max-width: 1200px;
   margin: 0 auto;
  
 }
 .CloudServices_div2_1{
   display: block;
+  position: relative;
 
   /* our width setting for mobile, one image per line */
-  flex-basis: 100%;
-  /* provide some space between our images */
-  padding: 40px;
+ 
   /* ensure padding doesn't cause images to wrap, it should be within the width rather than in addition */
   box-sizing: border-box;
+
 }
+.search_div
+{
+  position: absolute;
+  bottom: 40%;
+  left:40%;  
+}
+.search_upper_div{
+  position: relative;
+}
+.search_icon{
+  position: absolute;
+  left: 20px;
+  top: 24px;
+  width: 30px;
+}
+
 
 .h1_servcies_detail{
   font-size: 30px;
- color: white;
+  color: white;
 }
 .line_Services-detail{
-  border: 1px solid green;
+  order: 1px solid green;
   width: 100px;
   margin-top: 20px;
 }
 .p_servcies_detail{
-  font-size: 11px;
-  margin-top: 20px;
+  font-size: 12px;
+  margin-top: 15px;
+  color: #C8C8C8;
+  line-height: 1.6;
   text-align: justify;
-  color: #C8C8C8 ;
-  word-spacing: 2px;
   
+}
+.h1_search_div{
+  font-size: 19px;
+  color: white;
+
+  padding-left: 13px;
+  
+ 
+
+}
+.search_upper_img{
+  width: 58px;
+margin-top: 10px;
+margin-left: 10px;
 }
 
 
 @media only screen and (max-width: 2560px) {
-  .CloudServices_div2_1 {
 
-    flex-basis: 20%;
-  }
   .img_service_detail{
-    width:350px;
+    width:500px;
     height: 250px;
     border-radius: 20px;
   }
 
 }
-@media only screen and (max-width: 1600px) {
-  .CloudServices_div2_1 {
-
-    flex-basis: 20%;
-  }
+@media only screen and (max-width: 2200px) {
+ 
   .img_service_detail{
     width: 320px;
     height:290px;
     border-radius: 20px;
   }
 }
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1600px) {
+ 
+  .img_service_detail{
+    width: 320px;
+    height:290px;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 1390px) {
   .CloudServices_div2_1 {
 
     flex-basis: 20%;
   }
   .img_service_detail{
-    width:290px;
+    width:230px;
     height:260px;
     border-radius: 20px;
   }
@@ -1554,10 +1597,28 @@ padding: 50px;
     flex-basis: 20%;
   }
   .img_service_detail{
-    width:250px;
+    width:240px;
     height:240px;
     border-radius: 19px;
   }
+}
+@media only screen and (max-width: 1180px) {
+  .CloudServices_div2_1 {
+
+    flex-basis: 20%;
+  }
+  .img_service_detail{
+    width:230px;
+    height:220px;
+    border-radius: 20px;
+  }
+  .CloudServices {
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    /* padding: 50px; */
+    /* padding-left: 160px; */
+}
 }
 @media only screen and (max-width: 1160px) {
   .CloudServices_div2_1 {
@@ -1607,7 +1668,7 @@ padding: 50px;
     flex-basis: 20%;
   }
   .img_service_detail{
-    width:150px;
+    width:180px;
     height:190px;
     border-radius: 20px;
   }
@@ -1641,7 +1702,9 @@ padding: 50px;
     width: 400px;
     border-radius: 20px;
   }
-  
+  .outer_upper_div {
+    width: 100%;
+}
 .h1_servcies_detail{
   font-size: 30px;
  color: white;

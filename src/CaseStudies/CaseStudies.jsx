@@ -9,7 +9,6 @@ function  CaseStudies()
 {  console.log(z,"z")
   const array1=[
   { id:1,
-
    h1:'ERP for Restaurant',
    p:'There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
    h2:'read more'

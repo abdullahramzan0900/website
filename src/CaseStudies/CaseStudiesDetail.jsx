@@ -116,6 +116,7 @@ function CaseStudiesDetail()
          fontSize:'2vh',
          fontFamily:'roboto'
       }}>Connecting industry needs with Innovation, Excellence, & IT .We create IT solutions that are easy to use, easy to manage, and easy to trust.</p>    
+      
       <div style={{
    
       }}>

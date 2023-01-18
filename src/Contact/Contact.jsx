@@ -3,13 +3,13 @@ import "./Contact.css";
 import partner from "../image/Partners.png";
 import microsoft from "../image/microsoft.png";
 import Oracle from "../image/Oracle.png";
-import line8 from "../image/Line8.png";
+
 import Logo from "../image/Logo.svg";
 import fb from "../image/fb.png";
 import insta from "../image/insta.png";
 import tw from "../image/tw.png";
 import lk from "../image/lk.png";
-import { width } from "@mui/system";
+
 
 function Contact() {
   return (
@@ -29,7 +29,8 @@ function Contact() {
             alt=""
           />
 
-          <hr className="contact_hr" style={{}} />
+          <hr className="contact_hr" style={{
+          }} />
         </div>
 
         <p
@@ -226,8 +227,7 @@ function Contact() {
             margin: "5px",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
-            
+            justifyContent: "center",       
           }}
         >
           <p style={{
@@ -274,6 +274,7 @@ function Contact() {
           color: "white",
           fontSize: "13px",
           fontFamily: "roboto",
+
         }}
       >
         <p>CopyrightⒸ2022,Vyadom</p>

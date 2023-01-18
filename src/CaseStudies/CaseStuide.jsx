@@ -107,7 +107,8 @@ function CaseeStuide()
 
           <div className="detail_CaseStuides">
         <h1 style={{
-        fontSize:'28px'
+        fontSize:'28px',
+        color:'white'
         }}>Case-Studies</h1>
         <hr className="Case-Studies_detail_line" style={{
       
@@ -115,11 +116,11 @@ function CaseeStuide()
 
         }}></hr>
 
-         <div className="cards3">
-       
-  {
+         <div className="cards3">    
+  {   
 
-    
+
+
    array1 && array1?.map((item=>{
        return(
       <>
@@ -149,9 +150,7 @@ function CaseeStuide()
           cursor:'pointer'        
         }}>{item.h2}</div>
           
-        </div>
-     
-     
+        </div>  
       </>
    )
    }))
