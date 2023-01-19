@@ -109,6 +109,7 @@ function CaseStudiesDetail()
         fontSize:'40px',
         fontFamily:'roboto'
         
+        
       }} >Case Studies </h1>
       <p className='p1' style={{
          color:'#72818b',
@@ -129,8 +130,6 @@ function CaseStudiesDetail()
          if(item.id==param.id)
          { <h1>aaa</h1>
              return(
-
-           
                  <div className='Case_Studies_detail'>
            
 <div className='p_div'>

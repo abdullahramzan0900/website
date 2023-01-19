@@ -11,10 +11,38 @@ import integration from '../image/integration.png'
 import search_upper from '../image/serach_upper.png'
 import search from '../image/search_services.png'
 
+
 function Services_detail() {
+    
   return (
     
     <>
+  <div  className='Servicesbackground'>
+        </div>
+<div class="centered">
+      <h1  className='height' style={{
+        fontSize:'40px',
+        fontFamily:'roboto',
+        color:'#229958'
+        
+      }} >Our<span style={{
+        color:'#229958'
+      }}> Services</span>  </h1>
+      <p className='p1' style={{
+         color:'grey',
+         marginTop:"40px",
+         fontSize:'2vh',
+         fontFamily:'roboto',
+         lineHeight:'30px',
+         
+         
+      }}>Connecting industry needs with Innovation, Excellence, & IT .We create IT solutions that are easy to use, easy to manage, and easy to trust.</p>    
+      
+      <div style={{
+      }}>
+      </div>
+      </div>
+  
       <div className="Services_detail">
         <div className="CloudServices">
           <div className="CloudServices_div2">

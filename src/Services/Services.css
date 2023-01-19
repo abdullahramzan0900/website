@@ -15,6 +15,36 @@
   
 
 }
+.Servicesbackground
+{
+    height: 89vh;
+    background-image: url("../image/Servcies_background_image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+    width:100%;
+  } 
+  /* .Servicesbackground::after{
+    background-image: url("../image/mask_service_background.svg");
+    content: '';
+    display: block;
+    height: 89vh;
+    position: absolute;
+    width: 100%;
+  } */
+  .Servicesbackground::before{
+background-color:       rgba(0, 0, 0, 0.79);;
+    content: '';
+    display: block;
+    height: 89vh;
+    position: absolute;
+    width: 100%;
+  }
+  @media only screen and (min-width:100px) {
+    .Servicesbackground{
+      background-position: center;
+    }
+  }
 .Services{
   
     width:50%;
@@ -69,9 +99,7 @@
     position: relative;
     z-index: 3;
     width:100px;
-    font-size: 15px;
-    
-   
+    font-size: 15px;   
     bottom: 50px;
     left: 6vw;
     right:left;
@@ -122,6 +150,14 @@
     .grid-image {
       flex-basis: 20%;
     }
+ 
+  }
+  @media only screen and (max-width: 1660px) {
+    .grid-image {
+      flex-basis: 20%;
+    }
+
+ 
   }
   .card {
     background-color: dodgerblue;
@@ -253,6 +289,25 @@ background-color: #72818b;
   
   .itm41 {
     grid-row-end: span 3;
+  }
+  @media only screen and (max-width: 1669px) {
+
+
+    .img_background{
+    
+      width:100px;
+      height:40vh;
+      opacity:0.4;
+  
+  
+    }
+    .inner__text{
+      width:30px
+    }
+    .dynamic{
+      font-size: 15px;
+    }
+  
   }
   @media only screen and (max-width: 912px) {
     .grid-image {
@@ -524,6 +579,44 @@ color: black;
   }
 
 }
+@media only screen and (max-width: 1669px) {
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 2%;
+    /* margin: 0 auto; */
+}
+.Services {
+  width: 50%;
+  background-color: #229958;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding-left: 8%;
+}
+}
+@media only screen and (max-width: 1317px) {
+  .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-left: 2%;
+    /* margin: 0 auto; */
+}
+.Services {
+  width: 50%;
+  background-color: #229958;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+ 
+}
+}
 @media only screen and (max-width: 1110px) {
   .image-grid {
   
@@ -532,75 +625,96 @@ color: black;
     /* ALlow images to display on multiple lines rather than a single line */
     flex-wrap: wrap;
     /* Container should take up only 90% of the browser, leave 5% space on each side */
-    width: 60%;
+    width: 100%;
     /* Center container */
     /* margin: 0 auto; */
   }
+  .service_p {
+    font-size: 12px;
+    text-align: LEFT;
+    color: white;
+    font-family: "roboto";
+    padding-top: 20px;
+    line-height: 20px;
 }
-@media only screen and (max-width: 936px) {
-.Service1_div
+}
+@media only screen and (max-width: 875px) {
+  .Service1_div
 {
-  height: 140px;
+  height: 130px;
+  width:160px;
   padding: 10px;
   border: none;
 }
+.image-grid {
+  
+  
+  display: flex;
+
+  flex-wrap: wrap;
+  width: 30%;
+  
+}
+
   .Service1_button{
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
     left: 40px;
     background: white;
-    width: 130px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
 
   }
   .Service2_div{
     height: 140px;
     padding: 10px;
+    width:160px;
     border: none;
   }
   .Service2_button
   {
     position: absolute;
-    bottom: 5px;
+    bottom: 13px;
     left: 40px;
     background: white;
-    width: 130px;
-    height: 44px;
+    width: 100px;
+    height: 30px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
 
   }
   .Service3_div{
     height: 120px;
     padding: 10px;
+    width:160px;
     border: none;
   }
   .Service3_button{
     position: absolute;
-    bottom: 6px;
-    left: 60px;
+    bottom: 11px;
+    left: 40px;
     background: white;
-    width: 130px;
-    height: 44px;
+    width: 90px;
+    height: 35px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
-    
+   
   }
   .Service4_div{
     height: 120px;
     padding: 10px;
-    width: 220px;
+    width: 160px;
     border: none;
   }
   .Service4_button{
@@ -608,16 +722,17 @@ color: black;
     bottom: 7px;
     left: 40px;
     background: white;
-    width: 130px;
-    height: 40px;
+    width: 90px;
+    height: 30px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
-  
+
   }
 }
+
 @media only screen and (max-width: 768px) {
   .Service1_div
 {
@@ -638,15 +753,15 @@ color: black;
 
   .Service1_button{
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
     left: 40px;
     background: white;
     width: 100px;
-    height: 50px;
+    height: 30px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
 
   }
@@ -659,15 +774,15 @@ color: black;
   .Service2_button
   {
     position: absolute;
-    bottom: 5px;
+    bottom: 13px;
     left: 40px;
     background: white;
     width: 100px;
-    height: 44px;
+    height: 30px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
 
   }
@@ -679,15 +794,15 @@ color: black;
   }
   .Service3_button{
     position: absolute;
-    bottom: 6px;
+    bottom: 11px;
     left: 40px;
     background: white;
     width: 90px;
-    height: 44px;
+    height: 35px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 13px;
+  font-size: 10px;
   font-family: 'roboto';
    
   }
@@ -700,99 +815,14 @@ color: black;
   .Service4_button{
     position: absolute;
     bottom: 7px;
-    left: 30px;
-    background: white;
-    width: 110px;
-    height: 40px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
-
-  }
-}
-@media only screen and (max-width: 768px) {
-  .Service1_div
-{
-  height: 130px;
-  width:160px;
-  padding: 10px;
-  border: none;
-}
-
-  .Service1_button{
-    position: absolute;
-    bottom: 8px;
-    left: 40px;
-    background: white;
-    width: 100px;
-    height: 50px;
- 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
-  
-  }
-  .Service2_div{
-    height: 140px;
-    padding: 10px;
-    width:160px;
-    border: none;
-  }
-  .Service2_button
-  {
-    position: absolute;
-    bottom: 5px;
-    left: 40px;
-    background: white;
-    width: 100px;
-    height: 44px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
-  
-  }
-  .Service3_div{
-    height: 120px;
-    padding: 10px;
-    width:160px;
-    border: none;
-  }
-  .Service3_button{
-    position: absolute;
-    bottom: 6px;
     left: 40px;
     background: white;
     width: 90px;
-    height: 44px;
+    height: 30px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 13px;
-  font-family: 'roboto';
-
-  }
-  .Service4_div{
-    height: 120px;
-    padding: 10px;
-    width: 160px;
-    border: none;
-  }
-  .Service4_button{
-    position: absolute;
-    bottom: 7px;
-    left: 30px;
-    background: white;
-    width: 110px;
-    height: 40px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
 
   }
@@ -815,80 +845,96 @@ color: black;
   
 }
 
+.Service1_div
+{
+  height: 130px;
+  width:130px;
+  padding: 10px;
+  border: none;
+}
+.image-grid {
+  
+  
+  display: flex;
+
+  flex-wrap: wrap;
+  width: 30%;
+  
+}
+
   .Service1_button{
     position: absolute;
-    bottom: 8px;
-    left: 40px;
+    bottom: 20px;
+    left: 25px;
     background: white;
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 34px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
-    
+
   }
   .Service2_div{
     height: 140px;
     padding: 10px;
-    width:160px;
+    width:130px;
     border: none;
   }
   .Service2_button
   {
     position: absolute;
-    bottom: 5px;
-    left: 40px;
+    bottom: 10px;
+    left: 25px;
     background: white;
-    width: 100px;
-    height: 44px;
- 
+    width: 80px;
+    height: 34px;
+
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
-  
   }
   .Service3_div{
     height: 120px;
     padding: 10px;
-    width:160px;
+    width:130px;
     border: none;
   }
   .Service3_button{
     position: absolute;
-    bottom: 6px;
-    left: 40px;
+    bottom: 10px;
+    left: 25px;
     background: white;
     width: 90px;
-    height: 44px;
+    height: 34px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 13px;
+  font-size: 10px;
   font-family: 'roboto';
-    
+   
   }
   .Service4_div{
     height: 120px;
     padding: 10px;
-    width: 160px;
+    width: 130px;
     border: none;
   }
   .Service4_button{
     position: absolute;
-    bottom: 7px;
-    left: 30px;
+    bottom: 10px;
+    left: 25px;
     background: white;
-    width: 110px;
-    height: 40px;
+    width: 80px;
+    height: 34px;
 
     padding: 15px;
    padding-left: 20;
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'roboto';
-    
+
   }
 }
 @media only screen and (max-width: 554px) {
@@ -908,88 +954,86 @@ color: black;
   width: 65%;
   
 }
+.Service1_button{
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
 
-  .Service1_button{
-    position: absolute;
-    bottom: 8px;
-    left: 40px;
-    background: white;
-    width: 100px;
-    height: 50px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
+}
+.Service2_div{
+  height: 140px;
+  padding: 10px;
+  width:130px;
+  border: none;
+}
+.Service2_button
+{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
 
-  }
-  .Service2_div{
-    height: 140px;
-    padding: 10px;
-    width:160px;
-    border: none;
-  }
-  .Service2_button
-  {
-    position: absolute;
-    bottom: 5px;
-    left: 40px;
-    background: white;
-    width: 100px;
-    height: 44px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
+}
+.Service3_div{
+  height: 120px;
+  padding: 10px;
+  width: 160px;
+  border: none;
+}
+.Service3_button{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 90px;
+  height: 34px;
 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
  
-  }
-  .Service3_div{
-    height: 120px;
-    padding: 10px;
-    width:160px;
-    border: none;
-  }
-  .Service3_button{
-    position: absolute;
-    bottom: 6px;
-    left: 40px;
-    background: white;
-    width: 90px;
-    height: 44px;
+}
+.Service4_div{
+  height: 120px;
+  padding: 10px;
+  width: 130px;
+  border: none;
+}
+.Service4_button{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 13px;
-  font-family: 'roboto';
- 
-  }
-  .Service4_div{
-    height: 120px;
-    padding: 10px;
-    width: 160px;
-    border: none;
-  }
-  .Service4_button{
-    position: absolute;
-    bottom: 7px;
-    left: 30px;
-    background: white;
-    width: 110px;
-    height: 40px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
-   
-  }
+}
 }
 @media only screen and (max-width: 507px) {
   .Service1_div
 {
   height: 130px;
-  width:130px;
+  width:160px;
   padding: 10px;
   border: none;
 }
@@ -999,87 +1043,83 @@ color: black;
   display: flex;
 
   flex-wrap: wrap;
-  width: 60%;
-
+  width: 65%;
   
 }
+.Service1_button{
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
 
-  .Service1_button{
-    position: absolute;
-    bottom: 8px;
-    left: 20px;
-    background: white;
-    width: 80px;
-    height: 50px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
-   
-  }
-  .Service2_div{
-    height: 140px;
-    padding: 10px;
-    width:120px;
-    border: none;
-  }
-  .Service2_button
-  {
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
-    background: white;
-    width: 80px;
-    height: 44px;
+}
+.Service2_div{
+  height: 140px;
+  padding: 10px;
+  width:130px;
+  border: none;
+}
+.Service2_button
+{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 12px;
-  font-family: 'roboto';
-  
-  }
-  .Service3_div{
-    height: 120px;
-    padding: 10px;
-    width:130px;
-    border: none;
-  }
-  .Service3_button{
-    position: absolute;
-    bottom: 6px;
-    left: 40px;
-    background: white;
-    width: 70px;
-    height: 44px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
+}
+.Service3_div{
+  height: 120px;
+  padding: 10px;
+  width: 160px;
+  border: none;
+}
+.Service3_button{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 90px;
+  height: 34px;
 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 9px;
-  font-family: 'roboto';
-   
-  }
-  .Service4_div{
-    height: 120px;
-    padding: 10px;
-    width: 160px;
-    border: none;
-  }
-  .Service4_button{
-    position: absolute;
-    bottom: 7px;
-    left: 30px;
-    background: white;
-    width: 110px;
-    height: 40px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
-  
-  }
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
+ 
+}
+.Service4_div{
+  height: 120px;
+  padding: 10px;
+  width: 130px;
+  border: none;
+}
+.Service4_button{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
+}
+
+
 }
 @media only screen and (max-width: 492px) {
 .Service1_div
@@ -1117,80 +1157,78 @@ font-size: 30px;
   font-family: 'roboto';
 
 }
-  .Service1_button{
-    position: absolute;
-    bottom: 8px;
-    left: 20px;
-    background: white;
-    width: 80px;
-    height: 50px;
-  
-    padding: 15px;
-   padding-left: 20;
-  font-size: 15px;
-  font-family: 'roboto';
+.Service1_button{
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
 
-  }
-  .Service2_div{
-    height: 140px;
-    padding: 10px;
-    width:120px;
-    border: none;
-  }
-  .Service2_button
-  {
-    position: absolute;
-    bottom: 5px;
-    left: 20px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
 
-    width: 80px;
-    height: 44px;
+}
+.Service2_div{
+  height: 140px;
+  padding: 10px;
+  width:130px;
+  border: none;
+}
+.Service2_button
+{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
 
-    padding: 15px;
-   padding-left: 20;
-  font-size: 12px;
-  font-family: 'roboto';
-  
-  }
-  .Service3_div{
-    height: 120px;
-    padding: 10px;
-    width:130px;
-    border: none;
-  }
-  .Service3_button{
-    position: absolute;
-    bottom: 6px;
-    left: 20px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
+}
+.Service3_div{
+  height: 120px;
+  padding: 10px;
+  width: 130px;
+  border: none;
+}
+.Service3_button{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 90px;
+  height: 34px;
 
-    width: 80px;
-    height: 40px;
-  
-    padding: 15px;
-   padding-left: 20;
-  font-size: 9px;
-  font-family: 'roboto';
-
-  }
-  .Service4_div{
-    height: 120px;
-    padding: 10px;
-    width: 120px;
-    border: none;
-  }
-  .Service4_button{
-    position: absolute;
-    bottom: 7px;
-    left: 20px;
-    width: 80px;
-    height: 40px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 12px;
-  font-family: 'roboto';
-    
-  }
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
+ 
+}
+.Service4_div{
+  height: 120px;
+  padding: 10px;
+  width: 130px;
+  border: none;
+}
+.Service4_button{
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  background: white;
+  width: 80px;
+  height: 34px;
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
+}
 }
 @media only screen and (max-width: 445px) {
   .Service1_div
@@ -1229,18 +1267,128 @@ font-size: 30px;
   
   }
   .Service1_button{
-      position: absolute;
-      bottom: 8px;
-      left: 20px;
-
-      width: 80px;
-      height: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    background: white;
+    width: 80px;
+    height: 34px;
   
+    padding: 15px;
+   padding-left: 20;
+  font-size: 10px;
+  font-family: 'roboto';
+  
+  }
+  .Service2_div{
+    height: 140px;
+    padding: 10px;
+    width:130px;
+    border: none;
+  }
+  .Service2_button
+  {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    background: white;
+    width: 80px;
+    height: 34px;
+  
+    padding: 15px;
+   padding-left: 20;
+  font-size: 10px;
+  font-family: 'roboto';
+  }
+  .Service3_div{
+    height: 120px;
+    padding: 10px;
+    width: 13 0px;
+    border: none;
+  }
+  .Service3_button{
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    background: white;
+    width: 90px;
+    height: 34px;
+  
+    padding: 15px;
+   padding-left: 20;
+  font-size: 10px;
+  font-family: 'roboto';
+   
+  }
+  .Service4_div{
+    height: 120px;
+    padding: 10px;
+    width: 130px;
+    border: none;
+  }
+  .Service4_button{
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    background: white;
+    width: 80px;
+    height: 34px;
+    padding: 15px;
+   padding-left: 20;
+  font-size: 10px;
+  font-family: 'roboto';
+  }
+  }
+  @media only screen and (max-width: 439px) {
+
+    .image-grid {
+      
+      
+      display: flex;
+    
+      flex-wrap: wrap;
+      width: 60%;
+    
+      
+    }
+    .service_p{
+      font-size: 10px;
+      text-align: left;
+      color: white;
+    font-family: "roboto";
+      padding-top:20px ;
+    }
+    .sevicesimg_1{
+      padding-top: 20px;
+      width:110px;
+    }
+    .services_h1{
+    font-size: 30px;
+      color: white;
+      padding-top: 20px;
+      font-family: 'roboto';
+    
+    }
+    .Service1_div
+    {
+      height: 130px;
+      width:120px;
+      padding: 10px;
+      border: none;
+    }
+    .Service1_button{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: white;
+      width: 80px;
+      height: 34px;
+    
       padding: 15px;
      padding-left: 20;
-    font-size: 15px;
+    font-size: 10px;
     font-family: 'roboto';
-      
+    
     }
     .Service2_div{
       height: 140px;
@@ -1251,38 +1399,36 @@ font-size: 30px;
     .Service2_button
     {
       position: absolute;
-      bottom: 5px;
+      bottom: 10px;
       left: 20px;
-  
+      background: white;
       width: 80px;
-      height: 44px;
- 
+      height: 34px;
+    
       padding: 15px;
      padding-left: 20;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'roboto';
-      
-     
     }
     .Service3_div{
       height: 120px;
       padding: 10px;
-      width:130px;
+      width: 120px;
       border: none;
     }
     .Service3_button{
       position: absolute;
-      bottom: 6px;
+      bottom: 10px;
       left: 20px;
+      background: white;
+      width: 82px;
+      height: 34px;
     
-      width: 80px;
-      height: 40px;
-
       padding: 15px;
      padding-left: 20;
-    font-size: 9px;
+    font-size: 10px;
     font-family: 'roboto';
-    
+     
     }
     .Service4_div{
       height: 120px;
@@ -1292,19 +1438,17 @@ font-size: 30px;
     }
     .Service4_button{
       position: absolute;
-      bottom: 7px;
+      bottom: 10px;
       left: 20px;
-    
+      background: white;
       width: 80px;
-      height: 40px;
-
+      height: 34px;
       padding: 15px;
      padding-left: 20;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'roboto';
- 
     }
-  }
+    }
   
 
 
@@ -1330,21 +1474,17 @@ font-size: 30px;
 }
 
 .Service1_button{
-    position: absolute;
-    bottom: 10px;
-    left:15px;
-   
- 
-    width: 50px;
-    height: 25px;
-  border-top-left-radius: 22px;
-  border-top-right-radius: 22px;
-    padding: 10px;
-   padding-left: 20;
-  font-size: 8px;
-  font-family: 'roboto';
-    background:white;
-    color:black;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: white;
+  width: 60px;
+  height: 34px;
+
+  padding: 15px;
+ padding-left: 20;
+font-size: 10px;
+font-family: 'roboto';
   }
   .Service2_div{
     height: 140px;
@@ -1355,18 +1495,16 @@ font-size: 30px;
   .Service2_button
   {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 15px;
+    left: 20px;
     background: white;
     width: 60px;
-    height: 30px;
-
-    padding: 10px;
+    height: 34px;
+  
+    padding: 15px;
    padding-left: 20;
-  font-size: 8px;
+  font-size: 10px;
   font-family: 'roboto';
- 
-    color:black;
   }
   .Service3_div{
     height: 120px;
@@ -1376,18 +1514,17 @@ font-size: 30px;
   }
   .Service3_button{
     position: absolute;
-    bottom: 6px;
-    left: 20px;
+    bottom: 10px;
+    left: 15px;
     background: white;
-    width: 50px;
-    height: 25px;
-
-    padding: 10px;
+    width: 63px;
+    height: 34px;
+    text-align: left;
+  
+    padding: 15px;
    padding-left: 20;
-  font-size: 6px;
+  font-size: 7px;
   font-family: 'roboto';
-
-    color:black;
   }
   .Service4_div{
     height: 120px;
@@ -1397,18 +1534,16 @@ font-size: 30px;
   }
   .Service4_button{
     position: absolute;
-    bottom: 7px;
-    left: 20px;
+    bottom: 10px;
+    left: 15px;
     background: white;
-    height: 25px;
-    width: 50px;
-
-    padding: 10px;
+    width: 63px;
+    height: 34px;
+  
+    padding: 15px;
    padding-left: 20;
-  font-size: 7px;
+  font-size: 10px;
   font-family: 'roboto';
-
-    color:black;
   }
   .service_p{
     font-size: 8px;
@@ -1777,7 +1912,6 @@ margin-left: 5px;
   text-align: justify;
   color: #C8C8C8 ;
   word-spacing: 2px;
-  
 }
 
 

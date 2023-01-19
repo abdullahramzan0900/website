@@ -12,7 +12,7 @@ function Nav()
       <>
 <nav className="navigation">
   <img style={{
- marginLeft:'30px'
+ marginLeft:'60px'
   }} className='logo_img' src={Logo} alt="loading"/>
   
         <div onClick={()=>{

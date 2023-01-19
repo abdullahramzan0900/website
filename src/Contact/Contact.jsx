@@ -9,8 +9,7 @@ import fb from "../image/fb.png";
 import insta from "../image/insta.png";
 import tw from "../image/tw.png";
 import lk from "../image/lk.png";
-import logoicon from '../image/Logo-icon.svg'
-
+import logoicon from "../image/Logo-icon.svg";
 
 function Contact() {
   return (
@@ -30,8 +29,7 @@ function Contact() {
             alt=""
           />
 
-          <hr className="contact_hr" style={{
-          }} />
+          <hr className="contact_hr" style={{}} />
         </div>
 
         <p
@@ -63,19 +61,14 @@ function Contact() {
         </div>
       </div>
       <div className="contact2">
-        <div
+        <div className="contact2_1"
           style={{
-            width: "20vw",
-            color: "white",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            marginTop: "20px",
+           
           }}
         >
-          <img
+          <img className="logoiconn"
             style={{
-              width: "60px",
+           
             }}
             src={logoicon}
             alt=""
@@ -85,7 +78,8 @@ function Contact() {
               fontSize: "1.6vh",
               marginTop: "20px",
               fontFamily: "roboto",
-              lineHeight:'20px'
+              lineHeight: "20px",
+
             }}
           >
             We provide IT services with the goal of delivering business
@@ -102,14 +96,9 @@ function Contact() {
             Dubai Silicon Oasis, DDP Building A2, Dubai UAE
           </p>
         </div>
-        <div
+        <div className="contact2_2"
           style={{
-            display: "flex",
-            flexDirection: "column",
-           textAlign:'justify',
-            justifyContent: "center",
-            color: "white",
-            fontFamily:'roboto'
+          
           }}
         >
           <p
@@ -118,8 +107,7 @@ function Contact() {
               textDecoration: "none",
               fontSize: "2vh",
               marginTop: "15px",
-              fontWeight:'bold  ',
-              
+              fontWeight: "bold  ",
             }}
           >
             Services
@@ -129,10 +117,8 @@ function Contact() {
               color: "white",
               textDecoration: "none",
               fontSize: "2vh",
-              
 
               marginTop: "15px",
-          
             }}
             href=""
           >
@@ -172,11 +158,9 @@ function Contact() {
             Salesforce
           </a>
         </div>
-        <div
+        <div className="contact2_3"
           style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
+           
           }}
         >
           <div
@@ -189,7 +173,7 @@ function Contact() {
             <img
               style={{
                 width: "12px",
-                cursor:'pointer'
+                cursor: "pointer",
               }}
               src={fb}
               alt=""
@@ -198,7 +182,7 @@ function Contact() {
               style={{
                 width: "20px",
                 marginTop: "10px",
-                cursor:'pointer'
+                cursor: "pointer",
               }}
               src={insta}
               alt=""
@@ -207,7 +191,7 @@ function Contact() {
               style={{
                 width: "20px",
                 marginTop: "10px",
-                cursor:'pointer'
+                cursor: "pointer",
               }}
               src={tw}
               alt=""
@@ -216,25 +200,26 @@ function Contact() {
               style={{
                 width: "20px",
                 marginTop: "10px",
-                cursor:'pointer'
+                cursor: "pointer",
               }}
               src={lk}
               alt=""
             />
           </div>
         </div>
-        <div
+        <div className="contact2_4"
           style={{
-            color: "white",
-            margin: "5px",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",       
+           
+  
           }}
         >
-          <p style={{
-         marginLeft:'4px'
-          }}>Send Mail</p>
+          <p
+            style={{
+              marginLeft: "4px",
+            }}
+          >
+            Send Mail
+          </p>
 
           <div>
             <input
@@ -242,9 +227,9 @@ function Contact() {
               style={{
                 width: "150px",
                 marginTop: "5px",
-             
-                borderRadius:'7px',
-                height:'33px'
+
+                borderRadius: "7px",
+                height: "33px",
               }}
             />
             <div>
@@ -256,8 +241,7 @@ function Contact() {
                   background: "#229958",
                   borderRadius: "7px",
                   marginTop: "5px",
-                  marginLeft:'2px'
-                
+                  marginLeft: "2px",
                 }}
               >
                 Subscribe
@@ -266,22 +250,13 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div
+      <div className="contact2_5"
         style={{
-          background: "black",
-          width: "100%",
-          height: "5vh",
-          display: "flex",
-          justifyContent: "center",
-          color: "white",
-          fontSize: "13px",
-          fontFamily: "roboto",
-
+       
         }}
       >
         <p>CopyrightⒸ2022,Vyadom</p>
       </div>
-
     </>
   );
 }

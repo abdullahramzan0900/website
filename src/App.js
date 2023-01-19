@@ -13,6 +13,7 @@ import CaseStudiesDetail from './CaseStudies/CaseStudiesDetail'
 import MainBlog from './Blogs/MainBlog';
 import Blogs_detail from './Blogs/Blogs_detaill';
 import Services_detail from './Services/Services_detail';
+import Message from './ABOUT/Message';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         <Route path="/Blogs" element={<MainBlog/>} ></Route>
         <Route path="/Blogs/:id" element={<Blogs_detail/>} ></Route>
         <Route path="/CaseStudies" element={<CaseeStuide/>} ></Route>
-        <Route path="/CaseStudies/:id" element={<CaseStudiesDetail/>} ></Route>
+        <Route path="/CaseStudies/:id" element={<Message/>} ></Route>
         
 
       </Routes>

@@ -54,7 +54,11 @@ function Test() {
                     alt=""
                   />
 
-                  <h1>{item.h1}</h1>
+                  <h1 style={{
+                    padding:'20px',
+                    fontSize:'16px',
+                    fontWeight:'bold'
+                  }}>{item.h1}</h1>
                 </div>
               );
             })}

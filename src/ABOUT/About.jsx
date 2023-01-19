@@ -19,7 +19,7 @@ function About()
 </div>
 
 <div className="aboutus">
-<div style={{
+<div className="aboutus_inner" style={{
  
 
     
