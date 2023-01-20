@@ -7,6 +7,9 @@ function Blogs_detail()
 {
     return(
         <>
+        setshow && {
+          <about/>
+        }
           <div  className="background_Blogdetail_img">
         </div>
         {/* <img src={banner} alt="loading"/> */}
@@ -20,8 +23,6 @@ function Blogs_detail()
   
      </div>
    
-
-
 <div className="Blogs_detail">
 <div className="inner_Blogs_detail">
 

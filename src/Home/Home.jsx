@@ -6,7 +6,6 @@ import Services from "../Services/Services";
 import Blogs from "../Blogs/Blogs";
 import CaseStudies from "../CaseStudies/CaseStudies";
 import Contact from "../Contact/Contact";
-import Services_detail from "../Services/Services_detail";
 import img from "../image/Services_detail_img.png";
 import aws from "../image/aws.png";
 import dynamic from "../image/dynamic.png";

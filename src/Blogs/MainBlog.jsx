@@ -1,4 +1,4 @@
-import { background } from "material-paper/build/lib/styles/paper.stl";
+
 import React from "react";
 import CaseStudies from "../CaseStudies/CaseStudies";
 import Contact from "../Contact/Contact";

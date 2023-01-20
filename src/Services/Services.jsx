@@ -24,9 +24,9 @@ function Services() {
       <div className="main">
         <div class="service_main">
           <div className="Services">
-            <div
+            <div className="Services_inner"
               style={{
-                width: "70%",
+           
               }}
             >
               <div style={{}}>

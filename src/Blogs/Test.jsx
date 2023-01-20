@@ -10,6 +10,8 @@ import line8 from "../image/Line8.png";
 import Carousel from "react-elastic-carousel";
 
 function Test() {
+  
+
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },

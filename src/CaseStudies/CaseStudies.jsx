@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./CaseStudies.css";
-import path26 from "../image/Path26.png";
-import path27 from "../image/Path27.png";
-import line8 from "../image/Line8.png";
+
 import Carousel2 from "./Carousel2";
 let z = 1;
 function CaseStudies() {

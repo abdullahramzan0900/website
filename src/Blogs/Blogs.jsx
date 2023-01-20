@@ -4,12 +4,10 @@ import Blog1 from "../image/Blog1.png";
 import Blog2 from "../image/Blog2.png";
 import Blog3 from "../image/Blog3.png";
 import Blog4 from "../image/Blog4.png";
-import path26 from "../image/Path26.png";
-import path27 from "../image/Path27.png";
 import line8 from "../image/Line8.png";
 import Test from "./Test";
 
-import { Carousel } from "react-elastic-carousel";
+
 
 import { useState } from "react";
 

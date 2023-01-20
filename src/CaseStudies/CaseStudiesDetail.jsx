@@ -1,13 +1,9 @@
-import { fontSize } from '@mui/system';
-import { useState } from 'react';
+
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import Contact from '../Contact/Contact';
 import  about from '../image/about.png';
-import background_img_1 from '../image/banner.svg'
-import background_img_2 from '../image/background_img3.svg'
-import background_img_3 from '../image/bannerr.svg'
-import background_img_4 from '../image/background_img4.svg'
+
 
 
 let x=0;

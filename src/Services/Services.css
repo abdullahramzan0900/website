@@ -14,6 +14,10 @@
   background-color:#229958;
   
 
+  
+}
+.Services_inner{
+  width: 70%;
 }
 .Servicesbackground
 {
@@ -753,843 +757,153 @@ color: black;
 
   }
 }
-
-@media only screen and (max-width: 768px) {
-  .Service1_div
-{
-  height: 130px;
-  width:160px;
-  padding: 10px;
-  border: none;
-}
-.image-grid {
-  
-  
-  display: flex;
-
-  flex-wrap: wrap;
-  width: 30%;
-  
-}
-
-  .Service1_button{
-    position: absolute;
-    bottom: 20px;
-    left: 40px;
-    background: white;
-    width: 100px;
-    height: 30px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-
-  }
-  .Service2_div{
-    height: 140px;
-    padding: 10px;
-    width:160px;
-    border: none;
-  }
-  .Service2_button
-  {
-    position: absolute;
-    bottom: 13px;
-    left: 40px;
-    background: white;
-    width: 100px;
-    height: 30px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-
-  }
-  .Service3_div{
-    height: 120px;
-    padding: 10px;
-    width:160px;
-    border: none;
-  }
-  .Service3_button{
-    position: absolute;
-    bottom: 11px;
-    left: 40px;
-    background: white;
-    width: 90px;
-    height: 35px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-   
-  }
-  .Service4_div{
-    height: 120px;
-    padding: 10px;
-    width: 160px;
-    border: none;
-  }
-  .Service4_button{
-    position: absolute;
-    bottom: 7px;
-    left: 40px;
-    background: white;
-    width: 90px;
-    height: 30px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-
-  }
-}
-@media only screen and (max-width: 665px) {
-  .Service1_div
-{
-  height: 130px;
-  width:160px;
-  padding: 10px;
-  border: none;
-}
-.image-grid {
-  
-  
-  display: flex;
-
-  flex-wrap: wrap;
-  width: 60%;
-  
-}
-
-.Service1_div
-{
-  height: 130px;
-  width:130px;
-  padding: 10px;
-  border: none;
-}
-.image-grid {
-  
-  
-  display: flex;
-
-  flex-wrap: wrap;
-  width: 30%;
-  
-}
-
-  .Service1_button{
-    position: absolute;
-    bottom: 20px;
-    left: 25px;
-    background: white;
-    width: 80px;
-    height: 34px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-
-  }
-  .Service2_div{
-    height: 140px;
-    padding: 10px;
-    width:130px;
-    border: none;
-  }
-  .Service2_button
-  {
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
-    background: white;
-    width: 80px;
-    height: 34px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-  }
-  .Service3_div{
-    height: 120px;
-    padding: 10px;
-    width:130px;
-    border: none;
-  }
-  .Service3_button{
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
-    background: white;
-    width: 90px;
-    height: 34px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-   
-  }
-  .Service4_div{
-    height: 120px;
-    padding: 10px;
-    width: 130px;
-    border: none;
-  }
-  .Service4_button{
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
-    background: white;
-    width: 80px;
-    height: 34px;
-
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-
-  }
-}
-@media only screen and (max-width: 554px) {
-  .Service1_div
-{
-  height: 130px;
-  width:160px;
-  padding: 10px;
-  border: none;
-}
-.image-grid {
-  
-  
-  display: flex;
-
-  flex-wrap: wrap;
-  width: 65%;
-  
-}
-.Service1_button{
-  position: absolute;
-  bottom: 20px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-
-}
-.Service2_div{
-  height: 140px;
-  padding: 10px;
-  width:130px;
-  border: none;
-}
-.Service2_button
-{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-}
-.Service3_div{
-  height: 120px;
-  padding: 10px;
-  width: 160px;
-  border: none;
-}
-.Service3_button{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 90px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
+@media only screen and (max-width: 760px) {
+  .service_main {
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ 
+    background-color: #229958;
  
 }
-.Service4_div{
-  height: 120px;
-  padding: 10px;
-  width: 130px;
-  border: none;
-}
-.Service4_button{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
 
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-
+element.style {
 }
-}
-@media only screen and (max-width: 507px) {
-  .Service1_div
-{
-  height: 130px;
-  width:160px;
-  padding: 10px;
-  border: none;
-}
-.image-grid {
-  
-  
-  display: flex;
-
-  flex-wrap: wrap;
-  width: 65%;
-  
-}
-.Service1_button{
-  position: absolute;
-  bottom: 20px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-
-}
-.Service2_div{
-  height: 140px;
-  padding: 10px;
-  width:130px;
-  border: none;
-}
-.Service2_button
-{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-}
-.Service3_div{
-  height: 120px;
-  padding: 10px;
-  width: 160px;
-  border: none;
-}
-.Service3_button{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 90px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
- 
-}
-.Service4_div{
-  height: 120px;
-  padding: 10px;
-  width: 130px;
-  border: none;
-}
-.Service4_button{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-}
-
-
-}
-@media only screen and (max-width: 492px) {
-.Service1_div
-{
-  height: 130px;
-  width:130px;
-  padding: 10px;
-  border: none;
-}
-.image-grid {
-  
-  
-  display: flex;
-
-  flex-wrap: wrap;
-  width: 60%;
-
-  
-}
-.service_p{
-  font-size: 10px;
-  text-align: left;
-  color: white;
-font-family: "roboto";
-  padding-top:20px ;
-}
-.sevicesimg_1{
-  padding-top: 20px;
-  width:'10px'
-}
-.services_h1{
-font-size: 30px;
-  color: white;
-  padding-top: 20px;
-  font-family: 'roboto';
-
-}
-.Service1_button{
-  position: absolute;
-  bottom: 20px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-
-}
-.Service2_div{
-  height: 140px;
-  padding: 10px;
-  width:130px;
-  border: none;
-}
-.Service2_button
-{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-}
-.Service3_div{
-  height: 120px;
-  padding: 10px;
-  width: 130px;
-  border: none;
-}
-.Service3_button{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 90px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
- 
-}
-.Service4_div{
-  height: 120px;
-  padding: 10px;
-  width: 130px;
-  border: none;
-}
-.Service4_button{
-  position: absolute;
-  bottom: 10px;
-  left: 25px;
-  background: white;
-  width: 80px;
-  height: 34px;
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-}
-}
-@media only screen and (max-width: 445px) {
-  .Service1_div
-  {
-    height: 130px;
-    width:130px;
-    padding: 10px;
-    border: none;
-  }
-  .line_Services {
+.line_Services {
     margin-top: 10px;
     margin-left: 2px;
     /* border: 1px solid #229958; */
-    width: 80px;
+    width: 160px;
 }
-  .image-grid {
-    
-    
-    display: flex;
-  
-    flex-wrap: wrap;
-    width: 60%;
-  
-    
-  }
-  .service_p{
-    font-size: 10px;
-    text-align: left;
-    color: white;
-  font-family: "roboto";
-    padding-top:20px ;
-  }
-  .sevicesimg_1{
-    padding-top: 20px;
-    width:110px;
-  }
-  .services_h1{
-  font-size: 30px;
-    color: white;
-    padding-top: 20px;
-    font-family: 'roboto';
-  
-  }
-  .Service1_button{
-    position: absolute;
-    bottom: 20px;
-    left: 25px;
-    background: white;
-    width: 80px;
-    height: 34px;
-  
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-  
-  }
-  .Service2_div{
-    height: 140px;
-    padding: 10px;
-    width:130px;
-    border: none;
-  }
-  .Service2_button
-  {
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
-    background: white;
-    width: 80px;
-    height: 34px;
-  
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-  }
-  .Service3_div{
-    height: 120px;
-    padding: 10px;
-    width: 13 0px;
-    border: none;
-  }
-  .Service3_button{
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
-    background: white;
-    width: 90px;
-    height: 34px;
-  
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-   
-  }
-  .Service4_div{
-    height: 120px;
-    padding: 10px;
-    width: 130px;
-    border: none;
-  }
-  .Service4_button{
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
-    background: white;
-    width: 80px;
-    height: 34px;
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-  }
-  }
-  @media only screen and (max-width: 439px) {
-
-    .image-grid {
-      
-      
-      display: flex;
-    
-      flex-wrap: wrap;
-      width: 60%;
-    
-      
-    }
-    .service_p{
-      font-size: 10px;
-      text-align: left;
-      color: white;
-    font-family: "roboto";
-      padding-top:20px ;
-    }
-    .sevicesimg_1{
-      padding-top: 20px;
-      width:110px;
-    }
-    .services_h1{
-    font-size: 30px;
-      color: white;
-      padding-top: 20px;
-      font-family: 'roboto';
-    
-    }
-    .Service1_div
-    {
-      height: 130px;
-      width:120px;
-      padding: 10px;
-      border: none;
-    }
-    .Service1_button{
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      background: white;
-      width: 80px;
-      height: 34px;
-    
-      padding: 15px;
-     padding-left: 20;
-    font-size: 10px;
-    font-family: 'roboto';
-    
-    }
-    .Service2_div{
-      height: 140px;
-      padding: 10px;
-      width:120px;
-      border: none;
-    }
-    .Service2_button
-    {
-      position: absolute;
-      bottom: 10px;
-      left: 20px;
-      background: white;
-      width: 80px;
-      height: 34px;
-    
-      padding: 15px;
-     padding-left: 20;
-    font-size: 10px;
-    font-family: 'roboto';
-    }
-    .Service3_div{
-      height: 120px;
-      padding: 10px;
-      width: 120px;
-      border: none;
-    }
-    .Service3_button{
-      position: absolute;
-      bottom: 10px;
-      left: 20px;
-      background: white;
-      width: 82px;
-      height: 34px;
-    
-      padding: 15px;
-     padding-left: 20;
-    font-size: 10px;
-    font-family: 'roboto';
-     
-    }
-    .Service4_div{
-      height: 120px;
-      padding: 10px;
-      width: 120px;
-      border: none;
-    }
-    .Service4_button{
-      position: absolute;
-      bottom: 10px;
-      left: 20px;
-      background: white;
-      width: 80px;
-      height: 34px;
-      padding: 15px;
-     padding-left: 20;
-    font-size: 10px;
-    font-family: 'roboto';
-    }
-    }
-  
-
-
-
-@media only screen and (max-width: 393px) {
-  .Service1_div
-{
-  height: 130px;
-  width:100px;
-  padding: 10px;
-  border: none;
+.Services_inner{
+  width: 100%;
+  display: contents
 }
 .image-grid {
-  
-  
   display: flex;
-
   flex-wrap: wrap;
-  /*  width: 20%; */
-
-
-  
+  width: 50%;
+  margin-top: 50px;
+}
+.Services {
+  width: 100%;
+  background-color: #229958;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
 }
 
-.Service1_button{
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: white;
-  width: 60px;
-  height: 34px;
-
-  padding: 15px;
- padding-left: 20;
-font-size: 10px;
-font-family: 'roboto';
-  }
-  .Service2_div{
-    height: 140px;
-    width:100px;
-    padding: 10px;  
-    border: none;
-  }
-  .Service2_button
-  {
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    background: white;
-    width: 60px;
-    height: 34px;
-  
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-  }
-  .Service3_div{
-    height: 120px;
-    padding: 10px;
-    width:100px;
-    border: none;
-  }
-  .Service3_button{
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    background: white;
-    width: 63px;
-    height: 34px;
-    text-align: left;
-  
-    padding: 15px;
-   padding-left: 20;
-  font-size: 7px;
-  font-family: 'roboto';
-  }
-  .Service4_div{
-    height: 120px;
-    padding: 10px;
-    width:100px;
-    border: none;
-  }
-  .Service4_button{
-    position: absolute;
-    bottom: 10px;
-    left: 15px;
-    background: white;
-    width: 63px;
-    height: 34px;
-  
-    padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
-  }
-  .service_p{
-    font-size: 8px;
-    text-align: left;
-    color: white;
- font-family: "roboto";
-    padding-top:20px ;
-  }
-  .sevicesimg_1{
-    padding-top: 10px;
-  }
-  .services_h1{
-  font-size: 20px;
-    color: white;
-    padding-top: 20px;
-    font-family: 'roboto';
 
 }
+@media only screen and (max-width: 575px) {
+  .service_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #229958;
+ 
 }
+.Services_inner{
+  width: 100%;
+  display: contents
+}
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-top: 50px;
+  margin-right: 45px;
+}
+.Services {
+  width: 100%;
+  background-color: #229958;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+}
+@media only screen and (max-width: 506px) {
+  .service_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ 
+    background-color: #229958;
+ 
+}
+.Services_inner{
+  width: 100%;
+  display: contents
+}
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-top: 50px;
+  margin-right: 75px;
+}
+.Services {
+  width: 100%;
+  background-color: #229958;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+
+}
+@media only screen and (max-width: 450px) {
+  .service_main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ 
+    background-color: #229958;
+ 
+}
+.Services_inner{
+  width: 100%;
+  display: contents
+}
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-top: 50px;
+  margin-right: 155px;
+}
+.Services {
+  width: 100%;
+  background-color: #229958;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+
+
+}
+
 .Services_detail{
   width: 100%;
   background-color: #444545;
