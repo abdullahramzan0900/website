@@ -1,9 +1,7 @@
-
 import React from "react";
 import CaseStudies from "../CaseStudies/CaseStudies";
 import Contact from "../Contact/Contact";
 import { Navigate, useNavigate } from "react-router-dom";
-
 import Blog1 from "../image/Blog1.png";
 import Blog2 from "../image/Blog2.png";
 import Blog3 from "../image/Blog3.png";

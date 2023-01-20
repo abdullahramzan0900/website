@@ -826,9 +826,27 @@ element.style {
   width: 100%;
   background-color: #229958;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
+
+}
+
+
+}
+@media only screen and (max-width: 537px) {
+
+.upper_second_div {
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-left: 20px;
+}
+.outer_upper_div {
+  width: 40%;
+  padding-right: 50px;
+  margin-top: 30px;
+  margin-left: 60px;
 }
 
 
@@ -862,7 +880,7 @@ element.style {
   display: flex;
   /* flex-direction: column; */
   justify-content: center;
-  /* align-items: center; */
+
 }
 
 
