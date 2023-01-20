@@ -10,6 +10,7 @@ import cloud from '../image/cloud.png'
 import integration from '../image/integration.png'
 import search_upper from '../image/serach_upper.png'
 import search from '../image/search_services.png'
+import Contact from "../Contact/Contact";
 
 
 function Services_detail() {
@@ -347,6 +348,7 @@ function Services_detail() {
           </div>
         </div>
       </div>
+      <Contact/>
     </>
   );
 }

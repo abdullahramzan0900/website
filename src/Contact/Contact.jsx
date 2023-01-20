@@ -61,25 +61,14 @@ function Contact() {
         </div>
       </div>
       <div className="contact2">
-        <div className="contact2_1"
-          style={{
-           
-          }}
-        >
-          <img className="logoiconn"
-            style={{
-           
-            }}
-            src={logoicon}
-            alt=""
-          />
+        <div className="contact2_1" style={{}}>
+          <img className="logoiconn" style={{}} src={logoicon} alt="" />
           <p
             style={{
               fontSize: "1.6vh",
               marginTop: "20px",
               fontFamily: "roboto",
               lineHeight: "20px",
-
             }}
           >
             We provide IT services with the goal of delivering business
@@ -96,11 +85,7 @@ function Contact() {
             Dubai Silicon Oasis, DDP Building A2, Dubai UAE
           </p>
         </div>
-        <div className="contact2_2"
-          style={{
-          
-          }}
-        >
+        <div className="contact2_2" style={{}}>
           <p
             style={{
               color: "white",
@@ -158,11 +143,7 @@ function Contact() {
             Salesforce
           </a>
         </div>
-        <div className="contact2_3"
-          style={{
-           
-          }}
-        >
+        <div className="contact2_3" style={{}}>
           <div
             style={{
               display: "flex",
@@ -207,12 +188,7 @@ function Contact() {
             />
           </div>
         </div>
-        <div className="contact2_4"
-          style={{
-           
-  
-          }}
-        >
+        <div className="contact2_4" style={{}}>
           <p
             style={{
               marginLeft: "4px",
@@ -250,11 +226,7 @@ function Contact() {
           </div>
         </div>
       </div>
-      <div className="contact2_5"
-        style={{
-       
-        }}
-      >
+      <div className="contact2_5" style={{}}>
         <p>CopyrightⒸ2022,Vyadom</p>
       </div>
     </>

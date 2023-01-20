@@ -13,8 +13,8 @@ function Test() {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
-    { width: 768, itemsToShow: 3 },
-    { width: 900, itemsToShow: 4 },
+
+    { width: 1000, itemsToShow: 4 },
   ];
   const array1 = [
     { id: 1, img: Blog1, h1: "Cloud Computing & its Benefits" },
@@ -39,7 +39,7 @@ function Test() {
     <>
       <div
         style={{
-          padding: "40px",
+        
         }}
       >
         <Carousel breakPoints={breakPoints}>
@@ -54,11 +54,15 @@ function Test() {
                     alt=""
                   />
 
-                  <h1 style={{
-                    padding:'20px',
-                    fontSize:'16px',
-                    fontWeight:'bold'
-                  }}>{item.h1}</h1>
+                  <h1
+                    style={{
+                      padding: "20px",
+                      fontSize: "16px",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {item.h1}
+                  </h1>
                 </div>
               );
             })}

@@ -39,16 +39,9 @@ function Services() {
                 in developing and implementing ovations solution for performance
                 ,growth and relevance
               </p>
-              <button
+              <button className="Services_button"
                 style={{
-                  width: "120px",
-                  height: "45px",
-                  backgroundColor: "white",
-                  color: "#229958",
-                  borderRadius: "10px",
-                  border: "none",
-                  marginTop: "40px",
-                  fontFamily: "roboto",
+                    
                 }}
               >
                 Learn more
