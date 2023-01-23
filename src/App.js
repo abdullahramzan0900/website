@@ -14,6 +14,7 @@ import MainBlog from './Blogs/MainBlog';
 import Blogs_detail from './Blogs/Blogs_detaill';
 import Services_detail from './Services/Services_detail';
 import Message from './ABOUT/Message';
+import Contact_detail from './Contact/Contact_detail';
 
 
 function App() {
@@ -29,8 +30,10 @@ function App() {
         <Route path="/Blogs/:id" element={<Blogs_detail/>} ></Route>
         <Route path="/CaseStudies" element={<CaseeStuide/>} ></Route>
         <Route path="/CaseStudies/:id" element={<CaseStudiesDetail/>} ></Route>
+        <Route path="/Contact" element={<Contact_detail/>} ></Route>
         
-
+        
+  
       </Routes>
     </BrowserRouter>
    

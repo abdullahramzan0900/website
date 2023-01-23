@@ -52,7 +52,7 @@ function Blogs() {
         >
           <h1
             style={{
-              fontSize: "4vh",
+              fontSize: "40px",
             }}
           >
             Blogs

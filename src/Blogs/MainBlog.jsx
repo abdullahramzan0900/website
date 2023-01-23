@@ -194,9 +194,12 @@ function MainBlog() {
           })}
         </div>
       </div>
-      <CaseStudies />
-      <Contact />
+      <CaseStudies/>
+      <Contact/>
     </>
   );
 }
 export default MainBlog;
+
+
+

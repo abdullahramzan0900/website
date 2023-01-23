@@ -1,49 +1,4 @@
-/* 
-.image-grid {
 
-  display: flex;
-
-  flex-wrap: wrap;
-
-  width: 90%;
-
-  margin: 0 auto;
-}
-.grid-image {
-
-  display: block;
-  flex-basis: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-}
- 
-
-@media only screen and (min-width: 640px) {
-  .grid-image {
-    flex-basis: 50%;
-  }
-} */
-
-/* three images per line when browser width exceeds 960px
-@media only screen and (min-width: 960px) {
-  .grid-image {
-    flex-basis: 33.333%;
-  }
-}
- 
-
-@media only screen and (min-width: 1280px) {
-  .grid-image {
-    flex-basis: 25%;
-  }
-}
- 
-
-@media only screen and (min-width: 1600px) {
-  .grid-image {
-    flex-basis: 20%;
-  }
-} */
 .contain {
   width: 100%;
   background-color: white;
@@ -111,7 +66,7 @@
   text-align: justify;
   font-family: "roboto";
   color: #5f5e5e;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 @media screen and (max-width: 900px) {
@@ -140,7 +95,7 @@
     justify-content: space-around;
     text-align: left;
     padding: 30px;
-    /* background-color: blue; */
+
     width: 100%;
   }
   .aboutus {
@@ -150,7 +105,7 @@
     justify-content: space-around;
     text-align: left;
     height: 59vh;
-    /* background-color: blue; */
+
     width: 100%;
   }
   .H_aboutus {
@@ -163,15 +118,16 @@
     text-align: center;
   }
 }
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 540px) {
   .H_aboutus {
     font-size: 30px;
     font-family: "roboto";
+
   }
   .p_aboutus {
-    font-size: 12px;
+    font-size: 13px;
     text-align: justify;
+  
   }
   .about_btn {
     font-size: 15px;
@@ -181,6 +137,58 @@
     background-color: #72818b;
     color: white;
     border-radius: 10px;
+
+  }
+  .img_line {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .H_aboutus {
+    font-size: 30px;
+    font-family: "roboto";
+
+  }
+  .p_aboutus {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 18px;
+  }
+  .about_btn {
+    font-size: 15px;
+    align-items: flex-start;
+    width: 100px;
+    height: 40px;
+    background-color: #72818b;
+    color: white;
+    border-radius: 10px;
+
+  }
+  .img_line {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .H_aboutus {
+    font-size: 30px;
+    font-family: "roboto";
+
+  }
+  .p_aboutus {
+    font-size: 12px;
+    text-align: justify;
+    line-height: 18px;
+  }
+  .about_btn {
+    font-size: 15px;
+    align-items: flex-start;
+    width: 100px;
+    height: 40px;
+    background-color: #72818b;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
   }
   .img_line {
     width: 120px;
@@ -191,10 +199,12 @@
   .H_aboutus {
     font-size: 20px;
     font-family: "roboto";
+
   }
   .p_aboutus {
     font-size: 13px;
     text-align: justify;
+    line-height: 18px;
   }
   .about_btn {
     font-size: 15px;
@@ -206,14 +216,17 @@
     border-radius: 10px;
   }
 }
+
 @media screen and (max-width: 280px) {
   .H_aboutus {
     font-size: 10px;
     font-family: "roboto";
+ 
   }
   .p_aboutus {
     font-size: 8px;
     text-align: justify;
+    line-height: 18px;
   }
   .about_btn {
     font-size: 10px;

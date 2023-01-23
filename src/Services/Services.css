@@ -434,6 +434,7 @@ background-color: #72818b;
   height: 180px;
   padding: 10px;
   border: none;
+  width: 264px;
   border-radius: 22px;
 }
 .Service1_button{
@@ -446,7 +447,7 @@ background-color: #72818b;
 border-top-left-radius: 16px;
 border-top-right-radius: 16px;
   padding: 15px;
- padding-left: 20;
+ padding-left: 22px;
 font-size: 15px;
 font-family: 'roboto';
 color: black;
@@ -457,6 +458,7 @@ color: black;
   padding: 10px;
   border-radius: 22px;
   border: none;
+  width: 264px;
 }
 .Service2_button
 {
@@ -469,7 +471,7 @@ color: black;
 border-top-left-radius: 16px;
 border-top-right-radius: 16px;
   padding: 15px;
- padding-left: 20;
+  padding-left: 22px;
 font-size: 15px;
 font-family: 'roboto';
 color: black;
@@ -481,6 +483,7 @@ color: black;
   width: 290px;
   border-radius: 22px;
   border: none;
+  width: 264px;
 }
 .Service3_button{
   position: absolute;
@@ -492,7 +495,8 @@ color: black;
 border-top-left-radius: 16px;
 border-top-right-radius: 16px;
   padding: 15px;
- padding-left: 20;
+
+  padding-left: 22px;
 font-size: 15px;
 font-family: 'roboto';
 color: black;
@@ -501,7 +505,7 @@ color: black;
 .Service4_div{
   height: 152px;
   padding: 10px;
-  width: 256px;
+  width: 264px;
   border-radius: 22px;
   border: none;
 }
@@ -515,7 +519,7 @@ color: black;
 border-top-left-radius: 16px;
 border-top-right-radius: 16px;
   padding: 15px;
- padding-left: 22;
+  padding-left: 35px;
 font-size: 15px;
 font-family: 'roboto';
 color: black;
@@ -846,7 +850,7 @@ element.style {
   width: 40%;
   padding-right: 50px;
   margin-top: 30px;
-  margin-left: 60px;
+  margin-left: 70px;
 }
 
 
@@ -878,7 +882,6 @@ element.style {
   width: 100%;
   background-color: #229958;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
 
 }
@@ -893,8 +896,6 @@ element.style {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
- 
     background-color: #229958;
  
 }
@@ -967,6 +968,7 @@ padding: 50px;
   height: 280px;
   border-radius: 20px;
   opacity: 0.4;
+
 }
 
 
@@ -997,6 +999,7 @@ padding: 50px;
 {
   position: absolute;
   bottom: 40%;
+  width: 120px;
   left:40%;  
 }
 .search_upper_div{
@@ -1021,14 +1024,14 @@ padding: 50px;
 }
 .p_servcies_detail{
   font-size: 12px;
-  margin-top: 15px;
+  margin-top: 16px;
   color: #C8C8C8;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left;
   
 }
 .h1_search_div{
-  font-size: 19px;
+  font-size: 15px;
   color: white;
 
   padding-left: 13px;
@@ -1062,8 +1065,10 @@ margin-left: 10px;
     width: 30px;
   }
   .h1_search_div{
-    font-size: 19px;
+    font-size: 16px;
     color: white;
+   text-align: left;
+  
   
     padding-left: 13px;
     
@@ -1215,7 +1220,7 @@ margin-left: 5px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align:left;
   color: #C8C8C8 ;
   word-spacing: 2px;
   
@@ -1268,7 +1273,7 @@ margin-left: 5px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: left;
   color: #C8C8C8 ;
   word-spacing: 2px;
 }
@@ -1301,7 +1306,7 @@ margin-left: 5px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: left;
   color: #C8C8C8 ;
   word-spacing: 2px;
   
@@ -1333,7 +1338,7 @@ margin-left: 5px;
   text-align: justify;
   color: #C8C8C8;
   word-spacing: 2px;
-  text-align: center;
+  text-align: left;
 }
 .line_Services-detail {
   border: 1px solid #008000;
@@ -1376,7 +1381,7 @@ margin-left: 5px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align:left;
   color: #C8C8C8 ;
   word-spacing: 2px;
   
@@ -1415,7 +1420,7 @@ padding: 50px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: left;
   color: #C8C8C8 ;
   word-spacing: 2px;
   
@@ -1445,7 +1450,7 @@ padding: 50px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: left;
   color: #C8C8C8 ;
   word-spacing: 2px;
   
@@ -1484,7 +1489,7 @@ padding: 50px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: left;
   color: #C8C8C8 ;
   word-spacing: 2px;
   
@@ -1514,10 +1519,13 @@ padding: 50px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: left;
   color: #C8C8C8 ;
   word-spacing: 2px;
   
+}
+.h1_search_div {
+  font-size: 13px;
 }
 
 
@@ -1544,7 +1552,7 @@ padding: 50px;
 .p_servcies_detail{
   font-size: 12px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: left;
   color: #C8C8C8 ;
   word-spacing: 2px;
   

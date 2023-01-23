@@ -32,8 +32,7 @@ function CaseStudiesDetail()
      
         },
           
-        { id:3,
-      
+        { id:3,     
             h1:'Customized reporting with SAP',
             p:'One of our clients was struggling with the limitationsof a legacy system that truly relied on transactional services.Technologies used were CorePHP and MySQL database, since it contained millions of records so the latency of retrieval/update of information around was 5 to 6 minutes.As well as there were several other reasons for that, like tables with hundreds of columns, unoptimized code, and poor relations and joins.  ',
             p1:'We advised them to utilize Angular as their front-end framework, PostgreSQL as their database, and NodeJS as their backend. They agreed because it was so convincing, and we then had to move the legacy system to the one with the newest technologies.',
@@ -140,9 +139,7 @@ function CaseStudiesDetail()
     
             <p style={{
                 marginTop:'20px',
-              alignSelf:'center',
-      
-              
+              alignSelf:'center',          
               textAlign:'justify'
             }}>{item.p}</p>
                 <p style={{

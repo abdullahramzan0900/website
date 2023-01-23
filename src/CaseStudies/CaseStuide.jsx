@@ -9,48 +9,48 @@ function CaseeStuide()
     { id:1,
      h1:'ERP for Restaurant',
      p:'There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
-     h2:'readmore'
+     h2:'Read More'
     },
     { id:2,
       h1:'Odoo SME',
       p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
-      h2:'readmore'
+      h2:'Read More'
     },
     { id:3,
       h1:'Dynamics',
       p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
   
-      h2:'readmore'
+      h2:'Read More'
     },
      {id:4,
       h1:'API Integration',
       p:'There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
-      h2:'readmore'
+      h2:'Read More'
      },
      { id:5,
        h1:'Customized reporting  with SAP ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
-       h2:'readmore'
+       h2:'Read More'
      },
      { id:6,
        h1:'Oracle Deployment ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
-       h2:'readmore'
+       h2:'Read More'
      },
      {id:7,
       h1:'API Integration',
       p:'There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.',
-      h2:'readmore'
+      h2:'Read More'
      },
      { id:8,
        h1:'Customized P ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
-       h2:'readmore'
+       h2:'Read More'
      },
      { id:9,
        h1:'Oracle Deployment ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
-       h2:'readmore'
+       h2:'Read More'
      }
   ]
   // const [background,Setbackground]=useState('img');
@@ -89,6 +89,7 @@ function CaseeStuide()
         color:'#229958',
         fontSize:'36px',
          fontFamily:'roboto'
+  
      
       
       }}> Vyadom</span> </h1>
@@ -137,20 +138,18 @@ function CaseeStuide()
           }}>{item.h1}</h1>
              
 
-          <p style={{
-                      
+          <p style={{                    
               color:'white',
               fontFamily: "Roboto",
               lineHeight:'20px',
-              textAlign:'justify',
+              textAlign:'center',
               fontSize:'13px '
             }}>{item.p}
       
         </p>
-        <div onClick={()=>{
+        <div  className="casestudies_readmore" onClick={()=>{
           navigate(`/CaseStudies/${item.id}`);
-        }} style={{
-          color:'white',
+        }} style={{       
           fontFamily: "Roboto"  ,
           cursor:'pointer'        
         }}>{item.h2}</div>

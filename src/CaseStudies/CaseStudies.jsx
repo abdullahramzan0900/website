@@ -72,7 +72,7 @@ function CaseStudies() {
           <div className="case_height" style={{}}>
             <h1
               style={{
-                fontSize: "3vh",
+                fontSize: "35px",
                 paddingTop: "25px",
                 fontFamily: "roboto",
               }}

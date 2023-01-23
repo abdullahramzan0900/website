@@ -43,7 +43,7 @@ function Contact() {
         <div className="contact_images">
           <img
             style={{
-              marginTop: "37px",
+              marginTop: "43px",
               width: "13vw",
               height: "5vh",
             }}
@@ -52,8 +52,7 @@ function Contact() {
           />
           <img
             style={{
-              width: "30vw",
-              height: "13vh",
+              width: "30vw"
             }}
             src={microsoft}
             alt=""
@@ -118,7 +117,7 @@ function Contact() {
             }}
             href=""
           >
-            ERP Integration
+          ERP Integration
           </a>
           <a
             style={{
@@ -140,7 +139,7 @@ function Contact() {
             }}
             href=""
           >
-            Salesforce
+          Salesforce
           </a>
         </div>
         <div className="contact2_3" style={{}}>
@@ -151,10 +150,18 @@ function Contact() {
               backgroundColor: "black",
             }}
           >
+            <h1 style={{
+              color:'white',
+              fontSize:'2vh',
+              fontWeight:'bold'
+            }}>Follow Us </h1>
             <img
               style={{
                 width: "12px",
                 cursor: "pointer",
+                marginTop:'20px',
+                fontWeight:'bold',
+                marginLeft:'20px'
               }}
               src={fb}
               alt=""
@@ -164,6 +171,7 @@ function Contact() {
                 width: "20px",
                 marginTop: "10px",
                 cursor: "pointer",
+                marginLeft:'20px'
               }}
               src={insta}
               alt=""
@@ -173,6 +181,7 @@ function Contact() {
                 width: "20px",
                 marginTop: "10px",
                 cursor: "pointer",
+                marginLeft:'20px'
               }}
               src={tw}
               alt=""
@@ -182,6 +191,7 @@ function Contact() {
                 width: "20px",
                 marginTop: "10px",
                 cursor: "pointer",
+                marginLeft:'20px'
               }}
               src={lk}
               alt=""
@@ -199,13 +209,15 @@ function Contact() {
 
           <div>
             <input
-              placeholder="email"
+              placeholder="Email"
               style={{
                 width: "150px",
                 marginTop: "5px",
 
                 borderRadius: "7px",
                 height: "33px",
+                border:'none',
+                marginTop:'10px'
               }}
             />
             <div>
@@ -218,6 +230,8 @@ function Contact() {
                   borderRadius: "7px",
                   marginTop: "5px",
                   marginLeft: "2px",
+                  border:'none',
+                  marginTop:'10px'
                 }}
               >
                 Subscribe

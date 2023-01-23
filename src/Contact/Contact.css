@@ -13,8 +13,9 @@
   width: 70vw;
   height: 15vh;
   display: flex;
+  /* text-align: center; */
   justify-content: space-evenly;
-  align-content: center;
+
 }
 .contact2 {
   width: 100%;
@@ -83,34 +84,41 @@
     background-color: black;
   }
   .contact2_1 {
-    width: 100%;
+    width: 60%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
-    align-self: center;
-    text-align: center;
+    margin-left: 53px;
+    /* align-self: center; */
+    text-align: left;
   }
   .contact2_2 {
     margin-top: 50px;
     display: flex;
+    width: 50%;
     flex-direction: column;
     justify-content: center;
-    text-align: justify;
+    text-align: left;
     font-family: "roboto";
     color: white;
-    align-items: center;
+    /* align-items: center; */
+    margin-left: 20;
+    margin-left: 48px;
   }
   .logoiconn {
-    align-self: center;
+    align-self: left;
   }
   .contact2_3 {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+         width: 50%;
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: center; */
+      margin-left: 56px;
+  
   }
   .contact2_4 {
     display: flex;
@@ -118,8 +126,9 @@
     flex-direction: column;
     justify-content: center;
     color: white;
-    text-align: center;
-    align-self: center;
+    /* text-align: center; */
+    /* align-self: center; */
+    margin-left: 50px;
   }
   .contact2_5 {
     padding-top: 20px;
@@ -132,3 +141,218 @@
     color: white;
   }
 }
+
+.contact_detail{
+  background-color: #229958;
+  padding: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+justify-content: space-around;
+font-family: "roboto";
+}
+.contact_detail_1{
+
+display: flex;
+flex-direction: column;
+text-align:center ;
+
+}
+.Contact_detail_line{
+  border: 1px solid black;
+  width: 80px ;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+.Contact_detail_h1{
+ font-size: 40px;
+ color: white;
+}
+.Contact_detail_p{
+  margin-top: 20px;
+  color: white;
+}
+.contact_detail_2{
+
+  background-color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact_detail_2_inner{
+  text-align: center;
+}
+.contact_detail_2_inner_h1{
+  font-size: 22px;
+}
+.contact_detail_2_inner_p{
+  margin-top: 30px;
+  font-size: 13px;
+}
+.contact_background{
+  height:90vh;
+  background-image: url("../image/Contact_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  width: 100%;
+  background-position: center;
+  
+}
+.texttt{
+  width: 405px !important;
+  height: 100px !important;
+  border:1px solid #229958 !important;
+}
+@media only screen and (max-width: 900px) {
+  .contact_background{
+    height: 75vh;
+    background-image: url("../image/Contact_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    background-position: center;
+    
+  }
+
+}
+@media only screen and (max-width: 700px) {
+  .contact_background{
+    height: 60vh;
+    background-image: url("../image/Contact_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    background-position: center;
+    
+  }
+
+}
+@media only screen and (max-width: 561px) {
+  .MuiInputBase-root{
+  width: 320px;
+  }
+  .MuiStack-root{
+    width: 350px;
+  
+  } 
+  .textarea {
+    width:100px;
+  }  
+  .JoyTextarea-sizeMd{
+    width:0px;
+  }
+  .textareaa{
+    width:300px;
+  }
+  .texttt{
+    width: 320px !important;
+  }
+  .MuiStack-root>:not(style){
+    width:100% !important;
+
+  }
+  .contact_background{
+    height: 55vh;
+    background-image: url("../image/Contact_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    background-position: center;
+    
+  }
+  
+  
+}
+
+@media only screen and (max-width:448px) {
+  .MuiInputBase-root{
+  width: 280px;
+  }
+  .MuiStack-root{
+    width: 280px;
+  
+  } 
+
+  .JoyTextarea-sizeMd{
+    width:80px;
+  }
+  .textareaa{
+    width:300px;
+  }
+  .texttt{
+    width: 280px !important;
+  }
+  .contact_background{
+    height: 50vh;
+    background-image: url("../image/Contact_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    background-position: center;
+    
+  }
+  
+  
+}
+
+  
+  
+  
+
+@media only screen and (max-width:364px) {
+  .MuiInputBase-root{
+  width: 210px;
+  }
+  .MuiStack-root{
+    width: 220px;
+  
+  } 
+
+  .JoyTextarea-sizeMd{
+    width:30px;
+  }
+  .texttt{
+    width: 210px !important;
+
+  }
+  .contact_background{
+    height: 45vh;
+    background-image: url("../image/Contact_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    background-position: center;
+    
+  }
+
+  
+  
+}
+@media only screen and (max-width:330px) {
+  .MuiInputBase-root{
+  width: 240px;
+  }
+  .MuiStack-root{
+    width: 240px;
+  
+  } 
+
+  .JoyTextarea-sizeMd{
+    width:50px;
+  }
+  .texttt{
+    width: 237px !important;
+  }
+  
+  
+}
+
+
