@@ -41,18 +41,16 @@ function Contact() {
           Trusted by more than 5,000 businesses in 122 countries.
         </p>
         <div className="contact_images">
-          <img
+          <img className="contact_images_1"
             style={{
-              marginTop: "43px",
-              width: "13vw",
-              height: "5vh",
+          
             }}
             src={Oracle}
             alt=""
           />
-          <img
+          <img className="contact_images_2"
             style={{
-              width: "30vw"
+             
             }}
             src={microsoft}
             alt=""

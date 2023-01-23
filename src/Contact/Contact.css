@@ -17,6 +17,17 @@
   justify-content: space-evenly;
 
 }
+.contact_images_1{
+
+  margin-top: 50px;
+  width: 13vw;
+  height: 5vh;
+}
+.contact_images_2{
+
+  width: 30vw;
+
+}
 .contact2 {
   width: 100%;
   height: 50vh;
@@ -163,7 +174,7 @@ text-align:center ;
   border: 1px solid black;
   width: 80px ;
   margin: 0 auto;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .Contact_detail_h1{
  font-size: 40px;
