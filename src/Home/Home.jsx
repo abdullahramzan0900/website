@@ -17,40 +17,88 @@ import cloud from "../image/cloud.png";
 import integration from "../image/integration.png";
 import search_upper from "../image/serach_upper.png";
 import search from "../image/search_services.png";
+import { fabClasses } from "@mui/material";
+import chaticon from '../image/chat-icon.svg'
+import cross from '../image/cross.png'
 
 let x = 0;
 
 function Home() {
   const [background, Setbackground] = useState("img");
+  const [active, setActive] = useState(true);
+  const [active1, setActive1] = useState(false);
+  const [active2, setActive2] = useState(false);
+  const [active3, setActive3] = useState(false);
+  const [visible,Setvisible]=useState(false);
+
+
   const array = ["img1", "img2", "img4", "img3"];
+  
   setTimeout(() => {
     Setbackground(array[x]);
-    if (x == 3) {
-      x = 0;
+    console.log(x)
+    if(x===0)
+    {
+      setActive(true);
+      setActive1(false);
+      setActive2(false);
+      setActive3(false);
+x++;
     }
+
+ 
+  else if(x===1)
+  {  
+    setActive1(true)
+    setActive2(false)
+    setActive(false)
+    setActive3(false)
+    x++;  
+  
+ 
+  }
+  else if(x===2)
+  {  console.log("22222")
+    setActive2(true);
+    setActive(false);
+    setActive1(false);
+    setActive3(false);
     x++;
+   
+   
+
+
+  }
+    
+    else if (x === 3) {
+      setActive3(true)
+      x=0;
+      setActive2(false)
+      setActive(false)
+      setActive1(false)
+
+    }
+   
+  
   }, 5000);
 
   return (
     <>
       <div className="banner ">
-        <div className={background}></div>
+        <div   className={background}></div>
         {/* <img src={banner} alt="loading"/> */}
 
         <div class="centered">
           <h1
             className="height"
             style={{
-              fontSize: "25px",
-              fontFamily: "roboto",
+              
             }}
           >
             Delivering{" "}
             <span
               style={{
-                color: "#229958",
-                fontSize: "25px",
-                fontFamily: "roboto",
+                color:'#229958'
               }}
             >
               IT Solutions
@@ -58,9 +106,7 @@ function Home() {
             That enable you To
             <span
               style={{
-                color: "#229958",
-                fontSize: "25px",
-                fontFamily: "roboto",
+                color:'#229958'
               }}
             >
               Work Smarter
@@ -86,66 +132,66 @@ function Home() {
             <button className="btn_learn">Learn more</button>
           </div>
           <div style={{}}>
-            <button
+            <button className="button1_home"
               // onClick={() => {
               //   Setbackground("img");
               //   x=0;
               // }}
               style={{
-                background: "rgb(34, 153, 88)",
-
-                marginTop: "50px",
-                width: "45px",
-                height: "10px",
-                borderRadius: "22px",
-                border: "none",
+                backgroundColor: active ? "black" : "white" 
               }}
             ></button>
-            <button
+            <button className="button2_home"
               // onClick={() => {
               //   Setbackground("img2");
               //   x=1;
               // }}
               style={{
-                background: "rgb(34, 153, 88)",
-                width: "20px",
-                height: "10px",
-                borderRadius: "22px",
-                border: "none",
-                marginLeft: "8px",
+                backgroundColor: active1 ? "black" : "white" 
               }}
             ></button>
-            <button
+            <button className="button3_home"
               // onClick={() => {
               //   Setbackground("img3");
               //   x=2;
 
               // }}
               style={{
-                background: "rgb(34, 153, 88)",
-                height: "10px",
-                width: "20px",
-                borderRadius: "22px",
-                border: "none",
-                marginLeft: "8px",
+                backgroundColor: active2 ? "black" : "white" 
               }}
             ></button>
-            <button
+            <button className="button4_home"
               // onClick={() => {
               //   Setbackground("img4");
               //   x=3;
               // }}
               style={{
-                background: "rgb(34, 153, 88)",
-                height: "10px",
-                width: "20px",
-                borderRadius: "22px",
-                border: "none",
-                marginLeft: "8px",
+                backgroundColor: active3 ? "black" : "white" 
               }}
             ></button>
           </div>
+          
+
+
+      
         </div>
+        <div  style={{
+         
+        }} className="main_chat">
+
+          <div className="chat_upper_div">
+            <div  className="chat_upper_div_1">
+
+          <img className="chaticon" src={chaticon} alt="" />
+          <h1 className="chat_text">chat with us</h1>
+            </div>
+            <div>
+  <img className="cross" src={cross} alt="" />
+            </div>
+         
+          </div>
+          </div>
+        
         <About />
         <Services />
 
@@ -390,7 +436,6 @@ function Home() {
                     <h1 className="h1_search_div" style={{}}>
                       Conversion to cloud
                     </h1>
-
                     <div className="search_upper_div">
                       <img
                         className="search_upper_img"

@@ -185,7 +185,7 @@ function MainBlog() {
                         background: "none",
                       }}
                     >
-                      Readmore
+                      Read More
                     </button>
                   </div>
                 </div>

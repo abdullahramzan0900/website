@@ -85,22 +85,24 @@ function Contact() {
         <div className="contact2_2" style={{}}>
           <p
             style={{
-              color: "white",
+            
               textDecoration: "none",
               fontSize: "2vh",
               marginTop: "15px",
               fontWeight: "bold  ",
+              color:'#e2e2e2'
             }}
           >
             Services
           </p>
           <a
             style={{
-              color: "white",
+           
               textDecoration: "none",
-              fontSize: "2vh",
+              fontSize: "1.8vh",
 
-              marginTop: "15px",
+          marginTop:'28px',
+          color:'#e2e2e2'
             }}
             href=""
           >
@@ -108,10 +110,11 @@ function Contact() {
           </a>
           <a
             style={{
-              color: "white",
+            
               textDecoration: "none",
-              fontSize: "2vh",
+              fontSize: "1.8vh",
               marginTop: "15px",
+              color:'#e2e2e2'
             }}
             href=""
           >
@@ -119,10 +122,11 @@ function Contact() {
           </a>
           <a
             style={{
-              color: "white",
+        
               textDecoration: "none",
-              fontSize: "2vh",
+              fontSize: "1.8vh",
               marginTop: "15px",
+              color:'#e2e2e2'
             }}
             href=""
           >
@@ -130,10 +134,11 @@ function Contact() {
           </a>
           <a
             style={{
-              color: "white",
+
               textDecoration: "none",
-              fontSize: "2vh",
+              fontSize: "1.8vh",
               marginTop: "15px",
+              color:'#e2e2e2'
             }}
             href=""
           >
@@ -149,7 +154,7 @@ function Contact() {
             }}
           >
             <h1 style={{
-              color:'white',
+       
               fontSize:'2vh',
               fontWeight:'bold'
             }}>Follow Us </h1>
@@ -157,7 +162,7 @@ function Contact() {
               style={{
                 width: "12px",
                 cursor: "pointer",
-                marginTop:'20px',
+                marginTop:'19px',
                 fontWeight:'bold',
                 marginLeft:'20px'
               }}
@@ -199,7 +204,7 @@ function Contact() {
         <div className="contact2_4" style={{}}>
           <p
             style={{
-              marginLeft: "4px",
+              color:'#e2e2e2'
             }}
           >
             Send Mail
@@ -209,25 +214,26 @@ function Contact() {
             <input
               placeholder="Email"
               style={{
-                width: "150px",
+                width: "205px",
                 marginTop: "5px",
-
+                padding:'10px',
                 borderRadius: "7px",
-                height: "33px",
+                height: "38px",
                 border:'none',
-                marginTop:'10px'
+                marginTop:'40px'
               }}
             />
             <div>
               <button
                 style={{
-                  width: "80px",
-                  height: "30px",
+                  width: "100px",
+                  height: "34px",
                   textAlign: "center",
                   background: "#229958",
                   borderRadius: "7px",
                   marginTop: "5px",
                   marginLeft: "2px",
+                  color:"#e2e2e2",
                   border:'none',
                   marginTop:'10px'
                 }}
