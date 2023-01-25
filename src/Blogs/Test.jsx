@@ -34,7 +34,9 @@ function Test() {
 
   return (
     <>
-      <div style={{}}>
+      <div style={{
+        fontFamily:'roboto'
+      }}>
         <Carousel breakPoints={breakPoints}>
           {array1 &&
             array1?.map((item) => {
@@ -47,7 +49,9 @@ function Test() {
                     alt=""
                   />
 
-                  <h1
+                  <h1 onClick={()=>{
+                      window.open('/Services','_top');
+                  }}
                     style={{
                       padding: "20px",
                       fontSize: "16px",

@@ -83,13 +83,14 @@ function Carousel2() {
                   }}>{item.h1}</h1>
                   <p style={{
                       lineHeight:'20px',
-                      fontSize:'14px'
+                      fontSize:'12px',
+                      textAlign:'center'
                   }}>{item.p}</p>
                   <h4 className="readmore_outercasestudies" onClick={()=>{
-                       navigate('/CaseStudies')
+                      window.open('/CaseStudies','_top')
                   }} style={{
                     cursor:'pointer',
-                    fontSize:'16px'
+                    fontSize:'15px'
                   }}>{item.h2}</h4>
                   
               

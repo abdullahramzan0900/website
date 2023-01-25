@@ -95,52 +95,60 @@ function Contact() {
           >
             Services
           </p>
-          <a
+          <a onClick={()=>{
+        window.open('/Services','_top')
+          }}
             style={{
-           
+              cursor:'pointer',
               textDecoration: "none",
               fontSize: "1.8vh",
 
           marginTop:'28px',
           color:'#e2e2e2'
             }}
-            href=""
+         
           >
             Cloud services
           </a>
-          <a
+          <a onClick={()=>{
+        window.open('/Services','_top')
+          }}
             style={{
-            
+              cursor:'pointer',
               textDecoration: "none",
               fontSize: "1.8vh",
               marginTop: "15px",
               color:'#e2e2e2'
             }}
-            href=""
+           
           >
           ERP Integration
           </a>
-          <a
+          <a onClick={()=>{
+        window.open('/Services','_top')
+          }}
             style={{
-        
+              cursor:'pointer',
               textDecoration: "none",
               fontSize: "1.8vh",
               marginTop: "15px",
               color:'#e2e2e2'
             }}
-            href=""
+           
           >
             Digital Tranformation
           </a>
-          <a
+          <a onClick={()=>{
+        window.open('/Services','_top')
+          }}
             style={{
-
+              cursor:'pointer',
               textDecoration: "none",
               fontSize: "1.8vh",
               marginTop: "15px",
               color:'#e2e2e2'
             }}
-            href=""
+           
           >
           Salesforce
           </a>
@@ -214,7 +222,7 @@ function Contact() {
             <input
               placeholder="Email"
               style={{
-                width: "205px",
+                width: "215px",
                 marginTop: "5px",
                 padding:'10px',
                 borderRadius: "7px",
@@ -236,7 +244,8 @@ function Contact() {
                   color:"#e2e2e2",
                   border:'none',
                   marginTop:'10px',
-                  cursor:'pointer'
+                  cursor:'pointer',
+                  fontFamily:'roboto'
                 }}
               >
                 Subscribe

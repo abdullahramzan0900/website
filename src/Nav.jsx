@@ -1,15 +1,21 @@
 import React from "react";
 import Home from "./Home/Home";
 import { Link } from "react-router-dom";
-import {withRouter} from 'react-router-dom'
+
 import { useState } from "react";
 import Logo from "./image/Logo.svg";
 import menubar from "./image/menu-bar.png";
 import "@fontsource/roboto";
-
-function Nav({history}) {
+import { useLocation } from "react-router-dom";
+function Nav() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
-  console.log(history,"history")
+  const location = useLocation();
+  console.log(location,"location")
+  console.log(location);
+  const { pathname } = location;
+  console.log(pathname);
+  const splitLocation = pathname.split("/");
+  console.log(splitLocation,"aa")
   
   return (
     <>
@@ -46,7 +52,7 @@ function Nav({history}) {
             <li>
               <a
                 style={{
-                  color: "#229958",
+                  color: splitLocation[1] === "" ? "#23a55b" : "black",
                 }}
                 href="/"
               >
@@ -55,16 +61,24 @@ function Nav({history}) {
             </li>
 
             <li>
-              <a href="/Services">Services</a>
+              <a style={{
+                  color: splitLocation[1] === "Services" ? "#23a55b" : "black",
+              }} href="/Services">Services</a>
             </li>
             <li>
-              <a href="/Blogs">Blog</a>
+              <a style={{
+                 color: splitLocation[1] === "Blogs" ? "#23a55b" : "black",
+              }} href="/Blogs">Blog</a>
             </li>
             <li>
-              <a href="/CaseStudies">Case Studies</a>
+              <a style={{
+                   color: splitLocation[1] === "CaseStudies" ? "#23a55b" : "black",
+              }} href="/CaseStudies">Case Studies</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a style={{
+               color: splitLocation[1] === "contact" ? "#23a55b" : "black",
+              }} href="/contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -72,4 +86,4 @@ function Nav({history}) {
     </>
   );
 }
-export default withRouter(Nav);
+export default Nav;

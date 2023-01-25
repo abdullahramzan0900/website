@@ -1,10 +1,13 @@
 import React from "react";
-
+import { useLocation } from "react-router-dom";
 import Contact from "../Contact/Contact";
 import { useNavigate } from "react-router-dom";
 let x=0;
 function CaseeStuide()
 { const navigate=useNavigate();
+  
+
+
   const array1=[
     { id:1,
      h1:'ERP for Restaurant',
@@ -77,17 +80,17 @@ function CaseeStuide()
    
   <div class="centered">
       <h1  className='height' style={{
-        fontSize:'40px',
+        fontSize:'60px',
         fontFamily:'roboto'
         
       }} >Examples of <span style={{
       color:'#229958',
-      fontSize:'40px',
+      fontSize:'60px',
          fontFamily:'roboto'
      }}>Client Success</span> That 
     Powered by<span style={{
         color:'#229958',
-        fontSize:'36px',
+        fontSize:'60px',
          fontFamily:'roboto'
   
      

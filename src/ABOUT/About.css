@@ -41,11 +41,11 @@
   border-top-right-radius: 22px;
 }
 .about_img2 {
-  width: 40.99vw;
+  width:  40.6vw;
   height: 7vh;
 }
 .about_btn {
-  font-size: 19px;
+  font-size: 16px;
   align-items: flex-start;
   width: 162px;
   height: 54px;
@@ -58,14 +58,14 @@
 }
 .H_aboutus {
   font-size: 40px;
-  text-align: justify;
+  text-align: left;
   font-family: "roboto";
   color: #229958;
 }
 .p_aboutus {
   margin-top: 20px;
   font-size: 18px;
-  text-align: justify;
+  text-align: left;
   font-family: "roboto";
   color: #5f5e5e;
   line-height: 25px;

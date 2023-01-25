@@ -200,25 +200,27 @@ table {
 
 .btn_contact {
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 16px;
   padding: 15px;
   background-color: #229958;
   width: 161px;
   color: white;
   border: none;
   cursor: pointer;
+  font-family: 'roboto';
 }
 .btn_learn {
-  margin-left: 5px;
+  margin-left: 13px;
   border-radius: 10px;
   border: 1px solid #229958;
-  font-size: 20px;
+  font-size: 16px;
   padding: 15px;
   background-color: #229958;
   width: 161px;
   background-color: transparent;
   color: white;
   cursor: pointer;
+  font-family: 'roboto';
 }
 .button1_home{
       
@@ -280,7 +282,7 @@ align-items: center;
 .cross{
   padding-right: 20px;
   padding-top: 14px;
-  cursor: pointer;
+
 }
 .main_chat{
 
@@ -540,7 +542,7 @@ align-items: center;
   margin-top: 40px;
 }
 .height {
-  font-size: 68px;
+  font-size: 74px;
   
   color: white;
 }

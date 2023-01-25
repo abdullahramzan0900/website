@@ -68,7 +68,7 @@ function MainBlog() {
         <h1
           className="height"
           style={{
-            fontSize: "40px",
+            fontSize: "60px",
             fontFamily: "roboto",
           }}
         >
@@ -76,14 +76,14 @@ function MainBlog() {
           <span
             style={{
               color: "#229958",
-              fontSize: "40px",
+              fontSize: "60px",
               fontFamily: "roboto",
             }}
           ></span>{" "}
           <span
             style={{
               color: "#229958",
-              fontSize: "40px",
+              fontSize: "60px",
               fontFamily: "roboto",
             }}
           >
@@ -93,7 +93,7 @@ function MainBlog() {
           <span
             style={{
               color: "#229958",
-              fontSize: "40px",
+              fontSize: "60px",
               fontFamily: "roboto",
             }}
           >

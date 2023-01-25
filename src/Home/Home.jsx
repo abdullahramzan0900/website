@@ -20,64 +20,75 @@ import search from "../image/search_services.png";
 import { fabClasses } from "@mui/material";
 import chaticon from '../image/chat-icon.svg'
 import cross from '../image/cross.png'
+import { useLocation } from "react-router-dom";
 
 let x = 0;
 
 function Home() {
   const [background, Setbackground] = useState("img");
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(false);
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(false);
   const [visible,Setvisible]=useState(false);
+  const [visible1,Setvisible1]=useState(true);
+  
+  const location = useLocation();
+  console.log(location)
 
 
   const array = ["img1", "img2", "img4", "img3"];
   
   setTimeout(() => {
+  
     Setbackground(array[x]);
     console.log(x)
-    if(x===0)
-    {
-      setActive(true);
-      setActive1(false);
-      setActive2(false);
-      setActive3(false);
-x++;
-    }
+//     if(x===0)
+//     {
+//       setActive(true);
+//       setActive1(false);
+//       setActive2(false);
+//       setActive3(false);
+// x++;
+//     }
 
  
-  else if(x===1)
-  {  
-    setActive1(true)
-    setActive2(false)
-    setActive(false)
-    setActive3(false)
-    x++;  
+//   else if(x===1)
+//   {  
+//     setActive1(true)
+//     setActive2(false)
+//     setActive(false)
+//     setActive3(false)
+//     x++;  
   
  
-  }
-  else if(x===2)
-  {  console.log("22222")
-    setActive2(true);
-    setActive(false);
-    setActive1(false);
-    setActive3(false);
-    x++;
+//   }
+//   else if(x===2)
+//   {  console.log("22222")
+//     setActive2(true);
+//     setActive(false);
+//     setActive1(false);
+//     setActive3(false);
+//     x++;
    
    
 
 
-  }
+//   }
     
-    else if (x === 3) {
-      setActive3(true)
-      x=0;
-      setActive2(false)
-      setActive(false)
-      setActive1(false)
+//     else if (x === 3) {
+//       setActive3(true)
+//       x=0;
+//       setActive2(false)
+//       setActive(false)
+//       setActive1(false)
 
-    }
+//     }
+if(x==3)
+{
+  x=0;
+}
+x++;
    
   
   }, 5000);
@@ -92,23 +103,25 @@ x++;
           <h1
             className="height"
             style={{
-              
+              wordSpacing:'5px'
             }}
           >
             Delivering{" "}
             <span
               style={{
-                color:'#229958'
+                color:'#229958',
+         
               }}
             >
               IT Solutions
             </span>{" "}
-            That enable you To
+            That Enable you to 
             <span
               style={{
-                color:'#229958'
+                color:'#229958',
+             
               }}
-            >
+              >
               Work Smarter
             </span>{" "}
           </h1>
@@ -128,7 +141,9 @@ x++;
           </p>
 
           <div className="btns">
-            <button className="btn_contact">Contact us</button>
+            <button onClick={()=>{
+                        window.open('/contact','_top')
+            }} className="btn_contact">Contact us</button>
             <button className="btn_learn">Learn more</button>
           </div>
           <div style={{}}>
@@ -138,7 +153,7 @@ x++;
               //   x=0;
               // }}
               style={{
-                backgroundColor: active ? "black" : "white" 
+                backgroundColor: active ? "black" : "rgb(34, 153, 88)" 
               }}
             ></button>
             <button className="button2_home"
@@ -147,7 +162,7 @@ x++;
               //   x=1;
               // }}
               style={{
-                backgroundColor: active1 ? "black" : "white" 
+                backgroundColor: active1 ? "black" : "rgb(34, 153, 88)" 
               }}
             ></button>
             <button className="button3_home"
@@ -157,7 +172,7 @@ x++;
 
               // }}
               style={{
-                backgroundColor: active2 ? "black" : "white" 
+                backgroundColor: active2 ? "black" : "rgb(34, 153, 88)" 
               }}
             ></button>
             <button className="button4_home"
@@ -166,7 +181,7 @@ x++;
               //   x=3;
               // }}
               style={{
-                backgroundColor: active3 ? "black" : "white" 
+                backgroundColor: active3 ? "black" : "rgb(34, 153, 88)" 
               }}
             ></button>
           </div>
@@ -176,17 +191,48 @@ x++;
       
         </div>
         <div  style={{
-         
+       
         }} className="main_chat">
+          <div style={{
+            display:visible ? "block" : "none" 
+          }} class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
 
-          <div className="chat_upper_div">
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button onClick={(()=>{
+           Setvisible(false);
+           Setvisible1(true);
+
+            
+    })} type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+          <div style={{
+            display:visible1 ? "flex" : "none" 
+          }} className="chat_upper_div">
             <div  className="chat_upper_div_1">
 
-          <img className="chaticon" src={chaticon} alt="" />
-          <h1 className="chat_text">chat with us</h1>
+          <img style={{
+            cursor:'pointer'
+          }} onClick={()=>{
+            Setvisible(true);
+            Setvisible1(false)
+
+          }} className="chaticon" src={chaticon} alt="" />
+          <h1 onClick={()=>{
+          }} className="chat_text">Chat with us</h1>
             </div>
             <div>
-  <img className="cross" src={cross} alt="" />
+  <img style={{
+       cursor:'pointer'
+  }} onClick={()=>{
+   Setvisible1(false);
+  }} className="cross" src={cross} alt="" />
             </div>
          
           </div>

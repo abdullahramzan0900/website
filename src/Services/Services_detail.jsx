@@ -22,7 +22,7 @@ function Services_detail() {
         </div>
 <div class="centered">
       <h1  className='height' style={{
-        fontSize:'40px',
+        fontSize:'70px',
         fontFamily:'roboto',
         color:'#229958'
         

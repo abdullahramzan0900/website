@@ -39,7 +39,9 @@ function Services() {
                 in developing and implementing ovations solution for performance
                 ,growth and relevance
               </p>
-              <button className="Services_button"
+              <button onClick={()=>{
+                window.open('http://localhost:3001/Services','_top');
+              }} className="Services_button"
                 style={{
                     
                 }}

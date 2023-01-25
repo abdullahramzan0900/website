@@ -101,7 +101,7 @@ function CaseStudiesDetail()
    
   <div class="centered">
       <h1  className='height' style={{
-        fontSize:'40px',
+        fontSize:'70px',
         fontFamily:'roboto'
         
         

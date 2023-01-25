@@ -12,15 +12,34 @@ import Button from "@mui/material/Button";
 import Textarea from '@mui/joy/Textarea';
 import { ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material";
+import axios from "axios";
 
 
 import TextareaAutosize from "@mui/base/TextareaAutosize";
 import { green } from "@mui/material/colors";
 import Contact from "./Contact";
+import { GridColumnsPanel } from "@mui/x-data-grid";
 
 function Contact_detail() {
-  const [age, setAge] = React.useState("");
-
+  const [service, Setservice] = React.useState("");
+  const [name,Setname]=useState();
+  const [email,Setemail]=useState();
+  const [message,setMessage]=useState();
+  useState(()=>{
+    axios.get("http://localhost:3000/contactUs").then(function (response) {
+      console.log(response);
+   
+    });
+  },[])
+  
+function handleChange(e){
+Setname(e.target.value);
+console.log(e.target.value)
+}
+function handleChange2(e){
+  Setemail(e.target.value);
+  console.log(e.target.value)
+  }
   const theme = createTheme({
     breakpoints: {
       values: {
@@ -35,9 +54,30 @@ function Contact_detail() {
   });
 
 
-  const handleChange = (event) => {
-    setAge(event.target.value);
+
+  const handleChange3 = (event) => {
+    Setservice(event.target.value);
+    console.log(event.target.value)
   };
+  const handleChange4 = (event) => {
+    setMessage (event.target.value);
+    console.log(event.target.value);
+  };
+  function PostData()
+{
+  axios.post("http://localhost:3000/contactUs",{
+    "name":name,
+    "email":email,
+    "service":service,
+    "message":message
+
+  })
+
+  setMessage("");
+  Setname("");
+  Setemail("");
+  Setservice("")
+}
 
   return (
     <>
@@ -66,7 +106,12 @@ function Contact_detail() {
             noValidate
             autoComplete="off"
           >
-            <TextField
+            <TextField 
+             type="text"
+             id="name"
+             name="name"
+             onChange={handleChange}
+             value={name}
               sx={{
                 "& .MuiInputLabel-root": { color: "" }, //styles the label
                 "& .MuiOutlinedInput-root": {
@@ -87,6 +132,11 @@ function Contact_detail() {
                 }}
                 label="Enter Your Email"
                 variant="outlined"
+                id="email"
+                name="email"
+                onChange={handleChange2}
+                value={email}
+                required
                 />
                 </ThemeProvider>
 
@@ -114,9 +164,9 @@ function Contact_detail() {
                 }}
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
-                value={age}
+                value={service}
                 label="Select Services"
-                onChange={handleChange}
+                onChange={handleChange3}
               >
                 <MenuItem value={"Cloud Services"}>Cloud Services</MenuItem>
                 <MenuItem value={"ERP Integration"}>ERP Integration</MenuItem>
@@ -127,17 +177,23 @@ function Contact_detail() {
               </Select>
             </FormControl>
 
-            <textarea  placeholder="Drop a message" className="texttt" style={{
-
- paddingLeft:'20px',
- paddingTop:'10px'
+            <textarea 
+             value={message}
+       
+             onChange={handleChange4}
+            
+            placeholder="Drop a message" className="texttt" style={{
+             paddingLeft:'20px',
+             paddingTop:'10px'
 
             }} >
   
 </textarea>
         
 
-            <Button
+            <Button onClick={()=>{
+              PostData()
+            }}
               style={{
                 width: 100,
                 alignSelf: "center",
