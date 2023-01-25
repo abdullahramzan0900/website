@@ -244,14 +244,13 @@ x++;
                     <h1 className="h1_search_div" style={{}}>
                       AWS
                     </h1>
-
                     <div className="search_upper_div">
                       <img
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
                       />
-                      <img className="search_icon" src={search} alt="" />
+                    <img className="search_icon" src={search} alt="" />
                     </div>
                   </div>
                 </div>

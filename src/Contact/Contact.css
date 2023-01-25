@@ -345,8 +345,9 @@ text-align:center ;
   font-size: 13px;
 }
 .contact_background{
-  height:90vh;
-  background-image: url("../image/Contact_background.png");
+  height:75vh;
+  width: 1200px;
+  background-image: url("../image/Contact_backg.png");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;

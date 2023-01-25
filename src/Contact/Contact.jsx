@@ -235,7 +235,8 @@ function Contact() {
                   marginLeft: "2px",
                   color:"#e2e2e2",
                   border:'none',
-                  marginTop:'10px'
+                  marginTop:'10px',
+                  cursor:'pointer'
                 }}
               >
                 Subscribe

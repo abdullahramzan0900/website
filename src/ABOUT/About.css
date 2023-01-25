@@ -54,6 +54,7 @@
   border-radius: 10px;
   border: none;
   font-family: "roboto";
+  cursor: pointer;
 }
 .H_aboutus {
   font-size: 40px;

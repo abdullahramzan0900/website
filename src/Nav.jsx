@@ -1,13 +1,16 @@
 import React from "react";
 import Home from "./Home/Home";
 import { Link } from "react-router-dom";
+import {withRouter} from 'react-router-dom'
 import { useState } from "react";
 import Logo from "./image/Logo.svg";
 import menubar from "./image/menu-bar.png";
 import "@fontsource/roboto";
 
-function Nav() {
+function Nav({history}) {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  console.log(history,"history")
+  
   return (
     <>
       <nav className="navigation">
@@ -69,4 +72,4 @@ function Nav() {
     </>
   );
 }
-export default Nav;
+export default withRouter(Nav);

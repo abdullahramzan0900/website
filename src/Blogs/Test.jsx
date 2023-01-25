@@ -10,12 +10,9 @@ import line8 from "../image/Line8.png";
 import Carousel from "react-elastic-carousel";
 
 function Test() {
-  
-
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
-
     { width: 1000, itemsToShow: 4 },
   ];
   const array1 = [
@@ -28,9 +25,7 @@ function Test() {
     { id: 2, img: Blog1, h1: "Cloud Computing & its Benefits" },
     { id: 2, img: Blog2, h1: "Impact of ERP in SME" },
     {
-      id: 3,
-      img: Blog3,
-      h1: "Digital Transformation & IoT",
+      id: 3, img: Blog3, h1: "Digital Transformation & IoT",
     },
     { id: 3, img: Blog2, h1: "Impact of ERP in SME" },
     { id: 3, img: Blog1, h1: "Impact of ERP in SME" },
@@ -39,11 +34,7 @@ function Test() {
 
   return (
     <>
-      <div
-        style={{
-        
-        }}
-      >
+      <div style={{}}>
         <Carousel breakPoints={breakPoints}>
           {array1 &&
             array1?.map((item) => {
@@ -61,6 +52,7 @@ function Test() {
                       padding: "20px",
                       fontSize: "16px",
                       fontWeight: "bold",
+                      cursor: "pointer",
                     }}
                   >
                     {item.h1}

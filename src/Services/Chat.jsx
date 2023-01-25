@@ -52,7 +52,7 @@ const Chat = ({ location }) => {
     
     />
     <button className="sendButton" >Send</button>
-    
+
   </form>
 
       </div>

@@ -140,6 +140,7 @@ background-color:       rgba(0, 0, 0, 0.79);;
     margin-top: 40px;
     font-family: "roboto";
     border-radius: 10px;
+    cursor: pointer;
   }
    
   /* increase images per line as browser gets larger using media queries
@@ -457,6 +458,7 @@ border-top-right-radius: 16px;
 font-size: 15px;
 font-family: 'roboto';
 color: black;
+cursor: pointer;
 
 }
 .Service2_div{
@@ -482,6 +484,7 @@ font-size: 15px;
 font-family: 'roboto';
 text-align: center;
 color: black;
+cursor: pointer;
  
 }
 .Service3_div{
@@ -503,6 +506,7 @@ border-top-left-radius: 16px;
 border-top-right-radius: 16px;
 text-align: center;
   padding: 15px;
+  cursor: pointer;
 
   padding-left: 22px;
 font-size: 15px;
@@ -532,6 +536,7 @@ font-size: 15px;
 
 font-family: 'roboto';
 color: black;
+cursor: pointer;
 }
 @media only screen and (max-width: 1223px) {
   .Service1_div
@@ -1066,6 +1071,7 @@ margin-left: 10px;
   .search_upper_img{
     width: 58px;
   margin-top: 10px;
+ 
 
   }
   .search_icon{
@@ -1074,6 +1080,7 @@ margin-left: 10px;
     top: 24px;
     width: 30px;
     left: 50px;
+    cursor: pointer;
   }
   .h1_search_div{
     font-size: 16px;

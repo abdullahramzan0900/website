@@ -206,6 +206,7 @@ table {
   width: 161px;
   color: white;
   border: none;
+  cursor: pointer;
 }
 .btn_learn {
   margin-left: 5px;
@@ -217,6 +218,7 @@ table {
   width: 161px;
   background-color: transparent;
   color: white;
+  cursor: pointer;
 }
 .button1_home{
       

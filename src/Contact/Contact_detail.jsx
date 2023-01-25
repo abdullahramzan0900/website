@@ -127,9 +127,10 @@ function Contact_detail() {
               </Select>
             </FormControl>
 
-            <textarea placeholder="Drop a message" className="texttt" style={{
+            <textarea  placeholder="Drop a message" className="texttt" style={{
 
-
+ paddingLeft:'20px',
+ paddingTop:'10px'
 
             }} >
   
@@ -141,11 +142,12 @@ function Contact_detail() {
                 width: 100,
                 alignSelf: "center",
                 color: "#229958",
-                border:'1px solid #229958'
+                border:'1px solid #229958',
+                fontFamily:'roboto'
               }}
               variant="submit"
             >
-              Submit
+             Submit
             </Button>
           </Stack>
         </div>
