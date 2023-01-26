@@ -65,7 +65,11 @@
   text-align: center;
   color: rgb(104, 92, 92);
 }
-
+.itemm:hover{
+  background-color:#444545;
+  color: white;
+  transition: all 0.8s ease;
+}
 @media (max-width: 800px) {
   .containers {
     width: 100%;

@@ -15,6 +15,7 @@ import { createTheme } from "@mui/material";
 import axios from "axios";
 
 
+
 import TextareaAutosize from "@mui/base/TextareaAutosize";
 import { green } from "@mui/material/colors";
 import Contact from "./Contact";
@@ -27,7 +28,7 @@ function Contact_detail() {
   const [message,setMessage]=useState();
   useState(()=>{
     axios.get("http://localhost:3000/contactUs").then(function (response) {
-      console.log(response);
+      console.log(response,"aa");
    
     });
   },[])
@@ -76,7 +77,7 @@ function handleChange2(e){
   setMessage("");
   Setname("");
   Setemail("");
-  Setservice("")
+  Setservice("");
 }
 
   return (
@@ -182,10 +183,12 @@ function handleChange2(e){
        
              onChange={handleChange4}
             
-            placeholder="Drop a message" className="texttt" style={{
-             paddingLeft:'20px',
-             paddingTop:'10px'
-
+            placeholder="Drop a Message" className="texttt" style={{
+             paddingLeft:'13px',
+             paddingTop:'10px',
+             fontSize:'16px',
+             fontFamily:'roboto',
+             background:'transparent'
             }} >
   
 </textarea>
@@ -199,7 +202,8 @@ function handleChange2(e){
                 alignSelf: "center",
                 color: "#229958",
                 border:'1px solid #229958',
-                fontFamily:'roboto'
+                fontFamily:'roboto',
+                textTransform:'none'
               }}
               variant="submit"
             >

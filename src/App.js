@@ -32,6 +32,7 @@ function App() {
         <Route path="/CaseStudies" element={<CaseeStuide/>} ></Route>
         <Route path="/CaseStudies/:id" element={<CaseStudiesDetail/>} ></Route>
         <Route path="/Contact" element={<Contact_detail/>} ></Route>
+        
 
       </Routes>
     </BrowserRouter>

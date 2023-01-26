@@ -18,11 +18,19 @@ import integration from "../image/integration.png";
 import search_upper from "../image/serach_upper.png";
 import search from "../image/search_services.png";
 import { fabClasses } from "@mui/material";
-import chaticon from '../image/chat-icon.svg'
-import cross from '../image/cross.png'
+import chaticon from "../image/chat-icon.svg";
+import cross from "../image/cross.png";
 import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import axios from "axios";
+import logo from '../image/Logo.svg'
+import { GridColumnsPanel } from "@mui/x-data-grid";
+import Logo from '../image/Logo-icon.svg'
+
 
 let x = 0;
+console.log(x,"aaaa");
+
 
 function Home() {
   const [background, Setbackground] = useState("img");
@@ -30,98 +38,123 @@ function Home() {
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(false);
-  const [visible,Setvisible]=useState(false);
-  const [visible1,Setvisible1]=useState(true);
+  const [visible, Setvisible] = useState(false);
+  const [visible1, Setvisible1] = useState(true);
   
+  const [showchat,Setshowchat]=useState(false);
+  const [name,Setname]=useState('');
+  useEffect(()=>{
+  axios.get("http://localhost:3000/user")
+  .then(function (response){
+    console.log(response,"response");
+  })
+  },[]);
+function EventHandle(e)
+{
+console.log(e.target.value)
+Setname(e.target.value);
+}
+function PostName()
+{
+  axios.post("http://localhost:3000/user",{
+    "name":name
+  }).then(function(response){
+    console.log(response,"response1");
+})
+}
+function POSTNAME_ID()
+{
+  axios.post("http://localhost:3000/messages",{
+    "nameId":'ababab'
+  })
+ 
+}
+
+
+
+
   const location = useLocation();
-  console.log(location)
+  console.log(location);
 
 
   const array = ["img1", "img2", "img4", "img3"];
-  
+
+
+
   setTimeout(() => {
-  
     Setbackground(array[x]);
-    console.log(x)
-//     if(x===0)
-//     {
-//       setActive(true);
-//       setActive1(false);
-//       setActive2(false);
-//       setActive3(false);
-// x++;
-//     }
+    console.log(x);
+    //     if(x===0)
+    //     {
+    //       setActive(true);
+    //       setActive1(false);
+    //       setActive2(false);
+    //       setActive3(false);
+    // x++;
+    //     }
 
- 
-//   else if(x===1)
-//   {  
-//     setActive1(true)
-//     setActive2(false)
-//     setActive(false)
-//     setActive3(false)
-//     x++;  
-  
- 
-//   }
-//   else if(x===2)
-//   {  console.log("22222")
-//     setActive2(true);
-//     setActive(false);
-//     setActive1(false);
-//     setActive3(false);
-//     x++;
-   
-   
+    //   else if(x===1)
+    //   {
+    //     setActive1(true)
+    //     setActive2(false)
+    //     setActive(false)
+    //     setActive3(false)
+    //     x++;
 
+    //   }
+    //   else if(x===2)
+    //   {  console.log("22222")
+    //     setActive2(true);
+    //     setActive(false);
+    //     setActive1(false);
+    //     setActive3(false);
+    //     x++;
 
-//   }
-    
-//     else if (x === 3) {
-//       setActive3(true)
-//       x=0;
-//       setActive2(false)
-//       setActive(false)
-//       setActive1(false)
+    //   }
 
-//     }
-if(x==3)
-{
-  x=0;
-}
-x++;
-   
-  
+    //     else if (x === 3) {
+    //       setActive3(true)
+    //       x=0;
+    //       setActive2(false)
+    //       setActive(false)
+    //       setActive1(false)
+
+    //     }
+    if (x === 3) {
+      x = 0;
+    }
+    x++;
   }, 5000);
 
   return (
     <>
-      <div className="banner ">
-        <div   className={background}></div>
+      <div  className="banner ">
+        <div key={x+1} className={background}>
+
+        </div>
         {/* <img src={banner} alt="loading"/> */}
 
-        <div class="centered">
+        <div  class="centered">
           <h1
             className="height"
             style={{
-              wordSpacing:'5px'
+              wordSpacing: "5px",
             }}
           >
             Delivering{" "}
             <span
               style={{
-                color:'#229958',
-         
+                color: "#229958",
               }}
             >
               IT Solutions
             </span>{" "}
-            That Enable you to 
+            That Enable you to {""}
             <span
               style={{
-                color:'#229958',
-             
+                color: "#229958",
               }}
-              >
+            >
               Work Smarter
             </span>{" "}
           </h1>
@@ -141,103 +174,199 @@ x++;
           </p>
 
           <div className="btns">
-            <button onClick={()=>{
-                        window.open('/contact','_top')
-            }} className="btn_contact">Contact us</button>
+            <button
+              onClick={() => {
+                window.open("/contact", "_top");
+              }}
+              className="btn_contact"
+            >
+              Contact us
+            </button>
             <button className="btn_learn">Learn more</button>
           </div>
           <div style={{}}>
-            <button className="button1_home"
+            <button
+              className="button1_home"
               // onClick={() => {
               //   Setbackground("img");
               //   x=0;
               // }}
               style={{
-                backgroundColor: active ? "black" : "rgb(34, 153, 88)" 
+                backgroundColor: active ? "black" : "rgb(34, 153, 88)",
               }}
             ></button>
-            <button className="button2_home"
+            <button
+              className="button2_home"
               // onClick={() => {
               //   Setbackground("img2");
               //   x=1;
               // }}
               style={{
-                backgroundColor: active1 ? "black" : "rgb(34, 153, 88)" 
+                backgroundColor: active1 ? "black" : "rgb(34, 153, 88)",
               }}
             ></button>
-            <button className="button3_home"
+            <button
+              className="button3_home"
               // onClick={() => {
               //   Setbackground("img3");
               //   x=2;
 
               // }}
               style={{
-                backgroundColor: active2 ? "black" : "rgb(34, 153, 88)" 
+                backgroundColor: active2 ? "black" : "rgb(34, 153, 88)",
               }}
             ></button>
-            <button className="button4_home"
+            <button
+              className="button4_home"
               // onClick={() => {
               //   Setbackground("img4");
               //   x=3;
               // }}
               style={{
-                backgroundColor: active3 ? "black" : "rgb(34, 153, 88)" 
+                backgroundColor: active3 ? "black" : "rgb(34, 153, 88)",
               }}
             ></button>
           </div>
-          
-
-
-      
         </div>
-        <div  style={{
+        <div style={{}} className="main_chat">
+          <div
+            style={{
+              display: visible ? "block" : "none",
+            }}
+            class="chat-popup"
        
-        }} className="main_chat">
-          <div style={{
-            display:visible ? "block" : "none" 
-          }} class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
+          >
+            <div class="form-container">
+             
+              <textarea
+                placeholder="Enter your Name"
+                name="msg"
+                value={name}
+                onChange={EventHandle}
 
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+                required
+              ></textarea>
 
-    <button type="submit" class="btn">Send</button>
-    <button onClick={(()=>{
-           Setvisible(false);
-           Setvisible1(true);
+              <button className="btn" onClick={()=>{
+               PostName();
+               Setvisible(false);
+               Setshowchat(true);
+              }} >
+             Start chat
+              </button>
+              <button 
+                onClick={() => {
+                  Setvisible(false);
+                  Setvisible1(true);
 
-            
-    })} type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-          <div style={{
-            display:visible1 ? "flex" : "none" 
-          }} className="chat_upper_div">
-            <div  className="chat_upper_div_1">
-
-          <img style={{
-            cursor:'pointer'
-          }} onClick={()=>{
-            Setvisible(true);
-            Setvisible1(false)
-
-          }} className="chaticon" src={chaticon} alt="" />
-          <h1 onClick={()=>{
-          }} className="chat_text">Chat with us</h1>
+                }}
+           
+                class="btn cancel"             
+              >
+              Close
+              </button>
+            </div>
+          </div>
+          <div
+            style={{
+              display: visible1 ? "flex" : "none",
+            }}
+            className="chat_upper_div"
+          >
+            <div className="chat_upper_div_1">
+              <img
+                style={{
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  Setvisible(true);
+                  Setvisible1(false);
+                }}
+                className="chaticon"
+                src={chaticon}
+                alt=""
+              />
+              <h1 onClick={() => {}} className="chat_text">
+                Chat with us
+              </h1>
             </div>
             <div>
-  <img style={{
-       cursor:'pointer'
-  }} onClick={()=>{
-   Setvisible1(false);
-  }} className="cross" src={cross} alt="" />
+              <img
+                style={{
+                  cursor: "pointer",
+                }}
+                onClick={() => {
+                  Setvisible1(false);
+                }}
+                className="cross"
+                src={cross}
+                alt=""
+              />
             </div>
-         
           </div>
+          
+      <div style={{
+         display: showchat ? "flex" : "none",
+      }} className="chat_container">
+        <div className="infoBar">
+          <div style={{
+          
+          }} className="leftInnerContainer">
+            <img  className="onlineIcon" src={Logo} alt="online icon" />       
+       
           </div>
-        
+          <div className="rightInnerContainer">
+          
+          <img onClick={()=>{
+            Setshowchat(false);
+            Setvisible1(true);
+          }} style={{
+            marginRight:'5px',
+            cursor:'pointer'
+          }} src={cross} alt="" />
+          </div>
+        </div>
+        <div
+          style={{
+            overflow: "scroll",
+          }}
+        >
+          {/* {messages &&
+            messages?.map((item) => {
+              return (
+                <p
+                  style={{
+                    padding: "20px",
+
+                    marginTop: "10px",
+                  }}
+                >
+                  {item.message}
+                </p>
+              );
+            })} */}
+        </div>
+        <form className="form">
+          <input
+            className="input"
+            type="text"
+            placeholder="Type a message..."
+     
+       
+          />
+          <button
+            onClick={() => {
+            
+            }}
+            className="sendButton"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+   
+        </div>
+
         <About />
         <Services />
 
@@ -296,7 +425,7 @@ x++;
                         src={search_upper}
                         alt=""
                       />
-                    <img className="search_icon" src={search} alt="" />
+                      <img className="search_icon" src={search} alt="" />
                     </div>
                   </div>
                 </div>
@@ -547,6 +676,7 @@ x++;
                       Plug-In Development
                     </h1>
 
+
                     <div className="search_upper_div">
                       <img
                         className="search_upper_img"
@@ -559,7 +689,12 @@ x++;
                 </div>
               </div>
             </div>
+
+            
           </div>
+
+
+
         </div>
         <Blogs />
         <CaseStudies />

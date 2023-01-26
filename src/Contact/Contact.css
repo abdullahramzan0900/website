@@ -341,7 +341,7 @@ text-align:center ;
   font-size: 22px;
 }
 .contact_detail_2_inner_p{
-  margin-top: 30px;
+  margin-top: 19px;
   font-size: 13px;
 }
 .contact_background{
@@ -354,6 +354,9 @@ text-align:center ;
   width: 100%;
   background-position: center;
   
+}
+.MuiStack-root{
+  margin-top: 12px;
 }
 .texttt{
   width: 405px !important;
@@ -564,4 +567,3 @@ position: absolute;
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-

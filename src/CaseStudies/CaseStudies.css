@@ -264,18 +264,16 @@ align-items: center;
     font-family: 'roboto';
     text-align: justify;
     border-radius: 22px;
-    font-size: 17px;
-    
-    
+    font-size: 17px; 
    }
    .itemm2>.readmore_outercasestudies:hover{
-  color: #00011f;
-  
+  color: #00011f;  
   transition: all 0.8s ease;
     
    }
    .itemm2:hover{
     background-color: #229958;
+    transition: all 0.8s ease;
     
    }
   

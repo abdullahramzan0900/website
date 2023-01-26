@@ -212,7 +212,9 @@ function Contact() {
         <div className="contact2_4" style={{}}>
           <p
             style={{
-              color:'#e2e2e2'
+              color:'#e2e2e2',
+              fontWeight: "bold  ",
+              fontSize:'19px'
             }}
           >
             Send Mail

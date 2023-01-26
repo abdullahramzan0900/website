@@ -17,19 +17,19 @@ function Test() {
   ];
   const array1 = [
     { id: 1, img: Blog1, h1: "Cloud Computing & its Benefits" },
-    { id: 1, img: Blog2, h1: "Impact of ERP in SME" },
-    { id: 1, img: Blog3, h1: "Digital Transformation & IoT" },
-    { id: 1, h1: "Technology in 2023", img: Blog4 },
-    { id: 2, h1: "Technology in 2023", img: Blog4 },
-    { id: 2, img: Blog3, h1: "Digital Transformation & IoT" },
-    { id: 2, img: Blog1, h1: "Cloud Computing & its Benefits" },
     { id: 2, img: Blog2, h1: "Impact of ERP in SME" },
+    { id: 3, img: Blog3, h1: "Digital Transformation & IoT" },
+    { id: 4, h1: "Technology in 2023", img: Blog4 },
+    { id: 6, h1: "Technology in 2023", img: Blog4 },
+    { id: 7, img: Blog3, h1: "Digital Transformation & IoT" },
+    { id: 8, img: Blog1, h1: "Cloud Computing & its Benefits" },
+    { id: 9, img: Blog2, h1: "Impact of ERP in SME" },
     {
-      id: 3, img: Blog3, h1: "Digital Transformation & IoT",
+      id: 10, img: Blog3, h1: "Digital Transformation & IoT",
     },
-    { id: 3, img: Blog2, h1: "Impact of ERP in SME" },
-    { id: 3, img: Blog1, h1: "Impact of ERP in SME" },
-    { id: 3, img: Blog4, h1: "Impact of ERP in SME" },
+    { id:11, img: Blog2, h1: "Impact of ERP in SME" },
+    { id: 12, img: Blog1, h1: "Impact of ERP in SME" },
+    { id: 13, img: Blog4, h1: "Impact of ERP in SME" },
   ];
 
   return (

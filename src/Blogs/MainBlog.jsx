@@ -14,19 +14,19 @@ function MainBlog() {
       id: 1,
       img: Blog1,
       h1: "Cloud Computing & its Benefits",
-      p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
+      p: "If you're still debating whether to adopt cloud migration, you're already behind 90% of businesses. That indicates that enterprise workloads are largely already hosted on the cloud, making cloud adoption mainstream. Additionally, cloud migration has its dangers and disadvantages, just like any other new technology.",
     },
     {
       id: 2,
       img: Blog2,
-      h1: "Impact of ERP in SME",
-      p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
+      h1: "Grow your restaurant",
+      p: "Everything is becoming digitalized in this constantly developing digital age. Almost everything has moved online, from communicating with friends to placing food orders, leading to completely altered lifestyles. Digitalization has transformed corporate practices in addition to lives. Websites and mobile applications are now essential for any business to operate. ",
     },
     {
       id: 3,
       img: Blog3,
-      h1: "Digital Transformation & IoT",
-      p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
+      h1: " Digital Transformation",
+      p: "Digital transformation is the integration of digital solutions to enable an organization to enhance its business, operational, and cultural processes. Adding value to your consumers is just as important as improving the efficiency of your enterprises.  ",
     },
     {
       id: 4,
@@ -156,6 +156,7 @@ function MainBlog() {
                       height: "250px",
                       borderRadius: "22px",
                       background: "#FFFFFF",
+                      fontFamily: "roboto",
                     }}
                     src={item.img}
                   />
@@ -167,7 +168,9 @@ function MainBlog() {
                     <p
                       className="h_mainblog"
                       style={{
-                        marginLeft: "30px",
+                         textAlign:'center',
+                        fontFamily: "roboto",
+                         fontSize:'17px'
                       }}
                     >
                       {item.h1}
@@ -183,6 +186,7 @@ function MainBlog() {
                       style={{
                         cursor: "pointer",
                         background: "none",
+                        fontFamily: "roboto",
                       }}
                     >
                       Read More
