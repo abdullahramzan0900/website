@@ -23,14 +23,12 @@ import cross from "../image/cross.png";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
-import logo from '../image/Logo.svg'
+import logo from "../image/Logo.svg";
 import { GridColumnsPanel } from "@mui/x-data-grid";
-import Logo from '../image/Logo-icon.svg'
-
+import Logo from "../image/Logo-icon.svg";
 
 let x = 0;
-console.log(x,"aaaa");
-
+console.log(x, "aaaa");
 
 function Home() {
   const [background, Setbackground] = useState("img");
@@ -38,103 +36,97 @@ function Home() {
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(false);
-  const [visible, Setvisible] = useState(false);
+  const [visible, Setvisible] = useState(true);
   const [visible1, Setvisible1] = useState(true);
-  
-  const [showchat,Setshowchat]=useState(false);
-  const [name,Setname]=useState('');
-  useEffect(()=>{
-  axios.get("http://localhost:3000/user")
-  .then(function (response){
-    console.log(response,"response");
-  })
-  },[]);
-function EventHandle(e)
-{
-console.log(e.target.value)
-Setname(e.target.value);
-}
-function PostName()
-{
-  axios.post("http://localhost:3000/user",{
-    "name":name
-  }).then(function(response){
-    console.log(response,"response1");
-})
-}
-function POSTNAME_ID()
-{
-  axios.post("http://localhost:3000/messages",{
-    "nameId":'ababab'
-  })
- 
-}
+  const [showchat, Setshowchat] = useState(false);
+  const [disable, Setdisable] = useState(true);
+  const [showname, Setshowname] = useState([]);// For name reponse 
 
+  const [name, Setname] = useState("");
+  useEffect(() => {
+    axios.get("http://localhost:3000/user").then(function (response) {
+      console.log(response, "response");
+    });
+  }, []);
+  function EventHandle(e) {
+    console.log(e.target.value);
+    Setname(e.target.value);
+  }
+  function PostName() {
+    axios
+      .post("http://localhost:3000/user", {
+        name: name,
+      })
+      .then(function (response) {
+        console.log(response, "response1");
+        Setshowname(response.data.name)
+      });
+  }
+  function POSTNAME_ID() {
+    axios.post("http://localhost:3000/messages", {
+      nameId: "ababab",
+    });
+  }
 
-
+  console.log(showname,"name")
 
   const location = useLocation();
   console.log(location);
 
-
   const array = ["img1", "img2", "img4", "img3"];
 
+  // setTimeout( () => {
+  //   Setbackground(array[x]);
+  //   console.log(x);
+  //     if(x===0)
+  //     {
+  //       setActive(true);
+  //       setActive1(false);
+  //       setActive2(false);
+  //       setActive3(false);
+  // x++;
+  //     }
 
+  //   else if(x===1)
+  //   {
+  //     setActive1(true)
+  //     setActive2(false)
+  //     setActive(false)
+  //     setActive3(false)
+  //     x++;
 
-  setTimeout(() => {
-    Setbackground(array[x]);
-    console.log(x);
-    //     if(x===0)
-    //     {
-    //       setActive(true);
-    //       setActive1(false);
-    //       setActive2(false);
-    //       setActive3(false);
-    // x++;
-    //     }
+  //   }
+  //   else if(x===2)
+  //   {  console.log("22222")
+  //     setActive2(true);
+  //     setActive(false);
+  //     setActive1(false);
+  //     setActive3(false);
+  //     x++;
 
-    //   else if(x===1)
-    //   {
-    //     setActive1(true)
-    //     setActive2(false)
-    //     setActive(false)
-    //     setActive3(false)
-    //     x++;
+  //   }
 
-    //   }
-    //   else if(x===2)
-    //   {  console.log("22222")
-    //     setActive2(true);
-    //     setActive(false);
-    //     setActive1(false);
-    //     setActive3(false);
-    //     x++;
+  //     else if (x === 3) {
+  //       setActive3(true)
+  //       x=0;
+  //       setActive2(false)
+  //       setActive(false)
+  //       setActive1(false)
 
-    //   }
-
-    //     else if (x === 3) {
-    //       setActive3(true)
-    //       x=0;
-    //       setActive2(false)
-    //       setActive(false)
-    //       setActive1(false)
-
-    //     }
-    if (x === 3) {
-      x = 0;
-    }
-    x++;
-  }, 5000);
+  //     }
+  //   if (x === 3) {
+  //     x = 0;
+  //   }
+  //   x++;
+  // }, 5000);
 
   return (
     <>
-      <div  className="banner ">
-        <div key={x+1} className={background}>
-
-        </div>
+      <div className="banner ">
+        <div className={background}></div>
         {/* <img src={banner} alt="loading"/> */}
 
-        <div  class="centered">
+        <div class="centered">
           <h1
             className="height"
             style={{
@@ -229,14 +221,8 @@ function POSTNAME_ID()
           </div>
         </div>
         <div style={{}} className="main_chat">
-          <div
-            style={{
-              display: visible ? "block" : "none",
-            }}
-            class="chat-popup"
-       
-          >
-            <div class="form-container">
+          <div style={{}} class="chat-popup">
+            {/* <div class="form-container">
              
               <textarea
                 placeholder="Enter your Name"
@@ -265,7 +251,7 @@ function POSTNAME_ID()
               >
               Close
               </button>
-            </div>
+            </div> */}
           </div>
           <div
             style={{
@@ -279,8 +265,8 @@ function POSTNAME_ID()
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  Setvisible(true);
                   Setvisible1(false);
+                  Setshowchat(true);
                 }}
                 className="chaticon"
                 src={chaticon}
@@ -304,67 +290,114 @@ function POSTNAME_ID()
               />
             </div>
           </div>
-          
-      <div style={{
-         display: showchat ? "flex" : "none",
-      }} className="chat_container">
-        <div className="infoBar">
-          <div style={{
-          
-          }} className="leftInnerContainer">
-            <img  className="onlineIcon" src={Logo} alt="online icon" />       
-       
-          </div>
-          <div className="rightInnerContainer">
-          
-          <img onClick={()=>{
-            Setshowchat(false);
-            Setvisible1(true);
-          }} style={{
-            marginRight:'5px',
-            cursor:'pointer'
-          }} src={cross} alt="" />
-          </div>
-        </div>
-        <div
-          style={{
-            overflow: "scroll",
-          }}
-        >
-          {/* {messages &&
-            messages?.map((item) => {
-              return (
-                <p
-                  style={{
-                    padding: "20px",
 
-                    marginTop: "10px",
+          <div
+            style={{
+              display: showchat ? "flex" : "none",
+            }}
+            className="chat_container"
+          >
+            <div className="infoBar">
+              <div style={{}} className="leftInnerContainer">
+                <img className="onlineIcon" src={Logo} alt="online icon" />
+              </div>
+              <div
+                style={{
+                  display: visible ? "flex" : "none",
+                  padding: "10px",
+                  position: "absolute",
+                  top: "20%",
+                  border: "none",
+                }}
+                className="textfield_name"
+              >
+                <input
+                  name="msg"
+                  value={name}
+                  onChange={EventHandle}
+                  style={{
+                    height: "40px",
+                    width: "120px",
+                    borderRadius: "7px",
+                    border: "none",
+                    fontSize: "15px",
+                    fontFamily: "roboto",
+                    cursor: "text",
+                  }}
+                  placeholder="Enter your name"
+                  type="text"
+                />
+                <button
+                  onClick={() => {
+                    PostName();
+                    Setdisable(false);
+                    Setvisible(false);
+                  }}
+                  style={{
+                    padding: "10px",
+                    marginLeft: "12px",
+                    height: "40px",
+                    color: "white",
+                    fontFamily: "roboto",
+                    borderRadius: "7px",
+                    background: "#229958",
+                    border: "none",
+                    cursor: "pointer",
                   }}
                 >
-                  {item.message}
-                </p>
-              );
-            })} */}
-        </div>
-        <form className="form">
-          <input
-            className="input"
-            type="text"
-            placeholder="Type a message..."
+                  Start chat
+                </button>
+              </div>
+           
+              <div className="rightInnerContainer">
+                <img
+                  onClick={() => {
+                    Setshowchat(false);
+                    Setvisible1(true);
+                  }}
+                  style={{
+                    marginRight: "5px",
+                    cursor: "pointer",
+                  }}
+                  src={cross}
+                  alt=""
+                />
+              </div>
+            </div>
+            <div
+              style={{
+                overflow: "scroll",
+                height:'100%'
+              }}
+            >
      
-       
-          />
-          <button
-            onClick={() => {
-            
-            }}
-            className="sendButton"
-          >
-            Send
-          </button>
-        </form>
-      </div>
-   
+              <p style={{
+                padding:'10px', 
+                paddingLeft:'50px',
+                fontSize:'14px'
+            }}>{showname}</p>  
+                     
+          
+         
+
+           
+            </div>
+            <form className="form">
+              <input
+                className="input"
+                type="text"
+                placeholder="Type a message..."
+                disabled={disable}
+              />
+              <button
+                disabled={disable}
+                onClick={() => {}}
+                className="sendButton"
+              >
+                Send
+              </button>
+            </form>
+          </div>
         </div>
 
         <About />
@@ -676,7 +709,6 @@ function POSTNAME_ID()
                       Plug-In Development
                     </h1>
 
-
                     <div className="search_upper_div">
                       <img
                         className="search_upper_img"
@@ -689,12 +721,7 @@ function POSTNAME_ID()
                 </div>
               </div>
             </div>
-
-            
           </div>
-
-
-
         </div>
         <Blogs />
         <CaseStudies />

@@ -230,7 +230,8 @@ function Contact() {
                 borderRadius: "7px",
                 height: "38px",
                 border:'none',
-                marginTop:'40px'
+                marginTop:'40px',
+                fontSize:'15px'
               }}
             />
             <div>

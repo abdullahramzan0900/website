@@ -8,8 +8,8 @@ function CaseStudies() {
   const array1 = [
     {
       id: 1,
-      h1: "ERP for Restaurant",
-      p: "There are many variations of passages of Lorem Ipsum available, but the majority  have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.",
+      h1: "Digital transformation ",
+      p: 'One of our clients was struggling with the limitations of a legacy system that truly relied on transactional services. Technologies used were CorePHP and MySQL database, since it contained millions of records so the latency of retrieval/update of information around was 5 to 6 minutes. ',
       h2: "read more",
     },
     {

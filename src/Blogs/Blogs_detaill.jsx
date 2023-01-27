@@ -30,9 +30,9 @@ function Blogs_detail()
      p7:'Many companies used their own internal computing resources prior to the development of cloud computing. This required hiring IT team members to oversee those resources and make sure sensitive information was kept secure. Without a doubt, all of this was expensive. Businesses can potentially achieve significant cost savings by switching from internal IT infrastructure to remote servers provided by third-party cloud platforms.',
      h8:'Improved cooperation',
      p8:'You can make data accessible whenever you need it and from any location thanks to cloud storage. People can access data from anywhere in the world using any device as long as they have an internet connection, thus they are not restricted to a specific place or device.  ',
-     h9:'Advanced protection  ',
+     h9:'Advanced protection ',
      p9:'Contrary to what many people believe, the depth and breadth of security features, automatic maintenance, and centralized management of cloud computing can actually increase your security posture. Reputable cloud providers also work with the best security professionals and use innovative solutions to ensure stronger security',
-     h10:'Ending Words  ',
+     h10:'Ending Words ',
      p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  '
 
   },
