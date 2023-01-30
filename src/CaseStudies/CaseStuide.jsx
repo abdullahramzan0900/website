@@ -12,7 +12,7 @@ function CaseeStuide()
     {   id: 1,
       h1: "Digital transformation ",
       p: 'One of our clients was struggling with the limitations of a legacy system that truly relied on transactional services. Technologies used were CorePHP and MySQL database.',
-      h2: "read more",
+      h2: "Read More",
     },
     { id:2,
       h1:'ERP for Hotel ',

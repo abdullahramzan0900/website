@@ -438,6 +438,7 @@ background-color: #72818b;
 .Service1_div
 {
   height: 200px;
+  
   padding: 10px;
   border: none;
   width: 300px;
@@ -543,12 +544,13 @@ cursor: pointer;
 {
   height: 160px;
   padding: 10px;
+  width: 247px;
   border: none;
 }
 
   .Service1_button{
     position: absolute;
-    bottom: 25px;
+    bottom: 15px;
     left: 60px;
     background: white;
     width: 130px;
@@ -564,13 +566,14 @@ cursor: pointer;
   .Service2_div{
     height: 170px;
     padding: 10px;
+    width: 247px;
     border: none;
   }
   .Service2_button
   {
     position: absolute;
     bottom: 5px;
-    left: 60px;
+    left: 48px;
     background: white;
     width: 150px;
     height: 40px;
@@ -585,13 +588,15 @@ cursor: pointer;
     height: 140px;
     padding: 10px;
     border: none;
+    width: 247px;
   }
   .Service3_button{
     position: absolute;
     bottom: 7px;
     left: 60px;
     background: white;
-    width: 150px;
+    width: 130px;
+    text-align: center;
     height: 50px;
 
     padding: 15px;
@@ -603,15 +608,16 @@ cursor: pointer;
   .Service4_div{
     height: 152px;
     padding: 10px;
-    width: 250px;
+    width: 247px;
     border: none;
   }
   .Service4_button{
     position: absolute;
+    text-align: center;
     bottom: 7px;
-    left: 60px;
+    left: 58px;
     background: white;
-    width: 150px;
+    width: 140px;
     height: 40px;
 
     padding: 15px;
@@ -1134,7 +1140,7 @@ margin-left: 10px;
   }
   .search_icon{
     position: absolute;
-    left: 10px;
+    left: 51px;
     top: 24px;
     width: 20px;
   }
@@ -1184,7 +1190,7 @@ margin-left: 5px;
 }
 .search_icon{
   position: absolute;
-  left: 10px;
+  left: 51px;
   top: 24px;
   width: 20px;
 }
@@ -1196,6 +1202,13 @@ margin-left: 5px;
   
  
 
+}
+.search_div {
+  position: absolute;
+  bottom: 40%;
+  width: 120px;
+  left: 23%;
+  text-align: center;
 }
 }
 @media only screen and (max-width: 1160px) {
@@ -1209,59 +1222,7 @@ margin-left: 5px;
     border-radius: 20px;
   }
 }
-@media only screen and (max-width: 1093px) {
-  .CloudServices_div2_1 {
 
-    flex-basis: 20%;
-  }
-  .img_service_detail{
-    width:230px;
-    height:200px;
-    border-radius: 20px;
-  }
-  
-.h1_servcies_detail{
-  font-size: 30px;
- color: white;
-}
-.line_Services-detail{
-  border: 1px solid green;
-  width: 100px;
-  margin-top: 20px;
-}
-.p_servcies_detail{
-  font-size: 12px;
-  margin-top: 20px;
-  text-align:left;
-  color: #C8C8C8 ;
-  word-spacing: 2px;
-  
-}
-.search_upper_img{
-  width: 45px;
-margin-top: 10px;
-margin-left: 5px;
-}
-.search_icon{
-  position: absolute;
-  left: 10px;
-  top: 24px;
-  width: 20px;
-}
-.h1_search_div{
-  font-size: 14px;
-  color: white;
-  padding-left: 13px;
-}
-.search_div
-{
-  position: absolute;
-  bottom: 39%;
-  left:40%;  
-}
-
-
-}
 @media only screen and (max-width: 1029px) {
   .CloudServices_div2_1 {
 

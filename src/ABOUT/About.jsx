@@ -47,10 +47,10 @@ clients and explain the best strategies that take their projects to a higher lev
 
 </p>
     </div>
-    <div className="about_btn_div">
+    {/* <div className="about_btn_div">
 
 <button className="about_btn">Learn more </button>
-    </div>
+    </div> */}
     </div>
     </div>
 

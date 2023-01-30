@@ -323,17 +323,67 @@ background-color: #FFFFF9;
   top:50%
 
 }
-
-@media (min-width: 320px) and (max-width: 480px) {
-  .chat_outerContainer {
-    height: 100%;
-  }
-
+@media screen  and (max-width: 1600px){
   .chat_container {
-    width: 100%;
-    height: 100%;
+    left: 75%;
+    top:50%;
+    position: center;
+    height:350px;
   }
+  } 
+@media screen  and (max-width: 1278px){
+.chat_container {
+  left: 75%;
+  top:50%;
+  position: center;
+  height:350px;
 }
+} 
+@media screen  and (max-width: 1024px){
+  .chat_container {
+    left: 70%;
+    top:50%;
+    position: center;
+    height:280px;
+  }
+  } 
+  @media screen  and (max-width: 850px){
+    .chat_container {
+      left: 65%;
+      top:50%;
+      position: center;
+      height:330px;
+    }
+    } 
+  @media screen  and (max-width: 718px){
+    .chat_container {
+      left: 55%;
+      top:50%;
+      position: center;
+      height:280px;
+    }
+    } 
+    @media screen  and (max-width: 568px){
+      .chat_container {
+        left: 45%;
+        top:50%;
+        position: center;
+        height:280px;
+      }
+      } 
+      @media screen  and (max-width: 568px){
+        .chat_container {
+          left: 25%;
+          top:50%;
+          position: center;
+          height:280px;
+        }
+        } 
+  
+
+
+
+
 
 
 .infoBar {

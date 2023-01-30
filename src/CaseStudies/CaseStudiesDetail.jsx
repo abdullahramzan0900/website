@@ -100,7 +100,7 @@ function CaseStudiesDetail()
       <h1  className='height' style={{
         fontSize:'70px',
         fontFamily:'roboto'
-        
+       
         
       }} >Case Studies </h1>
       <p className='p1' style={{
@@ -123,37 +123,41 @@ function CaseStudiesDetail()
          { <h1>aaa</h1>
              return(
                  <div className='Case_Studies_detail'>
-           
+             <div className='Case_Studies_detail_inner' style={{
+         
+              
+             }}>
 <div className='p_div'>
             <h1 style={{
-                alignSelf:'center !important',
-                fontSize:'30px'
+              alignSelf:'center !important',
+              fontSize:'30px'
             }}>{item.h1}</h1>
              <hr className="Case-Studies_detail_line" style={{
     }}></hr>
     
          
                 <p style={{
-                     marginTop:'20px',
-              alignSelf:'center',
+                  marginTop:'20px',
+                  alignSelf:'center',
        
-         
+                  
             }}>{item.p1}</p>
                   <p style={{
-                     marginTop:'20px',
-              alignSelf:'center',
-              lineHeight:'20px',
-              textAlign:'center'
-          
-       
-            }}>{item.p2}</p>
+                    marginTop:'20px',
+                    alignSelf:'center',
+                    lineHeight:'20px',
+                    textAlign:'left'
+                    
+                    
+                  }}>{item.p2}</p>
             </div>
 
             <img style={{
-                alignSelf:'center'
+              alignSelf:'center'
             }} className='img_casestudies_detail' src={item.img}alt="" />
-
             </div>
+            </div>
+          
             
             )
          }

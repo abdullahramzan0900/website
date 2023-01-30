@@ -41,6 +41,7 @@ function Carousel2() {
       h1:'Application Development ',
       p:'A company came to us on a healthy recommendation for the integration of the reporting of their ongoing software with SAP S4HANA. The company was mostly dealing with the cement sector and they wanted to customize the report for their cost estimation.',
       h2:'Read More'
+  
      },
      { id:8,
        h1:'Customized P ',
@@ -53,6 +54,7 @@ function Carousel2() {
        h2:'Read More'
      }
   ];
+
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
@@ -96,3 +98,4 @@ function Carousel2() {
   );
 }
 export default Carousel2;
+ 

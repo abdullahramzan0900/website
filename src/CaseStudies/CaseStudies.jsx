@@ -35,7 +35,7 @@ function CaseStudies() {
       id: 2,
       h1: "Customized reporting  with SAP ",
       p: " There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ",
-      h2: "readmore",
+      h2: "read more",
     },
     {
       id: 2,

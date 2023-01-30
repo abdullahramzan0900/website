@@ -101,39 +101,61 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
         </div>
         {/* <img src={banner} alt="loading"/> */}
    
-  <div class="centered">
-      <h1  className='height' style={{
-        fontSize:'50px',
-        fontFamily:'roboto'
+  <div class="centered_Blogdetail">
+      <h1  className='height2_blogdetail' style={{
+
         
-      }} >Cloud Computing</h1>
+      }} >Cloud Computing & Its Benefits</h1>
+      <h2 className="height2_blogdetail_1" style={{
+      
+      }}>By:Atiya Fatima</h2>
+      <h3 className="height2_blogdetail_2" style={{
+ 
+      }}>30th Jan,2023</h3>
   
      </div>
    
 <div className="Blogs_detail">
 
 
+  
+
+
   {
-  Blog_detail && Blog_detail?.length>0 && Blog_detail?.map((item)=>{
-    if(item?.id==params?.id)
-    {
-      return(
-        <>
+    Blog_detail && Blog_detail?.length>0 && Blog_detail?.map((item)=>{
+      if(item?.id==params?.id)
+      {
+        return(
+          <>
 
       
       <div className="inner_Blogs_detail">
+<div style={{
+  width:'71%',
+  alignSelf:'center',
+  display:'flex',
+  flexDirection:'column',
+
+
+}}>
+<div style={{
+  textAlign:'center',
+
+}}>
 
     <h1 style={{
       fontSize:'40px',
-      color:'white'
+      color:'#229958'
     }}>
     {item.h1}
     </h1>
     <img style={{
-      width:'180px',
-      padding:'15px'
+      width:'150px',
+      padding:'15px',
+      
       
     }} src={line8} alt="" />
+    </div>
 
 <p className="Blogdetail_para">{item.p1}</p>
 <h1 className="BlogDetail_height">{item.h2}</h1>
@@ -150,22 +172,19 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
 <h1 className="BlogDetail_height">{item.h7}</h1>
 <p className="Blogdetail_para">{item.p7}</p>
 
-
-</div>
-
-<div className="blogdetail_second">
 <img className="Blog_img" src={blog_detail_img} alt="" />
-
 <h1 className="BlogDetail_height">{item.h8}</h1>
 <p className="Blogdetail_para">{item.p8}</p>
 <h1 className="BlogDetail_height">{item.h9}</h1>
 <p className="Blogdetail_para">{item.p9} </p>
 <p className="Blogdetail_para">{item.p10} </p>
 <p className="Blogdetail_para">{item.p11} </p>
-
-
-
+  </div>
 </div>
+
+
+
+
 </>
   )
 }
