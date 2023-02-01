@@ -19,7 +19,7 @@ function MainBlog() {
     {
       id: 2,
       img: Blog2,
-      h1: "Grow your restaurant",
+      h1: "Utilize a user-friendly mobile app to grow your restaurant. ",
       p: "Everything is becoming digitalized in this constantly developing digital age. Almost everything has moved online, from communicating with friends to placing food orders ",
     },
     {
@@ -163,6 +163,7 @@ function MainBlog() {
                   <div
                     style={{
                       padding: "30px",
+                      fontFamily:'roboto'
                     }}
                   >
                     <p

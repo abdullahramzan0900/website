@@ -1,6 +1,6 @@
-
+import { useState } from 'react';
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import Contact from '../Contact/Contact';
 import  about from '../image/about.png';
 import digitalTransform from '../image/digitaltransform_img.jpeg'
@@ -13,11 +13,14 @@ import application from '../image/application_casestudies_detail.webp'
 
 
 
+
 let x=0;
 
 function CaseStudiesDetail()
 {    
     const param=useParams();
+
+
     console.log(param.id,"param");
     const array1=[
         { id:1,
@@ -130,7 +133,8 @@ function CaseStudiesDetail()
 <div className='p_div'>
             <h1 style={{
               alignSelf:'center !important',
-              fontSize:'30px'
+              fontSize:'30px',
+              marginTop:'40px'
             }}>{item.h1}</h1>
              <hr className="Case-Studies_detail_line" style={{
     }}></hr>

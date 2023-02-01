@@ -82,7 +82,7 @@ function handleChange2(e){
 
   return (
     <>
-      <div className="contact_background"></div>
+      {/* <div className="contact_background"></div> */}
       <div className="contact_detail">
         <div className="contact_detail_1">
           <h1 className="Contact_detail_h1">Contact Us</h1>

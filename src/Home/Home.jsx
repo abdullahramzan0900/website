@@ -40,7 +40,9 @@ function Home() {
   const [visible1, Setvisible1] = useState(true);
   const [showchat, Setshowchat] = useState(false);
   const [disable, Setdisable] = useState(true);
-  const [showname, Setshowname] = useState([]);// For name reponse 
+  const [showname, Setshowname] = useState([]);// For name reponses
+
+
 
   const [name, Setname] = useState("");
   useEffect(() => {
@@ -75,50 +77,6 @@ function Home() {
 
   const array = ["img1", "img2", "img4", "img3"];
 
-  // setTimeout( () => {
-  //   Setbackground(array[x]);
-  //   console.log(x);
-  //     if(x===0)
-  //     {
-  //       setActive(true);
-  //       setActive1(false);
-  //       setActive2(false);
-  //       setActive3(false);
-  // x++;
-  //     }
-
-  //   else if(x===1)
-  //   {
-  //     setActive1(true)
-  //     setActive2(false)
-  //     setActive(false)
-  //     setActive3(false)
-  //     x++;
-
-  //   }
-  //   else if(x===2)
-  //   {  console.log("22222")
-  //     setActive2(true);
-  //     setActive(false);
-  //     setActive1(false);
-  //     setActive3(false);
-  //     x++;
-
-  //   }
-
-  //     else if (x === 3) {
-  //       setActive3(true)
-  //       x=0;
-  //       setActive2(false)
-  //       setActive(false)
-  //       setActive1(false)
-
-  //     }
-  //   if (x === 3) {
-  //     x = 0;
-  //   }
-  //   x++;
-  // }, 5000);
 
   return (
     <>
@@ -311,7 +269,7 @@ function Home() {
                 }}
                 className="textfield_name"
               >
-                <input
+                {/* <input
                   name="msg"
                   value={name}
                   onChange={EventHandle}
@@ -326,8 +284,8 @@ function Home() {
                   }}
                   placeholder="Enter your name"
                   type="text"
-                />
-                <button
+                /> */}
+                {/* <button
                   onClick={() => {
                     PostName();
                     Setdisable(false);
@@ -346,7 +304,7 @@ function Home() {
                   }}
                 >
                   Start chat
-                </button>
+                </button> */}
               </div>
            
               <div className="rightInnerContainer">
@@ -366,7 +324,6 @@ function Home() {
             </div>
             <div
               style={{
-                overflow: "scroll",
                 height:'100%'
               }}
             >
@@ -387,11 +344,11 @@ function Home() {
                 className="input"
                 type="text"
                 placeholder="Type a message..."
-                disabled={disable}
+ 
               />
               <button
-                disabled={disable}
-                onClick={() => {}}
+               
+               
                 className="sendButton"
               >
                 Send

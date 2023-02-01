@@ -7,6 +7,8 @@ import Logo from "./image/Logo.svg";
 import menubar from "./image/menu-bar.png";
 import "@fontsource/roboto";
 import { useLocation } from "react-router-dom";
+import cross_nav from './image/crosss.png'
+
 function Nav() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const location = useLocation();
@@ -22,7 +24,7 @@ function Nav() {
       <nav className="navigation">
         <img
           style={{
-            marginLeft: "60px",
+            marginLeft:"60px",
           }}
           className="logo_img"
           src={Logo}
@@ -35,13 +37,26 @@ function Nav() {
           }}
           className="menunav"
         >
-          <img
+          {  !isNavExpanded && 
+            <img
             style={{
-              width: "20px",
+              width: "25px",
             }}
             src={menubar}
             alt=""
           />
+}
+{  isNavExpanded && 
+            <img
+            style={{
+              padding:'0px',
+              width: "20px",
+              marginBottom:'40px'
+            }}
+            src={cross_nav}
+            alt=""
+          />
+}
         </div>
         <div
           className={
@@ -63,21 +78,25 @@ function Nav() {
             <li>
               <a style={{
                   color: splitLocation[1] === "Services" ? "#23a55b" : "black",
+             
               }} href="/Services">Services</a>
             </li>
             <li>
               <a style={{
                  color: splitLocation[1] === "Blogs" ? "#23a55b" : "black",
+      
               }} href="/Blogs">Blog</a>
             </li>
             <li>
               <a style={{
                    color: splitLocation[1] === "CaseStudies" ? "#23a55b" : "black",
+        
               }} href="/CaseStudies">Case Studies</a>
             </li>
             <li>
               <a style={{
                color: splitLocation[1] === "contact" ? "#23a55b" : "black",
+
               }} href="/contact">Contact</a>
             </li>
           </ul>

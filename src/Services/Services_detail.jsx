@@ -1,50 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "../image/Services_detail_img.png";
-import aws from "../image/aws.png"
-import dynamic from "../image/dynamic.png"
-import infor from "../image/infor.png"
-import sap from "../image/sap.png"
-import oracle2 from "../image/oracle2.png"
-import migration from "../image/migration.png"
-import cloud from '../image/cloud.png'
-import integration from '../image/integration.png'
-import search_upper from '../image/serach_upper.png'
-import search from '../image/search_services.png'
+import aws from "../image/aws.png";
+import dynamic from "../image/dynamic.png";
+import infor from "../image/infor.png";
+import sap from "../image/sap.png";
+import oracle2 from "../image/oracle2.png";
+import migration from "../image/migration.png";
+import cloud from "../image/cloud.png";
+import integration from "../image/integration.png";
+import search_upper from "../image/serach_upper.png";
+import search from "../image/search_services.png";
 import Contact from "../Contact/Contact";
-
+import { StepContent } from "@mui/material";
 
 function Services_detail() {
-    
+  const [data, showData] = useState(false);
+  const handleClick = () => {
+    showData(!data);
+    console.log("aaaa");
+  };
   return (
-    
     <>
-  <div  className='Servicesbackground'>
-        </div>
-<div class="centered">
-      <h1  className='height' style={{
-        fontSize:'70px',
-        fontFamily:'roboto',
-        color:'#229958'
-        
-      }} >Our<span style={{
-        color:'#229958'
-      }}> Services</span>  </h1>
-      <p className='p1' style={{
-         color:'grey',
-         marginTop:"40px",
-         fontSize:'2vh',
-         fontFamily:'roboto',
-         lineHeight:'30px',
-         
-         
-         
-      }}>Connecting industry needs with Innovation, Excellence, & IT .We create IT solutions that are easy to use, easy to manage, and easy to trust.</p>    
-      
-      <div style={{
-      }}>
+      <div className="Servicesbackground"></div>
+      <div class="centered">
+        <h1
+          className="height"
+          style={{
+            fontSize: "70px",
+            fontFamily: "roboto",
+            color: "#229958",
+          }}
+        >
+          Our
+          <span
+            style={{
+              color: "#229958",
+            }}
+          >
+            {" "}
+            Services
+          </span>{" "}
+        </h1>
+        <p
+          className="p1"
+          style={{
+            color: "grey",
+            marginTop: "40px",
+            fontSize: "2vh",
+            fontFamily: "roboto",
+            lineHeight: "30px",
+          }}
+        >
+          Connecting industry needs with Innovation, Excellence, & IT .We create
+          IT solutions that are easy to use, easy to manage, and easy to trust.
+        </p>
+
+        <div style={{}}></div>
       </div>
-      </div>
-  
+
       <div className="Services_detail">
         <div className="CloudServices">
           <div className="CloudServices_div2">
@@ -68,42 +81,83 @@ function Services_detail() {
                   src={img}
                   alt=""
                 />
-               <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>AZURE</h1>
+                <div onClick={() => {}} className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    AZURE
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
-              <div style={{}} className="CloudServices_div2_1">
 
+              {!data && (
+                <div style={{}} className="CloudServices_div2_1">
+                  <img
+                    className="img_service_detail"
+                    style={{}}
+                    src={aws}
+                    alt=""
+                  />
+                  <div className="search_div">
+                    <h1 className="h1_search_div" style={{}}>
+                      AWS
+                    </h1>
 
+                    <div className="search_upper_div">
+                      <img
+                        className="search_upper_img"
+                        src={search_upper}
+                        alt=""
+                      />
+                      <img
+                        onClick={() => {
+                          handleClick();
+                        }}
+                        className="search_icon"
+                        src={search}
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              )}
+              {data && (
+                <div
+                  style={{
+                    backgroundColor: "green",
+                    maxWidth:'320px',
+                    borderRadius:'20px'
+                  }}
+                  className="CloudServices_div2_1"
+                >
+          <div style={{
+            display:'flex',
+            flexDirection:'column',
+        textAlign:'center'        
+          }}>
 
-                <img
-                  className="img_service_detail"
-                  style={{}}
-                  src={aws}
-                  alt=""
-                />
-                 <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>AWS</h1>
+   <h1>   AWS</h1>
+                  <p style={{
+                    fontSize:'10px'
+                  }}>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
-              </div>
+                  With more than 200 featured resources, from infrastructure to
+                  machine learning, Amazon Web Services (AWS) is the largest
+                  cloud computing platform. These modular solutions combine
+                  optimum usability with speed optimization for your application
+                  through features for content delivery, data storage, and more.
+                 
+                  </p>
+            </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -148,18 +202,20 @@ function Services_detail() {
                   src={dynamic}
                   alt=""
                 />
-                 <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>Dynamics</h1>
+                <div className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    Dynamics
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
               <div style={{}} className="CloudServices_div2_1">
                 <img
@@ -168,18 +224,20 @@ function Services_detail() {
                   src={infor}
                   alt=""
                 />
-                 <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>Infor</h1>
+                <div className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    Infor
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
               <div style={{}} className="CloudServices_div2_1">
                 <img
@@ -188,18 +246,20 @@ function Services_detail() {
                   src={aws}
                   alt=""
                 />
-                 <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>SAP</h1>
+                <div className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    SAP
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
               <div style={{}} className="CloudServices_div2_1">
                 <img
@@ -208,18 +268,20 @@ function Services_detail() {
                   src={oracle2}
                   alt=""
                 />
-                    <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>Oracle</h1>
+                <div className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    Oracle
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -250,18 +312,20 @@ function Services_detail() {
                   src={migration}
                   alt=""
                 />
-                    <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>Migration From Legacy System</h1>
+                <div className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    Migration From Legacy System
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
               <div style={{}} className="CloudServices_div2_1">
                 <img
@@ -270,18 +334,20 @@ function Services_detail() {
                   src={cloud}
                   alt=""
                 />
-                    <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>Conversion to cloud</h1>
+                <div className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    Conversion to cloud
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -312,18 +378,20 @@ function Services_detail() {
                   src={integration}
                   alt=""
                 />
-                    <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>Integration-Api</h1>
+                <div className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    Integration-Api
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
               <div style={{}} className="CloudServices_div2_1">
                 <img
@@ -332,24 +400,31 @@ function Services_detail() {
                   src={img}
                   alt=""
                 />
-                    <div className="search_div">
-                 <h1 className="h1_search_div" style={{
-                    
-                 }}>Plug-In Development</h1>
+                <div className="search_div">
+                  <h1 className="h1_search_div" style={{}}>
+                    Plug-In Development
+                  </h1>
 
-                 <div className="search_upper_div">
-
-                <img className="search_upper_img" src={search_upper} alt="" />
-                <img className="search_icon" src={search} alt="" />
-                 </div>
-
-               </div>
+                  <div className="search_upper_div">
+                    <img
+                      className="search_upper_img"
+                      src={search_upper}
+                      alt=""
+                    />
+                    <img className="search_icon" src={search} alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+
+
+
       </div>
-      <Contact/>
+      
+      <Contact />
     </>
   );
 }

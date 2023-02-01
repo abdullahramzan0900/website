@@ -145,7 +145,8 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
 
     <h1 style={{
       fontSize:'40px',
-      color:'#229958'
+      color:'#229958',
+      marginTop:'31px'
     }}>
     {item.h1}
     </h1>
