@@ -73,19 +73,16 @@ function Carousel2() {
             array1?.map((item) => {
               return (
                 <div key={item.id} className="itemm2">
-                  <h1 style={{
-                    fontSize:'25px'
+                  <h1 className="h1_carousel2" style={{
+                 
                   }}>{item.h1}</h1>
-                  <p style={{
-                      lineHeight:'20px',
-                      fontSize:'12px',
-                      textAlign:'center'
+                  <p  className="p_carousel2" style={{
+                   
                   }}>{item.p}</p>
-                  <h4 className="readmore_outercasestudies" onClick={()=>{
+                  <h4  className="readmore_outercasestudies" onClick={()=>{
                       window.open(`/CaseStudies/${item.id}`,'_top')
                   }} style={{
-                    cursor:'pointer',
-                    fontSize:'14px'
+                
                   }}>{item.h2}</h4>
               
                    

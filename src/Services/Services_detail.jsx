@@ -51,7 +51,7 @@ function Services_detail() {
             lineHeight: "30px",
           }}
         >
-          Connecting industry needs with Innovation, Excellence, & IT .We create
+          Connecting industry needs wi  th Innovation, Excellence, & IT .We create
           IT solutions that are easy to use, easy to manage, and easy to trust.
         </p>
 

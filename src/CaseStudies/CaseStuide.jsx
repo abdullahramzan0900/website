@@ -77,30 +77,24 @@ function CaseeStuide()
         </div>
         {/* <img src={banner} alt="loading"/> */}
    
-  <div class="centered">
-      <h1  className='height' style={{
-        fontSize:'60px',
+  <div class="centered_casestudies">
+      <h1  className='height_casestudies' style={{
+   
         fontFamily:'roboto'
         
       }} >Examples of <span style={{
       color:'#229958',
-      fontSize:'60px',
-         fontFamily:'roboto'
+ 
      }}>Client Success</span> That 
     Powered by<span style={{
         color:'#229958',
-        fontSize:'60px',
-         fontFamily:'roboto'
+
   
      
       
       }}> Vyadom</span> </h1>
-      <p className='p1' style={{
-         color:'#72818b',
-         marginTop:"40px",
-         fontSize:'2vh',
-         fontFamily:'roboto',
-         lineHeight:'25px'
+      <p className='p1_casestudies' style={{
+      
       }}>Connecting industry needs with Innovation, Excellence, & IT .We create IT solutions that are easy to use, easy to manage, and easy to trust.</p>
      
      

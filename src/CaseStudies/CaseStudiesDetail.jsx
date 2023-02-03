@@ -99,19 +99,16 @@ function CaseStudiesDetail()
         </div>
         {/* <img src={banner} alt="loading"/> */}
    
-  <div class="centered">
-      <h1  className='height' style={{
-        fontSize:'70px',
+  <div class="centered_detail_case">
+      <h1  className='height_detail_casestudies' style={{
+     
         fontFamily:'roboto'
        
         
       }} >Case Studies </h1>
-      <p className='p1' style={{
+      <p className='p1_detail_casestudies' style={{
          color:'#72818b',
-         marginTop:"40px",
-         fontSize:'2vh',
-         fontFamily:'roboto',
-         lineHeight:'30px'
+      
       }}>Connecting industry needs with Innovation, Excellence, & IT .We create IT solutions that are easy to use, easy to manage, and easy to trust.</p>    
       
       <div style={{

@@ -24,7 +24,7 @@ function Nav() {
       <nav className="navigation">
         <img
           style={{
-            marginLeft:"60px",
+            marginLeft:"4%",
           }}
           className="logo_img"
           src={Logo}
@@ -40,7 +40,7 @@ function Nav() {
           {  !isNavExpanded && 
             <img
             style={{
-              width: "25px",
+              width: "20px",
             }}
             src={menubar}
             alt=""
@@ -63,7 +63,10 @@ function Nav() {
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
           }
         >
-          <ul>
+          <ul style={{
+            border:'none'
+          }}
+          >
             <li>
               <a
                 style={{

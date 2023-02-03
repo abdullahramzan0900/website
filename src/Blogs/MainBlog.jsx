@@ -64,26 +64,23 @@ function MainBlog() {
       <div className="img4"></div>
       {/* <img src={banner} alt="loading"/> */}
 
-      <div class="centered">
+      <div class="centered_Blog">
         <h1
-          className="height"
+          className="height_Blog"
           style={{
-            fontSize: "60px",
-            fontFamily: "roboto",
+       
           }}
         >
           The Latest
           <span
             style={{
               color: "#229958",
-              fontSize: "60px",
               fontFamily: "roboto",
             }}
           ></span>{" "}
           <span
             style={{
               color: "#229958",
-              fontSize: "60px",
               fontFamily: "roboto",
             }}
           >
@@ -93,7 +90,6 @@ function MainBlog() {
           <span
             style={{
               color: "#229958",
-              fontSize: "60px",
               fontFamily: "roboto",
             }}
           >
@@ -102,13 +98,9 @@ function MainBlog() {
           </span>{" "}
         </h1>
         <p
-          className="p1"
+          className="p1_Blog"
           style={{
-            color: "#72818b",
-            marginTop: "40px",
-            fontSize: "2vh",
-            fontFamily: "roboto",
-            lineHeight: "30px",
+           
           }}
         >
           Connecting industry needs with Innovation, Excellence, & IT .We create

@@ -21,13 +21,9 @@ function Contact() {
         className="contact_main"
       >
         <div>
-          <img
-            style={{
-              width: "200px",
-            }}
-            src={partner}
-            alt=""
-          />
+       <h1 style={{
+        fontSize:'40px'
+       }}>Partners</h1>
 
           <hr className="contact_hr" style={{}} />
         </div>

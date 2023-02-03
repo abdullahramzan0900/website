@@ -828,6 +828,288 @@ font-size: 15px;
   }
 
 
+  .h1_carousel2{
+    font-size: 25px;
+    text-align: center;
 
+  }
+.p_carousel2{
+  line-height: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+.readmore_outercasestudies{
+  cursor: pointer;
+  font-size: 14px;
+}
+@media screen  and (max-width:450)
+{
+  .h1_carousel2{
+    font-size: 17px;
+    text-align: center;
+  }
+.p_carousel2{
+  line-height: 20px;
+  font-size: 8px;
+  text-align: center;
+}
+.readmore_outercasestudies{
+  cursor: pointer;
+  font-size: 6px;
+}
+}
+.centered_casestudies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.height_casestudies{
+  font-size: 60px;
+  font-family: 'roboto';
+ 
+  color: white;
+}
 
+.p1_casestudies{
+  color:#72818b ;
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: 'roboto';
+  line-height: 25px;
+}
+
+@media only screen and (max-width:1077px)
+{
+
+  .height_casestudies{
+    font-size: 50px;
+    font-family: 'roboto';
+    color:white ;
+  }
   
+  .p1_casestudies{
+    color: #72818b;
+    margin-top: 40px;
+    font-size: 15px;
+    font-family: 'roboto';
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width:950px)
+{
+  
+  .height_casestudies{
+    font-size: 40px;
+    font-family: 'roboto';
+    color:white ;
+  }
+  
+  .p1_casestudies{
+    color: #72818b;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: 'roboto';
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width:950px)
+{
+
+  .height_casestudies{
+    font-size: 60px;
+    font-family: 'roboto';
+
+  }
+  
+  .p1_casestudies{
+    color: #72818b;
+    margin-top: 40px;
+    font-size: 13px;
+    font-family: 'roboto';
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width:800px)
+{
+
+  .height_casestudies{
+    font-size: 40px;
+    font-family: 'roboto';
+
+  }
+  
+  .p1_casestudies{
+    color: #72818b;
+    margin-top: 40px;
+    font-size: 13px;
+    font-family: 'roboto';
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width:450px)
+{
+
+  .height_casestudies{
+    font-size: 30px;
+    font-family: 'roboto';
+
+  }
+  
+  .p1_casestudies{
+   
+    margin-top: 40px;
+    font-size: 11px;
+    font-family: 'roboto';
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width:400px)
+{
+
+  .height_casestudies{
+    font-size: 20px;
+    font-family: 'roboto';
+ 
+  }
+  
+  .p1_casestudies{
+    color: #72818b;
+    margin-top: 40px;
+    font-size: 10px;
+    font-family: 'roboto';
+    line-height: 20px;
+  }
+}
+.centered_detail_case{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.height_detail_casestudies{
+  color: #fff;
+  font-size: 60px;
+}
+.p1_detail_casestudies{
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+
+@media only screen and (max-width:1077px)
+{
+
+  .height_detail_casestudies{
+    font-size: 50px;
+    font-family: 'roboto';
+    color:white ;
+  }
+  
+  .p1_detail_casestudies{
+    color: #72818b;
+
+    font-size: 15px;
+    font-family: 'roboto';
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width:950px)
+{
+  
+  .height_detail_casestudies{
+    font-size: 40px;
+    font-family: 'roboto';
+    color:white ;
+  }
+  
+  .p1_detail_casestudies{
+    color: #72818b;
+    margin-top: 40px;
+    font-size: 14px;
+    font-family: 'roboto';
+    line-height: 15px;
+  }
+}
+@media only screen and (max-width:950px)
+{
+
+  .height_detail_casestudies{
+    font-size: 60px;
+    font-family: 'roboto';
+
+  }
+  
+  .p1_detail_casestudies{
+    color: #72818b;
+    margin-top: 40px;
+    font-size: 13px;
+    font-family: 'roboto';
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width:800px)
+{
+
+  .height_detail_casestudies{
+    font-size: 40px;
+    font-family: 'roboto';
+
+  }
+  
+  .p1_detail_casestudies{
+    color: #72818b;
+
+    font-size: 13px;
+    font-family: 'roboto';
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width:450px)
+{
+
+  .height_detail_casestudies{
+    font-size: 30px;
+    font-family: 'roboto';
+
+  }
+  
+  .p1_detail_casestudies{
+   
+
+    font-size: 11px;
+    font-family: 'roboto';
+    line-height: 15px;
+  }
+}
+@media only screen and (max-width:400px)
+{
+
+  .height_detail_casestudies{
+    font-size: 20px;
+    font-family: 'roboto';
+ 
+  }
+  
+  .p1_detail_casestudies{
+    color: #72818b;
+
+    font-size: 10px;
+    font-family: 'roboto';
+    line-height: 15px;
+  }
+}
+
+
+

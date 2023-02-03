@@ -58,6 +58,7 @@ background-color:      #ffffffb3;
     height: 89vh;
     position: absolute;
     width: 100%;
+    opacity: 0.9;
   }
   @media only screen and (min-width:100px) {
     .Servicesbackground{
@@ -582,7 +583,7 @@ background-color: #72818b;
 
   .Service1_button{
     position: absolute;
-    bottom: 15px;
+    bottom: 20px;
     left: 60px;
     background: white;
     width: 130px;
@@ -604,7 +605,7 @@ background-color: #72818b;
   .Service2_button
   {
     position: absolute;
-    bottom: 5px;
+    bottom: 13px;
     left: 48px;
     background: white;
     width: 150px;
@@ -624,7 +625,7 @@ background-color: #72818b;
   }
   .Service3_button{
     position: absolute;
-    bottom: 7px;
+    bottom: 24px;
     left: 60px;
     background: white;
     width: 130px;
@@ -646,7 +647,7 @@ background-color: #72818b;
   .Service4_button{
     position: absolute;
     text-align: center;
-    bottom: 7px;
+    bottom: 13px;
     left: 58px;
     background: white;
     width: 140px;
@@ -672,7 +673,7 @@ background-color: #72818b;
 
   .Service1_button{
     position: absolute;
-    bottom: 15px;
+    bottom: 23px;
     left: 60px;
     background: white;
     width: 130px;
@@ -694,7 +695,7 @@ background-color: #72818b;
   .Service2_button
   {
     position: absolute;
-    bottom: 5px;
+    bottom: 13px;
     left: 48px;
     background: white;
     width: 150px;
@@ -707,14 +708,14 @@ background-color: #72818b;
 
   }
   .Service3_div{
-    height: 140px;
+    height: 152px;
     padding: 10px;
     border: none;
     width: 247px;
   }
   .Service3_button{
     position: absolute;
-    bottom: 7px;
+    bottom: 13px;
     left: 60px;
     background: white;
     width: 130px;
@@ -736,7 +737,7 @@ background-color: #72818b;
   .Service4_button{
     position: absolute;
     text-align: center;
-    bottom: 7px;
+    bottom: 13px;
     left: 58px;
     background: white;
     width: 140px;
@@ -812,8 +813,8 @@ background-color: #72818b;
 @media only screen and (max-width: 875px) {
   .Service1_div
 {
-  height: 130px;
-  width:160px;
+  height: 138px;
+  width: 160px;
   padding: 10px;
   border: none;
 }
@@ -829,16 +830,15 @@ background-color: #72818b;
 
   .Service1_button{
     position: absolute;
-    bottom: 20px;
-    left: 40px;
+    bottom: 16px;
+    left: 33px;
     background: white;
-    width: 100px;
+    width: 96px;
     height: 30px;
-
     padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
+    padding-left: 20;
+    font-size: 10px;
+    font-family: 'roboto';
 
   }
   .Service2_div{
@@ -850,16 +850,15 @@ background-color: #72818b;
   .Service2_button
   {
     position: absolute;
-    bottom: 13px;
-    left: 40px;
+    bottom: 14px;
+    left: 30px;
     background: white;
     width: 100px;
     height: 30px;
-
     padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
+    padding-left: 20;
+    font-size: 10px;
+    font-family: 'roboto';
 
   }
   .Service3_div{
@@ -870,16 +869,15 @@ background-color: #72818b;
   }
   .Service3_button{
     position: absolute;
-    bottom: 11px;
-    left: 40px;
+    bottom: 13px;
+    left: 36px;
     background: white;
     width: 90px;
     height: 35px;
-
     padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
+    padding-left: 20;
+    font-size: 10px;
+    font-family: 'roboto';
    
   }
   .Service4_div{
@@ -890,16 +888,15 @@ background-color: #72818b;
   }
   .Service4_button{
     position: absolute;
-    bottom: 7px;
-    left: 40px;
+    bottom: 13px;
+    left: 35px;
     background: white;
     width: 90px;
     height: 30px;
-
     padding: 15px;
-   padding-left: 20;
-  font-size: 10px;
-  font-family: 'roboto';
+    padding-left: 20;
+    font-size: 10px;
+    font-family: 'roboto';
 
   }
 }
