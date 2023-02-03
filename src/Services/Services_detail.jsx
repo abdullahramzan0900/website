@@ -22,13 +22,13 @@ function Services_detail() {
   return (
     <>
       <div className="Servicesbackground"></div>
-      <div class="centered">
+      <div class="centered_Service">
         <h1
           className="height"
           style={{
             fontSize: "70px",
             fontFamily: "roboto",
-            color: "#229958",
+            color: "black",
           }}
         >
           Our
@@ -46,7 +46,7 @@ function Services_detail() {
           style={{
             color: "grey",
             marginTop: "40px",
-            fontSize: "2vh",
+            fontSize:'13px',
             fontFamily: "roboto",
             lineHeight: "30px",
           }}

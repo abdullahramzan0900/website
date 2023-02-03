@@ -85,7 +85,7 @@ function Carousel2() {
                       window.open(`/CaseStudies/${item.id}`,'_top')
                   }} style={{
                     cursor:'pointer',
-                    fontSize:'15px'
+                    fontSize:'14px'
                   }}>{item.h2}</h4>
               
                    

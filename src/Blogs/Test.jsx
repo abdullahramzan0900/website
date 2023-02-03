@@ -50,7 +50,7 @@ function Test() {
                   />
 
                   <h1 onClick={()=>{
-                      window.open('/Services','_top');
+                      window.open('/Blogs','_top');
                   }}
                     style={{
                       padding: "20px",

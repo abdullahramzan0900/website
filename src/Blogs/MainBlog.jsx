@@ -14,13 +14,13 @@ function MainBlog() {
       id: 1,
       img: Blog1,
       h1: "Cloud Computing & its Benefits",
-      p: "If you're still debating whether to adopt cloud migration, you're already behind 90% of businesses. That indicates that enterprise workloads are largely already hosted on the cloud. ",
+      p: "If you're still debating whether to adopt cloud migration, you're already behind 90% of businesses. That indicates that enterprise workloads are largely.."
     },
     {
       id: 2,
       img: Blog2,
       h1: "Utilize a user-friendly mobile app to grow your restaurant. ",
-      p: "Everything is becoming digitalized in this constantly developing digital age. Almost everything has moved online, from communicating with friends to placing food orders ",
+      p: "Everything is becoming digitalized in this constantly developing digital age. Almost everything has moved online, ",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ function MainBlog() {
       id: 4,
       h1: "Technology in 2023",
       img: Blog4,
-      p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
+      p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely...",
     },
     {
       id: 5,
@@ -143,6 +143,7 @@ function MainBlog() {
       <div
         style={{
           backgroundColor: "#23A55B",
+          paddingBottom:'60px'
         }}
       >
         <div class="MainBlog-grid">

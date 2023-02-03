@@ -122,26 +122,26 @@ function CaseeStuide()
 
          <div className="cards3">    
   {   
-
-
-
+  
    array1 && array1?.map((item=>{
        return(
       <>
 
         <div key={item.id} class="card3">
 
+
+
         <h1 style={{         
             color:'white',
             alignSelf:'center',
             fontFamily: "Roboto",
-            fontSize:'20px'
+            fontSize:'28px'
             
           }}>{item.h1}</h1>
              
 
           <p style={{                    
-              color:'white',
+              color:'#E6E6E6',
               fontFamily: "Roboto",
               lineHeight:'20px',
               textAlign:'center',
@@ -153,7 +153,8 @@ function CaseeStuide()
           navigate(`/CaseStudies/${item.id}`);
         }} style={{       
           fontFamily: "Roboto"  ,
-          cursor:'pointer'        
+          cursor:'pointer'  ,
+          fontSize:'14px'      
         }}>{item.h2}</div>
           
         </div>  

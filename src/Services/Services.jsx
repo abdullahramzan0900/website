@@ -40,7 +40,7 @@ function Services() {
                 ,growth and relevance
               </p>
               <button onClick={()=>{
-                window.open('http://localhost:3001/Services','_top');
+                window.open('/Services','_top');
               }} className="Services_button"
                 style={{
                     

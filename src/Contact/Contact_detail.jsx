@@ -200,8 +200,8 @@ function handleChange2(e){
               style={{
                 width: 100,
                 alignSelf: "center",
-                color: "#229958",
-                border:'1px solid #229958',
+                color: "white",
+               background:'rgb(34, 153, 88)',
                 fontFamily:'roboto',
                 textTransform:'none'
               }}
