@@ -4,7 +4,7 @@ import "./CaseStudies.css";
 import Carousel2 from "./Carousel2";
 let z = 1;
 function CaseStudies() {
-  console.log(z, "z");
+
   const array1 = [
     {
       id: 1,
@@ -62,9 +62,10 @@ function CaseStudies() {
       h2: "read more",
     },
   ];
+
   const [Array, Setarray] = useState(array1);
   const [id, Setid] = useState(z);
-  
+
 
   return (
     <>

@@ -1120,11 +1120,12 @@ padding: 50px;
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
- 
+  
 }
 .CloudServices_div2_1{
   display: block;
   position: relative;
+  border-radius: 22px;
 
   /* our width setting for mobile, one image per line */
  
@@ -1689,14 +1690,101 @@ padding: 50px;
     justify-content: center;
     /* align-items: center; */
     position: absolute;
-    /* text-align: center; */
+
     top: 54%;
     /* width: 562px; */
     left: 38%;
     transform: translate(-50%, -50%);
   }
 }
- 
+.changed_div{
+  position: absolute;
+  bottom: 22%;
+line-height: 1.1;
+  display: flex;
+  font-size: 14px;
+  height: 72%;
+  justify-content: space-between;
+  /* padding: 21px; */
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  font-family: 'roboto';
+}
+.changed_div_h1{
+  font-size: 23px;
+}
+
+ @media only screen and (max-width:1389px){
+
+
+  .changed_div{
+    position: absolute;
+    bottom: 22%;
+    transition: 0.10s;
+    display: flex;
+    font-size: 10px;
+    height: 72%;
+    justify-content: space-between;
+    /* padding: 21px; */
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-family: 'roboto';
+  }
+  .changed_div_h1{
+    font-size: 20px;
+  }
+  
+ }
+ @media only screen and (max-width:977px){
+
+
+  .changed_div{
+    position: absolute;
+    bottom: 22%;
+    transition: 0.10s;
+    display: flex;
+    font-size: 13px;
+    height: 72%;
+    justify-content: space-between;
+    /* padding: 21px; */
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-family: 'roboto';
+  }
+  .changed_div_h1{
+    font-size: 20px;
+  }
+  
+ }
+ @media only screen and (max-width:575px){
+
+
+  .changed_div{
+    position: absolute;
+    bottom: 22%;
+    transition: 0.10s;
+    display: flex;
+    font-size: 11px;
+    height: 72%;
+    justify-content: space-between;
+    /* padding: 21px; */
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-family: 'roboto';
+  }
+  .changed_div_h1{
+    font-size: 20px;
+  }
+  
+ }
 
 
 

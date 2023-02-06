@@ -140,7 +140,7 @@ table {
 }
 .img2 {
   height: 89vh;
-  background-image: url("../image/banner.svg");
+  background-image: url("../image/bannerr.svg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 1;
@@ -193,7 +193,7 @@ table {
   align-items: center;
   position: absolute;
   text-align: center;
-  top: 55%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -263,7 +263,7 @@ table {
   background-color:#229958;
   position: absolute;
   text-align: center;
-  top: 85%;
+  top: 82%;
   left: 80%;
 }
 .chat_upper_div_1{
@@ -439,10 +439,8 @@ align-items: center;
   }
 }
 
-
-
 .btns {
-  margin-top: 30px;
+  margin-top: 9%;
 }
 @media screen and (max-height: 520px) {
   .height {

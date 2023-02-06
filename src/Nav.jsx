@@ -13,12 +13,11 @@ function Nav() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   const navigate=useNavigate();
   const location = useLocation();
-  console.log(location,"location");
-  console.log(location);
+
   const { pathname } = location;
-  console.log(pathname);
+
   const splitLocation = pathname.split("/");
-  console.log(splitLocation,"aa");
+
   
   return (
     <>

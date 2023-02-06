@@ -35,11 +35,11 @@ function Contact_detail() {
   
 function handleChange(e){
 Setname(e.target.value);
-console.log(e.target.value)
+
 }
 function handleChange2(e){
   Setemail(e.target.value);
-  console.log(e.target.value)
+
   }
   const theme = createTheme({
     breakpoints: {
@@ -58,11 +58,11 @@ function handleChange2(e){
 
   const handleChange3 = (event) => {
     Setservice(event.target.value);
-    console.log(event.target.value)
+  
   };
   const handleChange4 = (event) => {
     setMessage (event.target.value);
-    console.log(event.target.value);
+
   };
   function PostData()
 {

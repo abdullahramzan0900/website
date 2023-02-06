@@ -28,7 +28,7 @@ import { GridColumnsPanel } from "@mui/x-data-grid";
 import Logo from "../image/Logo-icon.svg";
 
 let x = 0;
-console.log(x, "aaaa");
+
 
 function Home() {
   const [background, Setbackground] = useState("img");
@@ -69,15 +69,20 @@ const navigate=useNavigate();
       nameId: "ababab",
     });
   }
-
-  console.log(showname,"name")
+  setTimeout(()=>{
+    Setbackground(array[x])
+ 
+    if(x>=3){
+      x=0;
+    }
+    x++;
+  },8000)
 
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
 
   const array = ["img1", "img2", "img4", "img3"];
-
-
+  
   return (
     <>
       <div className="banner ">
@@ -112,7 +117,7 @@ const navigate=useNavigate();
             className="p1"
             style={{
               color: "#72818b",
-              marginTop: "40px",
+              marginTop: "3%",
               fontSize: "1.5vh",
               fontFamily: "roboto",
               lineHeight: "30px",
@@ -123,7 +128,9 @@ const navigate=useNavigate();
             to trust.
           </p>
 
-          <div className="btns">
+          <div style={{
+    
+          }} className="btns">
             <button
               onClick={() => {
                 navigate('/Contact')
@@ -134,7 +141,9 @@ const navigate=useNavigate();
             </button>
             <button className="btn_learn">Learn more</button>
           </div>
-          <div style={{}}>
+          <div style={{
+            marginTop:'7%'
+          }}>
             <button
               className="button1_home"
               // onClick={() => {
