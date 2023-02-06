@@ -1,14 +1,20 @@
 import React from "react";
+import { useEffect } from "react";
 import line8 from '../image/Line8.png';
 import blog_detail_img from '../image/BlogDetail_img.png'
 import background_img from '../image/blog_detail_background.png'
 import Contact from "../Contact/Contact";
 import { useParams } from "react-router-dom";
+import userRestaurent from '../image/Mobile-App-Development.png'
+import digital from '../image/Blog_detail_digital.webp'
 
 function Blogs_detail()
 {  
   const params=useParams();
-  console.log(params.id)
+  console.log(params.id);
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+  },[])
 
   
 
@@ -33,7 +39,9 @@ function Blogs_detail()
      h9:'Advanced protection ',
      p9:'Contrary to what many people believe, the depth and breadth of security features, automatic maintenance, and centralized management of cloud computing can actually increase your security posture. Reputable cloud providers also work with the best security professionals and use innovative solutions to ensure stronger security',
      h10:'Ending Words ',
-     p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  '
+     p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  ',
+     img:blog_detail_img
+
 
   },
   {  id:2,
@@ -70,7 +78,8 @@ function Blogs_detail()
     h9:'Advanced protection  ',
     p9:'Contrary to what many people believe, the depth and breadth of security features, automatic maintenance, and centralized management of cloud computing can actually increase your security posture. Reputable cloud providers also work with the best security professionals and use innovative solutions to ensure stronger security',
     h10:'Ending Words  ',
-    p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  '
+    p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  ',
+    img:userRestaurent
 
  },
  {  id:3,
@@ -87,7 +96,8 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
   p9:'- People finally have access to the resources they require to work "smarter, not harder," as the saying goes, which results in higher employee morale.',
 
   p10:'All of these improvements quickly result in cost reductions, which inevitably also results in improved profit margins.   ',
-    p11:`in improved profit margins. Finally, each organization should implement a digital transformation strategy as just the first step in enhancing both its performance and operations. Finding a business partner who can assist in putting that digital transformation into action is just as important as the process itself. Choosing an experienced IT company as a partner is essential to your success in this project if your corporation lacks experience with the transformation process and developing software systems. Remember that the most successful of your competitors have already begun or perhaps finished their digital transition. To expand and stay competitive in a market that will get more and more crowded over the next ten years and beyond, the majority of businesses must do this for many aspects of their operations.  `
+    p11:`in improved profit margins. Finally, each organization should implement a digital transformation strategy as just the first step in enhancing both its performance and operations. Finding a business partner who can assist in putting that digital transformation into action is just as important as the process itself. Choosing an experienced IT company as a partner is essential to your success in this project if your corporation lacks experience with the transformation process and developing software systems. Remember that the most successful of your competitors have already begun or perhaps finished their digital transition. To expand and stay competitive in a market that will get more and more crowded over the next ten years and beyond, the majority of businesses must do this for many aspects of their operations.  `,
+    img:digital
 
 },
 
@@ -173,7 +183,7 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
 <h1 className="BlogDetail_height">{item.h7}</h1>
 <p className="Blogdetail_para">{item.p7}</p>
 
-<img className="Blog_img" src={blog_detail_img} alt="" />
+<img className="Blog_img" src={item?.img} alt="loading..." />
 <h1 className="BlogDetail_height">{item.h8}</h1>
 <p className="Blogdetail_para">{item.p8}</p>
 <h1 className="BlogDetail_height">{item.h9}</h1>

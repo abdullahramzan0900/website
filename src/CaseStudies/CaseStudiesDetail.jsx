@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import React from 'react'
 import { useParams} from 'react-router-dom';
 import Contact from '../Contact/Contact';
@@ -19,6 +19,10 @@ let x=0;
 function CaseStudiesDetail()
 {    
     const param=useParams();
+    useEffect(()=>{
+      window.scrollTo(0, 0)
+    },[])
+    
 
 
     console.log(param.id,"param");
@@ -115,7 +119,6 @@ function CaseStudiesDetail()
       }}>
       </div>
       </div>
-
     {
         array1 && array1?.map((item)=>{
             console.log(typeof param.id)

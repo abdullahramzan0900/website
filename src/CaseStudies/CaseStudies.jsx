@@ -64,6 +64,7 @@ function CaseStudies() {
   ];
   const [Array, Setarray] = useState(array1);
   const [id, Setid] = useState(z);
+  
 
   return (
     <>

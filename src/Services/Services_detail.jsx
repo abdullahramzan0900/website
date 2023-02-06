@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import img from "../image/Services_detail_img.png";
 import aws from "../image/aws.png";
 import dynamic from "../image/dynamic.png";
@@ -13,12 +13,19 @@ import search from "../image/search_services.png";
 import Contact from "../Contact/Contact";
 import { StepContent } from "@mui/material";
 
+
 function Services_detail() {
   const [data, showData] = useState(false);
   const handleClick = () => {
     showData(!data);
     console.log("aaaa");
   };
+
+
+
+  useEffect(()=>{
+    window.scrollTo(0, 0)
+  },[])
   return (
     <>
       <div className="Servicesbackground"></div>
@@ -49,6 +56,8 @@ function Services_detail() {
             fontSize:'13px',
             fontFamily: "roboto",
             lineHeight: "30px",
+            width:'61%',
+           marginLeft:'1%'
           }}
         >
           Connecting industry needs wi  th Innovation, Excellence, & IT .We create

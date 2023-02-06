@@ -20,7 +20,7 @@ import search from "../image/search_services.png";
 import { fabClasses } from "@mui/material";
 import chaticon from "../image/chat-icon.svg";
 import cross from "../image/cross.png";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import axios from "axios";
 import logo from "../image/Logo.svg";
@@ -42,7 +42,7 @@ function Home() {
   const [disable, Setdisable] = useState(true);
   const [showname, Setshowname] = useState([]);// For name reponses
 
-
+const navigate=useNavigate();
 
   const [name, Setname] = useState("");
   useEffect(() => {
@@ -126,7 +126,7 @@ function Home() {
           <div className="btns">
             <button
               onClick={() => {
-                window.open("/contact", "_top");
+                navigate('/Contact')
               }}
               className="btn_contact"
             >

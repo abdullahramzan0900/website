@@ -60,6 +60,7 @@ function Carousel2() {
     { width: 550, itemsToShow: 2 },
     { width: 768, itemsToShow: 3 },
     { width: 900, itemsToShow: 3 },
+
   ];
   return (
     <>
@@ -77,10 +78,11 @@ function Carousel2() {
                  
                   }}>{item.h1}</h1>
                   <p  className="p_carousel2" style={{
-                   
+
                   }}>{item.p}</p>
                   <h4  className="readmore_outercasestudies" onClick={()=>{
-                      window.open(`/CaseStudies/${item.id}`,'_top')
+               
+                      navigate(`/CaseStudies/${item.id}`)
                   }} style={{
                 
                   }}>{item.h2}</h4>

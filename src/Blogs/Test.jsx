@@ -8,6 +8,7 @@ import path26 from "../image/Path26.png";
 import path27 from "../image/Path27.png";
 import line8 from "../image/Line8.png";
 import Carousel from "react-elastic-carousel";
+import { useNavigate } from "react-router-dom";
 
 function Test() {
   const breakPoints = [
@@ -31,6 +32,7 @@ function Test() {
     { id: 12, img: Blog1, h1: "Impact of ERP in SME" },
     { id: 13, img: Blog4, h1: "Impact of ERP in SME" },
   ];
+  const navigate=useNavigate()
 
   return (
     <>
@@ -50,7 +52,8 @@ function Test() {
                   />
 
                   <h1 onClick={()=>{
-                      window.open('/Blogs','_top');
+                   
+                      navigate(`/Blogs/${item.id}`)
                   }}
                     style={{
                       padding: "20px",

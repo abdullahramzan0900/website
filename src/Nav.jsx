@@ -1,6 +1,6 @@
 import React from "react";
 import Home from "./Home/Home";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 import { useState } from "react";
 import Logo from "./image/Logo.svg";
@@ -11,13 +11,14 @@ import cross_nav from './image/crosss.png'
 
 function Nav() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const navigate=useNavigate();
   const location = useLocation();
-  console.log(location,"location")
+  console.log(location,"location");
   console.log(location);
   const { pathname } = location;
   console.log(pathname);
   const splitLocation = pathname.split("/");
-  console.log(splitLocation,"aa")
+  console.log(splitLocation,"aa");
   
   return (
     <>
@@ -68,39 +69,54 @@ function Nav() {
           }}
           >
             <li>
-              <a
+              <a onClick={()=>{
+                navigate('./')
+              }}
                 style={{
                   color: splitLocation[1] === "" ? "#23a55b" : "black",
+                  cursor:'pointer'
                 }}
-                href="/"
+                
               >
                 Home
               </a>
             </li>
 
             <li>
-              <a style={{
+              <a  onClick={()=>{
+                navigate('/Services')
+              }} style={{
                   color: splitLocation[1] === "Services" ? "#23a55b" : "black",
+                  cursor:'pointer'
              
-              }} href="/Services">Services</a>
+              }} >Services</a>
             </li>
             <li>
-              <a style={{
+              <a  onClick={()=>{
+                navigate('/Blogs')
+              }} style={{
                  color: splitLocation[1] === "Blogs" ? "#23a55b" : "black",
+                 cursor:'pointer'
       
-              }} href="/Blogs">Blog</a>
+              }}>Blog</a>
             </li>
             <li>
-              <a style={{
+              <a  onClick={()=>{
+                navigate('/CaseStudies')
+              }} style={{
                    color: splitLocation[1] === "CaseStudies" ? "#23a55b" : "black",
+                   cursor:'pointer'
         
-              }} href="/CaseStudies">Case Studies</a>
+              }} >Case Studies</a>
             </li>
             <li>
-              <a style={{
+              <a  onClick={()=>{
+                navigate('/Contact')
+              }} style={{
                color: splitLocation[1] === "contact" ? "#23a55b" : "black",
+               cursor:'pointer'
 
-              }} href="/contact">Contact</a>
+              }} >Contact</a>
             </li>
           </ul>
         </div>

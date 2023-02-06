@@ -131,6 +131,7 @@ background-color:      #ffffffb3;
  font-family: "roboto";
     padding-top:20px ;
     line-height: 20px;
+
   }
   .sevicesimg_1{
     padding-top: 20px;
@@ -227,10 +228,6 @@ background-color:      #ffffffb3;
     color: white;
     text-align: center;
     width:30vw;
-
-
-   
-    /* font-size: 30px; */
   }
   .service_background{
  
@@ -450,16 +447,16 @@ background-color: #72818b;
 }
 .Service1_div
 {
-  height: 239px;
+  height: 250px;
   padding: 10px;
   border: none;
-  width: 386px;
+  width: 333px;
   border-radius: 39px;
 }
 .Service1_button{
   position: absolute;
   bottom: 14px;
-  left: 119px;
+  left: 101px;
   background: white;
   width: 150px;
   height: 40px;
@@ -475,18 +472,18 @@ background-color: #72818b;
 
 }
 .Service2_div{
-  height: 239px;
+  height: 250px;
   padding: 10px;
   border-radius: 39px;
   border: none;
-  width: 374px;
+  width: 333px;
 }
 
 .Service2_button
 {
   position: absolute;
   bottom: 13px;
-  left: 114px;
+  left: 94px;
   background: white;
   width: 150px;
   height: 40px;
@@ -502,18 +499,19 @@ background-color: #72818b;
  
 }
 .Service3_div{
-  height: 224px;
+  height: 232px;
   padding: 10px;
   width: 290px;
   border-radius: 39px;
   border: none;
-  width: 387px;
+  width: 333px;
 }
+
 
 .Service3_button{
   position: absolute;
   bottom: 14px;
-  left: 123px;
+  left: 97px;
   background: white;
   width: 150px;
   height: 50px;
@@ -529,16 +527,16 @@ background-color: #72818b;
 }
 
 .Service4_div{
-  height: 224px;
+  height: 235px;
   padding: 10px;
-  width: 374px;
+  width: 333px;
   border-radius: 39px;
   border: none;
 }
 .Service4_button{
   position: absolute;
   bottom: 12px;
-  left: 118px;
+  left: 92px;
   background: white;
   width: 150px;
   height: 40px;

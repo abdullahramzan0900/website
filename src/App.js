@@ -18,6 +18,7 @@ import Contact_detail from './Contact/Contact_detail';
 import Chat from './Services/Chat';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -32,7 +33,6 @@ function App() {
         <Route path="/CaseStudies" element={<CaseeStuide/>} ></Route>
         <Route path="/CaseStudies/:id" element={<CaseStudiesDetail/>} ></Route>
         <Route path="/Contact" element={<Contact_detail/>} ></Route>
-        
 
       </Routes>
     </BrowserRouter>

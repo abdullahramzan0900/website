@@ -3,15 +3,25 @@ import "./Contact.css";
 import partner from "../image/Partners.png";
 import microsoft from "../image/microsoft.png";
 import Oracle from "../image/Oracle.png";
-
+import { useLocation } from "react-router-dom";
 import Logo from "../image/Logo.svg";
 import fb from "../image/fb.png";
 import insta from "../image/insta.png";
 import tw from "../image/tw.png";
 import lk from "../image/lk.png";
 import logoicon from "../image/Logo-icon.svg";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
+  const navigate=useNavigate();
+  const location = useLocation();
+  console.log(location,"location");
+  console.log(location);
+  const { pathname } = location;
+  console.log(pathname);
+  const splitLocation = pathname.split("/");
+  console.log(splitLocation,"aa");
+
   return (
     <>
       <div
@@ -91,8 +101,15 @@ function Contact() {
           >
             Services
           </p>
-          <a onClick={()=>{
-        window.open('/Services','_top')
+          <a  onClick={()=>{
+       if(window.location)
+       if( splitLocation[1] === "Services")
+            {
+              window.scrollTo(0, 0);
+            }else {
+              
+              navigate('/Services')
+            }
           }}
             style={{
               cursor:'pointer',
@@ -107,7 +124,13 @@ function Contact() {
             Cloud services
           </a>
           <a onClick={()=>{
-        window.open('/Services','_top')
+     if( splitLocation[1] === "Services")
+     {
+       window.scrollTo(0, 0);
+     }else {
+       
+       navigate('/Services')
+     }
           }}
             style={{
               cursor:'pointer',
@@ -121,7 +144,13 @@ function Contact() {
           ERP Integration
           </a>
           <a onClick={()=>{
-        window.open('/Services','_top')
+            if( splitLocation[1] === "Services")
+            {
+              window.scrollTo(0, 0);
+            }else {
+              
+              navigate('/Services')
+            }
           }}
             style={{
               cursor:'pointer',
@@ -135,7 +164,13 @@ function Contact() {
             Digital Tranformation
           </a>
           <a onClick={()=>{
-        window.open('/Services','_top')
+        if( splitLocation[1] === "Services")
+        {
+          window.scrollTo(0, 0);
+        }else {
+          
+          navigate('/Services')
+        }
           }}
             style={{
               cursor:'pointer',

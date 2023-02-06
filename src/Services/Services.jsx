@@ -17,8 +17,10 @@ import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 
 import "./Services.css";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Services() {
+  const navigate=useNavigate();
   return (
     <>
       <div className="main">
@@ -40,7 +42,10 @@ function Services() {
                 ,growth and relevance
               </p>
               <button onClick={()=>{
-                window.open('/Services','_top');
+                // window.open('/Services','_top');
+                navigate("/Services")
+          
+    
               }} className="Services_button"
                 style={{
                     
