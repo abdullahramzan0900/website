@@ -45,7 +45,7 @@ function CaseeStuide()
       h2:'Read More'
      },
      { id:8,
-       h1:'Customized P ',
+       h1:'Customized reporting with SAP ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
        h2:'Read More'
      },

@@ -288,7 +288,7 @@ function Contact() {
         </div>
       </div>
       <div className="contact2_5" style={{}}>
-        <p>CopyrightⒸ2022,Vyadom</p>
+        <p>CopyrightⒸ2023,Vyadom</p>
       </div>
     </>
   );

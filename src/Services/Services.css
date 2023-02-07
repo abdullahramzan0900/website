@@ -499,10 +499,11 @@ background-color: #72818b;
  
 }
 .Service3_div{
-  height: 232px;
+  height: 210px;
   padding: 10px;
   width: 290px;
   border-radius: 39px;
+
   border: none;
   width: 333px;
 }
@@ -510,7 +511,7 @@ background-color: #72818b;
 
 .Service3_button{
   position: absolute;
-  bottom: 14px;
+  bottom: 15px;
   left: 97px;
   background: white;
   width: 150px;
@@ -526,12 +527,13 @@ background-color: #72818b;
   color: black;
 }
 
+
 .Service4_div{
-  height: 235px;
+  height: 212px;
   padding: 10px;
-  width: 333px;
+  width: 338px;
   border-radius: 39px;
-  border: none;
+  border: none;;
 }
 .Service4_button{
   position: absolute;
@@ -1700,12 +1702,12 @@ padding: 50px;
 .changed_div{
   position: absolute;
   bottom: 22%;
-line-height: 1.1;
+  line-height: 1.1;
   display: flex;
-  font-size: 14px;
+  font-size: 12px;
   height: 72%;
   justify-content: space-between;
-  /* padding: 21px; */
+  padding: 9px;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
@@ -1785,6 +1787,30 @@ line-height: 1.1;
   }
   
  }
+ @media only screen and (max-width:390px){
+
+
+  .changed_div{
+    position: absolute;
+    bottom: 22%;
+    transition: 0.10s;
+    display: flex;
+    font-size: 10px;
+    height: 72%;
+    justify-content: space-between;
+    /* padding: 21px; */
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-family: 'roboto';
+  }
+  .changed_div_h1{
+    font-size: 20px;
+  }
+  
+ }
+
 
 
 

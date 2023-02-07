@@ -7,12 +7,13 @@ import Blog2 from "../image/Blog2.png";
 import Blog3 from "../image/Blog3.png";
 import Blog4 from "../image/Blog4.png";
 import line8 from "../image/Line8.png";
+import cloud from '../image/clouddetail_img.jpg'
 function MainBlog() {
   const navigate = useNavigate();
   const array1 = [
     {
       id: 1,
-      img: Blog1,
+      img: cloud,
       h1: "Cloud Computing & its Benefits",
       p: "If you're still debating whether to adopt cloud migration, you're already behind 90% of businesses. That indicates that enterprise workloads are largely.."
     },
@@ -24,14 +25,14 @@ function MainBlog() {
     },
     {
       id: 3,
-      img: Blog3,
-      h1: " Digital Transformation",
+      img: Blog4,
+      h1: "Digital Transformation & IoT",
       p: "Digital transformation is the integration of digital solutions to enable an organization to enhance its business, operational, and cultural processes. ",
     },
     {
       id: 4,
       h1: "Technology in 2023",
-      img: Blog4,
+      img: Blog3,
       p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely...",
     },
     {
@@ -54,7 +55,7 @@ function MainBlog() {
     },
     {
       id: 8,
-      img: Blog2,
+      img: Blog3,
       h1: "Impact of ERP in SME",
       p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
     },

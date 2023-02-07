@@ -73,7 +73,9 @@ function Services() {
                   }}
                 >
                   <img className="Service1_div" src={Service1} alt="" />
-                  <div className="Service1_button">Cloud Services</div>
+                  <div onClick={()=>{
+                      navigate("/Services")
+                  }} className="Service1_button">Cloud Services</div>
                 </div>
                 <div
                   style={{
@@ -81,7 +83,9 @@ function Services() {
                   }}
                 >
                   <img className="Service2_div" src={Service2} alt="" />
-                  <div className="Service2_button">ERP Integration</div>
+                  <div onClick={()=>{
+                      navigate("/Services")
+                  }} className="Service2_button">ERP Integration</div>
                 </div>
               </div>
               <div
@@ -95,7 +99,9 @@ function Services() {
                   }}
                 >
                   <img className="Service3_div" src={Service3} alt="" />
-                  <div className="Service3_button">Digital Transformation</div>
+                  <div onClick={()=>{
+                      navigate("/Services")
+                  }} className="Service3_button">Digital Transformation</div>
                 </div>
                 <div
                   style={{
@@ -103,7 +109,11 @@ function Services() {
                   }}
                 >
                   <img className="Service4_div" src={Servcies4} alt="" />
-                  <div className="Service4_button">Salesforce</div>
+                  <div onClick={()=>{
+                    
+                    navigate("/Services")
+
+                  }} className="Service4_button">Salesforce</div>
                 </div>
               </div>
             </div>

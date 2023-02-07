@@ -4,6 +4,7 @@ import Blog1 from "../image/Blog1.png";
 import Blog2 from "../image/Blog2.png";
 import Blog3 from "../image/Blog3.png";
 import Blog4 from "../image/Blog4.png";
+import cloud from '../image/clouddetail_img.jpg'
 import path26 from "../image/Path26.png";
 import path27 from "../image/Path27.png";
 import line8 from "../image/Line8.png";
@@ -17,9 +18,9 @@ function Test() {
     { width: 1000, itemsToShow: 4 },
   ];
   const array1 = [
-    { id: 1, img: Blog1, h1: "Cloud Computing & its Benefits" },
-    { id: 2, img: Blog2, h1: "Impact of ERP in SME" },
-    { id: 3, img: Blog3, h1: "Digital Transformation & IoT" },
+    { id: 1, img: cloud, h1: "Cloud Computing & its Benefits" },
+    { id: 2, img: Blog2, h1: "Utilize a user-friendly mobile app " },
+    { id: 3, img: Blog1, h1: "Digital Transformation & IoT" },
     { id: 4, h1: "Technology in 2023", img: Blog4 },
     { id: 6, h1: "Technology in 2023", img: Blog4 },
     { id: 7, img: Blog3, h1: "Digital Transformation & IoT" },

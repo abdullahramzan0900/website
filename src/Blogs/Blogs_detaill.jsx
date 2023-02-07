@@ -7,6 +7,11 @@ import Contact from "../Contact/Contact";
 import { useParams } from "react-router-dom";
 import userRestaurent from '../image/Mobile-App-Development.png'
 import digital from '../image/Blog_detail_digital.webp'
+import cloud_background from '../image/clouddetail_img.jpg'
+import restaurant_detail from '../image/growrestaurant.webp'
+import digitaltransform from '../image/digitalransfrom_detail.jpg'
+
+
 
 function Blogs_detail()
 {  
@@ -21,6 +26,7 @@ function Blogs_detail()
   const Blog_detail=[
   {  id:1,
      h1:'Cloud Computing & Its Benefits',
+     h12: "Cloud Computing & its Benefits",
      p1:'If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses. That indicates that enterprise workloads are largely already hosted on the cloud, making cloud adoption mainstream. Additionally, cloud migration has its dangers and disadvantages, j',
      h2:'Benefits of CloudComputing',
      p2:'Numerous businesses, from established corporations to fresh startups, are embracing cloud technology because of its many advantages. So cloud computing can be helpful whether you want to reduce the carbon footprint of your company or you need to preserve sensitive data.',
@@ -40,12 +46,15 @@ function Blogs_detail()
      p9:'Contrary to what many people believe, the depth and breadth of security features, automatic maintenance, and centralized management of cloud computing can actually increase your security posture. Reputable cloud providers also work with the best security professionals and use innovative solutions to ensure stronger security',
      h10:'Ending Words ',
      p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  ',
-     img:blog_detail_img
+     img:blog_detail_img,
+     img2:cloud_background
+    
 
 
   },
   {  id:2,
     h1:'The Benefits of Hiring an App Development Company ',
+    h12: "Utilize a user-friendly mobile app to grow your restaurant",
     p1:'',
     h2:'Better customer reach',
     p2:'Today, people use their mobile devices the majority of the time. Therefore, having a mobile app developed for your restaurant by an App Development Company might boost the number of customers you have. You can provide your consumers access to your restaurant by doing this. By doing this, you will become more well-liked and serve more customers each day. ',
@@ -73,18 +82,21 @@ function Blogs_detail()
     customer care services 
     
     Push Notifications 
+    str[i]=
     
     Automated Q/A Services  `,
     h9:'Advanced protection  ',
     p9:'Contrary to what many people believe, the depth and breadth of security features, automatic maintenance, and centralized management of cloud computing can actually increase your security posture. Reputable cloud providers also work with the best security professionals and use innovative solutions to ensure stronger security',
     h10:'Ending Words  ',
     p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  ',
-    img:userRestaurent
+    img:userRestaurent,
+    img2:restaurant_detail
 
  },
  {  id:3,
   h1:`Digital Transformation's Advantages `,
-  p1:`- There are many advantages to a digital transformation strategy, including:`,
+  h12:'Digital Transformation',  
+  p1:`There are many advantages to a digital transformation strategy, including:`,
   p2:`- By getting rid of labor-intensive, mistake-prone manual procedures, you can increase corporate efficiency in operations. `,
   p3:'- Processes are carried out immediately and with a high degree of consistency, giving you more timely and reliable data. ',
   p4:'- Data silos are dismantled, allowing information to move freely and orderly throughout your organization, improving communication.  ',
@@ -97,17 +109,24 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
 
   p10:'All of these improvements quickly result in cost reductions, which inevitably also results in improved profit margins.   ',
     p11:`in improved profit margins. Finally, each organization should implement a digital transformation strategy as just the first step in enhancing both its performance and operations. Finding a business partner who can assist in putting that digital transformation into action is just as important as the process itself. Choosing an experienced IT company as a partner is essential to your success in this project if your corporation lacks experience with the transformation process and developing software systems. Remember that the most successful of your competitors have already begun or perhaps finished their digital transition. To expand and stay competitive in a market that will get more and more crowded over the next ten years and beyond, the majority of businesses must do this for many aspects of their operations.  `,
-    img:digital
+    img:digital,
+    img2:digitaltransform
 
 },
 
 ]
     return(
         <>
-         {
-          <about/>
-        }
-          <div  className="background_Blogdetail_img">
+    {  
+      Blog_detail && Blog_detail?.length>0 && Blog_detail?.map((item)=>{
+        if(item?.id==params?.id)
+        {
+          return(
+            <>
+     
+          <div style={{
+backgroundImage: `url(${item.img2})`
+          }}  className="background_Blogdetail_img">
         </div>
         {/* <img src={banner} alt="loading"/> */}
    
@@ -115,7 +134,7 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
       <h1  className='height2_blogdetail' style={{
 
         
-      }} >Cloud Computing & Its Benefits</h1>
+      }} >{item.h12}</h1>
       <h2 className="height2_blogdetail_1" style={{
       
       }}>By:Atiya Fatima</h2>
@@ -128,15 +147,9 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
 <div className="Blogs_detail">
 
 
-  
+ 
 
 
-  {
-    Blog_detail && Blog_detail?.length>0 && Blog_detail?.map((item)=>{
-      if(item?.id==params?.id)
-      {
-        return(
-          <>
 
       
       <div className="inner_Blogs_detail">
@@ -196,6 +209,7 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
 
 
 
+</div>
 </>
   )
 }
@@ -203,12 +217,12 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
 
 }
 
-</div>
 <Contact/>
 
 
 
 </>
-)
+
+    )
 }
 export default Blogs_detail
