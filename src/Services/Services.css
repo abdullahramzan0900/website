@@ -73,9 +73,9 @@ background-color:      #ffffffb3;
    display: flex;
     flex-direction: column;
     justify-content: center;
-     align-items: center;
+   
       text-align: left;
-      padding-left: 13%;
+      padding-left: 10%;
 
 }
 .Services_image{
@@ -96,7 +96,8 @@ background-color:      #ffffffb3;
     flex-wrap: wrap;
     /* Container should take up only 90% of the browser, leave 5% space on each side */
     width: 50%;
-    padding-left: 2%;
+
+    padding-left: 0;
     /* Center container */
     /* margin: 0 auto; */
   }
@@ -447,15 +448,15 @@ background-color: #72818b;
 }
 .Service1_div
 {
-  height: 250px;
+  height: 254px;
   padding: 10px;
   border: none;
-  width: 333px;
+  width: 348px;
   border-radius: 39px;
 }
 .Service1_button{
   position: absolute;
-  bottom: 14px;
+  bottom: 16px;
   left: 101px;
   background: white;
   width: 150px;
@@ -469,20 +470,20 @@ background-color: #72818b;
   font-family: 'roboto';
   color: black;
   cursor: pointer;
-
 }
 .Service2_div{
-  height: 250px;
+  height: 259px;
   padding: 10px;
   border-radius: 39px;
   border: none;
-  width: 333px;
+  width: 348px;
+
 }
 
 .Service2_button
 {
   position: absolute;
-  bottom: 13px;
+  bottom: 14px;
   left: 94px;
   background: white;
   width: 150px;
@@ -499,20 +500,19 @@ background-color: #72818b;
  
 }
 .Service3_div{
-  height: 210px;
+  height: 241px;
   padding: 10px;
   width: 290px;
   border-radius: 39px;
-
   border: none;
-  width: 333px;
+  width: 351px;
 }
 
 
 .Service3_button{
   position: absolute;
-  bottom: 15px;
-  left: 97px;
+  bottom: 17px;
+  left: 99px;
   background: white;
   width: 150px;
   height: 50px;
@@ -529,16 +529,16 @@ background-color: #72818b;
 
 
 .Service4_div{
-  height: 212px;
-  padding: 10px;
-  width: 338px;
+  height: 246px;
+  padding: 12px;
+  width: 349px;
   border-radius: 39px;
-  border: none;;
+  border: none;
 }
 .Service4_button{
   position: absolute;
-  bottom: 12px;
-  left: 92px;
+  bottom: 15px;
+  left: 98px;
   background: white;
   width: 150px;
   height: 40px;
@@ -1103,7 +1103,7 @@ padding: 50px;
 }
 .img_service_detail{
   
-  width: 400px;
+  width: 410px ;
   height: 280px;
   border-radius: 20px;
   opacity: 0.4;
@@ -1120,7 +1120,7 @@ padding: 50px;
 .CloudServices_div2{
   display: flex;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
   
 }
@@ -1218,8 +1218,8 @@ margin-left: 10px;
 @media only screen and (max-width: 2200px) {
  
   .img_service_detail{
-    width: 320px;
-    height:290px;
+    width: 376px;
+    height: 320px;
     border-radius: 20px;
   }
 }
@@ -1702,10 +1702,11 @@ padding: 50px;
 .changed_div{
   position: absolute;
   bottom: 22%;
-  line-height: 1.1;
+  line-height: 1.6;
   display: flex;
   font-size: 12px;
   height: 72%;
+  color: #C8C8C8;
   justify-content: space-between;
   padding: 9px;
   flex-direction: column;
@@ -1714,6 +1715,7 @@ padding: 50px;
   color: white;
   font-family: 'roboto';
 }
+
 .changed_div_h1{
   font-size: 23px;
 }

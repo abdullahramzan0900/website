@@ -46,8 +46,9 @@ function CaseStudiesDetail()
       
             h1:'ERP for Hotel',
           p2:'With the help of Vyadoms ERP, SMEs can keep track of all their company transactions in a single system. Additionally, it can help SMEs stay competitive by enabling them to make fast, fact-based decisions that are well-informed. To give strength, transparency, and control to your expanding firm, it acts as the backbone of a company.     An established restaurant was looking for a place that could handle its company management issues in a systematic manner. Soon they captured us and relied on us with assurance. We successfully handled their issue with the aid of our ERP system and by applying our knowledge.  The following are some of the ways that Vyadoms ERP benefited the client:   Integrated the process needed to run the restaurant that will help them to manage their business more efficiently and improve profitability.           To streamline operations in order to increase productivity and relieve labor pressure.       Automate restaurant operations to save time and money.    Data-sharing through the industry, to avoid blind spots caused by data silos. ',
-          img:erp,
-          img2:restaurant_detail
+          img:restaurant_detail,
+          
+          img2:   erp
      
         },
           

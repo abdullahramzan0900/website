@@ -146,6 +146,14 @@ table {
   opacity: 1;
   width: 100%;
 }
+.img::before {
+  background-color: rgba(0, 0, 0, 0.79);
+  content: "";
+  display: block;
+  height: 89vh;
+  position: absolute;
+  width: 100%;
+}
 .img2::before {
   background-color: rgba(0, 0, 0, 0.79);
   content: "";
@@ -255,16 +263,24 @@ table {
     margin-left: 8px;
 }
 .chat_upper_div{
-  padding-left: 20px;
-  display: flex;
-  justify-content: space-between;
-  width: 250px;
+  background-color: #229958;
+  /* position: absolute; */
+  /* text-align: center; */
+  /* top: 82%; */
+  /* left: 80%; */
+  /* background-color: rgb(255, 255, 255); */
+  width: 50px;
   height: 50px;
-  background-color:#229958;
-  position: absolute;
   text-align: center;
-  top: 82%;
-  left: 80%;
+  border-radius: 100px;
+  position: fixed;
+  bottom: 89px;
+  right: 30px;
+  /* transition: background-color 0.3s ease 0s, opacity 0.5s ease 0s, visibility 0.5s ease 0s; */
+  opacity: 3;
+  /* visibility: hidden; */
+  border: none;
+  cursor: pointer;
 }
 .chat_upper_div_1{
 align-items: center;
@@ -273,6 +289,7 @@ align-items: center;
 }
 .chaticon{
   width: 20px;
+  margin-left: 65%;
 }
 .chat_text{
   font-size: 14px;
@@ -295,10 +312,9 @@ align-items: center;
     width: 250px;
     height: 50px;
     background-color:#229958;
-    position: absolute;
+
     text-align: center;
-    top: 85%;
-    left: 76%;
+
   }
 }
 @media screen and (max-width: 1121px) {
@@ -306,13 +322,11 @@ align-items: center;
     padding-left: 20px;
     display: flex;
     justify-content: space-between;
-    width: 250px;
-    height: 50px;
+  
     background-color:#229958;
-    position: absolute;
+
     text-align: center;
-    top: 85%;
-    left: 70%;
+
   }
 }
 @media screen and (max-width: 935px) {
@@ -323,10 +337,9 @@ align-items: center;
     width: 200px;
     height: 50px;
     background-color:#229958;
-    position: absolute;
+
     text-align: center;
-    top: 85%;
-    left: 70%;
+
   }
 }
 @media screen and (max-width: 722px) {
@@ -334,13 +347,12 @@ align-items: center;
     padding-left: 20px;
     display: flex;
     justify-content: space-between;
-    width: 180px;
+
     height: 50px;
     background-color:#229958;
-    position: absolute;
+
     text-align: center;
-    top: 85%;
-    left: 70%;
+
   }
   .chat_text{
     font-size: 14px;

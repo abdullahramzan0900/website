@@ -22,9 +22,12 @@ function Nav() {
   return (
     <>
       <nav className="navigation">
-        <img
+        <img onClick={()=>{
+        navigate('/');
+        }}
           style={{
             marginLeft:"4%",
+            cursor:'pointer'
           }}
           className="logo_img"
           src={Logo}

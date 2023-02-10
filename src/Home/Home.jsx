@@ -99,7 +99,7 @@ console.log(background,"bbbbbb")
   const location = useLocation();
   // console.log(location);
 
-  const array = ["img1", "img2", "img4", "img3"];
+  const array = ["img", "img2", "img4", "img3"];
   return (
     <>
       <div className="banner ">
@@ -258,23 +258,9 @@ console.log(background,"bbbbbb")
                 src={chaticon}
                 alt=""
               />
-              <h1 onClick={() => {}} className="chat_text">
-                Chat with us
-              </h1>
+            
             </div>
-            <div>
-              <img
-                style={{
-                  cursor: "pointer",
-                }}
-                onClick={() => {
-                  Setvisible1(false);
-                }}
-                className="cross"
-                src={cross}
-                alt=""
-              />
-            </div>
+         
           </div>
 
           <div

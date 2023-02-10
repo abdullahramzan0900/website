@@ -1,6 +1,6 @@
 import React from "react";
-import Service1 from "../image/Services1.png";
-import Service2 from "../image/Services2.png";
+import Service1 from "../image/cloud.png";
+import Service2 from "../image/erp_casestudies_detail.webp";
 import Service3 from "../image/Services3.png";
 import Servcies4 from "../image/Servcies4.png";
 import background from "../image/background.png";
@@ -15,6 +15,8 @@ import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
+import img2 from '../image/digitalransfrom_detail.jpg'
+import salesforce from '../image/salesforce_2.webp'
 
 import "./Services.css";
 import { Navigate, useNavigate } from "react-router-dom";
@@ -98,7 +100,7 @@ function Services() {
                     position: "relative",
                   }}
                 >
-                  <img className="Service3_div" src={Service3} alt="" />
+                  <img className="Service3_div" src={img2} alt="" />
                   <div onClick={()=>{
                       navigate("/Services")
                   }} className="Service3_button">Digital Transformation</div>
@@ -108,7 +110,7 @@ function Services() {
                     position: "relative",
                   }}
                 >
-                  <img className="Service4_div" src={Servcies4} alt="" />
+                  <img className="Service4_div" src={salesforce} alt="" />
                   <div onClick={()=>{
                     
                     navigate("/Services")

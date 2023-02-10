@@ -64,7 +64,12 @@ function Contact() {
       </div>
       <div className="contact2">
         <div className="contact2_1" style={{}}>
-          <img className="logoiconn" style={{}} src={logoicon} alt="" />
+          <img onClick={()=>{
+                window.scrollTo(0, 0);
+          }} className="logoiconn" style={{
+            cursor:'pointer',
+
+          }} src={logoicon} alt="" />
           <p
             style={{
               fontSize: "1.6vh",

@@ -47,7 +47,8 @@ function Blogs_detail()
      h10:'Ending Words ',
      p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  ',
      img:blog_detail_img,
-     img2:cloud_background
+     img2:cloud_background,
+     date:'5th Jan,2023'
     
 
 
@@ -90,7 +91,9 @@ function Blogs_detail()
     h10:'Ending Words  ',
     p10:'Cloud computing is a strong, adaptable, and economical tool. It represents the future for many enterprises. More flexibility and dependability, improved performance and efficiency, and a reduction in IT expenditures are all provided by the cloud. Additionally, it enhances innovation, enabling businesses to cut down on time to market and include use cases for AI and machine learning in their plans. These basic benefits can also be translated into various associated benefits that can support remote workers, increase productivity, and enhance operational effectiveness.  ',
     img:userRestaurent,
-    img2:restaurant_detail
+    img2:restaurant_detail,
+    date:'10th Jan,2023'
+    
 
  },
  {  id:3,
@@ -110,7 +113,9 @@ p8:'- Due to the nearly complete elimination of human error, corporate processes
   p10:'All of these improvements quickly result in cost reductions, which inevitably also results in improved profit margins.   ',
     p11:`in improved profit margins. Finally, each organization should implement a digital transformation strategy as just the first step in enhancing both its performance and operations. Finding a business partner who can assist in putting that digital transformation into action is just as important as the process itself. Choosing an experienced IT company as a partner is essential to your success in this project if your corporation lacks experience with the transformation process and developing software systems. Remember that the most successful of your competitors have already begun or perhaps finished their digital transition. To expand and stay competitive in a market that will get more and more crowded over the next ten years and beyond, the majority of businesses must do this for many aspects of their operations.  `,
     img:digital,
-    img2:digitaltransform
+    img2:digitaltransform,
+    date:'14th Jan,2023'
+
 
 },
 
@@ -140,7 +145,7 @@ backgroundImage: `url(${item.img2})`
       }}>By:Atiya Fatima</h2>
       <h3 className="height2_blogdetail_2" style={{
  
-      }}>30th Jan,2023</h3>
+      }}>{item.date}</h3>
   
      </div>
    
