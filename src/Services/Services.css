@@ -1685,6 +1685,16 @@ padding: 50px;
 /* four images per line when browser width exceeds 1280px */
 
 
+@media only screen and (max-width: 1669px) {
+
+  
+  .CloudServices_div2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 94%;
+    margin: 0 auto;
+}
+}
 @media only screen and (max-width: 1609px) {
   .centered_Service{
     display: flex;
@@ -1698,21 +1708,29 @@ padding: 50px;
     left: 38%;
     transform: translate(-50%, -50%);
   }
+  .CloudServices_div2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 94%;
+    margin: 0 auto;
 }
+}
+
+
 .changed_div{
   position: absolute;
   bottom: 22%;
   line-height: 1.6;
   display: flex;
-  font-size: 12px;
+  font-size: 13px;
   height: 72%;
-  color: #C8C8C8;
+  color: #ffffffd9;
   justify-content: space-between;
   padding: 9px;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  color: white;
+
   font-family: 'roboto';
 }
 
@@ -1728,7 +1746,53 @@ padding: 50px;
     bottom: 22%;
     transition: 0.10s;
     display: flex;
-    font-size: 10px;
+    font-size: 9px;
+    height: 72%;
+    justify-content: space-between;
+    /* padding: 21px; */
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-family: 'roboto';
+  }
+  .changed_div_h1{
+    font-size: 18px;
+  }
+  
+  @media only screen and (max-width:1026px){
+
+
+    .changed_div{
+      position: absolute;
+      bottom: 22%;
+      transition: 0.10s;
+      display: flex;
+      font-size: 8px;
+      height: 72%;
+      justify-content: space-between;
+      /* padding: 21px; */
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      color: white;
+      font-family: 'roboto';
+    }
+    .changed_div_h1{
+      font-size: 15px;
+    }
+    
+   }
+ }
+ @media only screen and (max-width:977px){
+
+
+  .changed_div{
+    position: absolute;
+    bottom: 22%;
+    transition: 0.10s;
+    display: flex;
+    font-size: 12px;
     height: 72%;
     justify-content: space-between;
     /* padding: 21px; */
@@ -1743,7 +1807,7 @@ padding: 50px;
   }
   
  }
- @media only screen and (max-width:977px){
+ @media only screen and (max-width:715px){
 
 
   .changed_div{
@@ -1751,7 +1815,7 @@ padding: 50px;
     bottom: 22%;
     transition: 0.10s;
     display: flex;
-    font-size: 13px;
+    font-size: 11px;
     height: 72%;
     justify-content: space-between;
     /* padding: 21px; */
@@ -1762,7 +1826,7 @@ padding: 50px;
     font-family: 'roboto';
   }
   .changed_div_h1{
-    font-size: 20px;
+    font-size: 18px;
   }
   
  }
@@ -1785,7 +1849,30 @@ padding: 50px;
     font-family: 'roboto';
   }
   .changed_div_h1{
-    font-size: 20px;
+    font-size: 18px;
+  }
+  
+ }
+ @media only screen and (max-width:575px){
+
+
+  .changed_div{
+    position: absolute;
+    bottom: 22%;
+    transition: 0.10s;
+    display: flex;
+    font-size: 8px;
+    height: 72%;
+    justify-content: space-between;
+    /* padding: 21px; */
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    font-family: 'roboto';
+  }
+  .changed_div_h1{
+    font-size: 15px;
   }
   
  }
@@ -1797,7 +1884,7 @@ padding: 50px;
     bottom: 22%;
     transition: 0.10s;
     display: flex;
-    font-size: 10px;
+    font-size: 8px;
     height: 72%;
     justify-content: space-between;
     /* padding: 21px; */
@@ -1808,7 +1895,7 @@ padding: 50px;
     font-family: 'roboto';
   }
   .changed_div_h1{
-    font-size: 20px;
+    font-size:15px;
   }
   
  }

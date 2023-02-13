@@ -275,9 +275,10 @@ table {
   border-radius: 100px;
   position: fixed;
   bottom: 89px;
-  right: 30px;
+  right: 17px;
   /* transition: background-color 0.3s ease 0s, opacity 0.5s ease 0s, visibility 0.5s ease 0s; */
   opacity: 3;
+  z-index: 9999;
   /* visibility: hidden; */
   border: none;
   cursor: pointer;
@@ -304,7 +305,7 @@ align-items: center;
 .main_chat{
 
 }
-@media screen and (max-width: 1324px) {
+/* @media screen and (max-width: 1324px) {
   .chat_upper_div{
     padding-left: 20px;
     display: flex;
@@ -449,7 +450,7 @@ align-items: center;
   .chaticon{
     width: 12px;
   }
-}
+} */
 
 .btns {
   margin-top: 9%;

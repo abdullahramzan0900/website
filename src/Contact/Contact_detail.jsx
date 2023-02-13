@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
@@ -26,9 +26,11 @@ function Contact_detail() {
   const [name,Setname]=useState();
   const [email,Setemail]=useState();
   const [message,setMessage]=useState();
-  useState(()=>{
+  const [showmessage,Setshowmessage]=useState(false);
+  const [success,showsuccessmsg]=useState(false);
+  useEffect(()=>{
     axios.get("http://localhost:3000/contactUs").then(function (response) {
-      console.log(response,"aa");
+      console.log(response,"aaaaaaaa");
    
     });
   },[])
@@ -64,8 +66,16 @@ function handleChange2(e){
     setMessage (event.target.value);
 
   };
-  function PostData()
+function PostData()
+{  if(email===''|| service==="" || name==="" )
 {
+  Setshowmessage(true)
+  showsuccessmsg(false)
+}
+else {
+
+  Setshowmessage(false);
+  showsuccessmsg(true);
   axios.post("http://localhost:3000/contactUs",{
     "name":name,
     "email":email,
@@ -79,6 +89,8 @@ function handleChange2(e){
   Setemail("");
   Setservice("");
 }
+}
+
 
   return (
     <>
@@ -98,6 +110,29 @@ function handleChange2(e){
             <p className="contact_detail_2_inner_p">
               kindly respond filling this form
             </p>
+         {
+          showmessage && (
+            <>
+            <p style={{
+              color:'red',
+              marginTop:'10px'
+            }}>please fill out all required fields</p>
+            </>
+          )
+         }
+         {
+          success && (
+            <>
+               <p style={{
+              color:'#229958',
+              marginTop:'10px'
+            }}>Your submission has been received.</p>
+            
+            
+            </>
+          )
+         }
+      
           </div>
           <Stack
             component="form"
@@ -121,6 +156,8 @@ function handleChange2(e){
               }}
               label="Enter Your Name"
               variant="outlined"
+              required
+         
             />
              <ThemeProvider theme={theme}>
 
@@ -168,6 +205,8 @@ function handleChange2(e){
                 value={service}
                 label="Select Services"
                 onChange={handleChange3}
+                required
+              
               >
                 <MenuItem value={"Cloud Services"}>Cloud Services</MenuItem>
                 <MenuItem value={"ERP Integration"}>ERP Integration</MenuItem>
@@ -190,7 +229,6 @@ function handleChange2(e){
              fontFamily:'roboto',
              background:'transparent'
             }} >
-  
 </textarea>
         
 

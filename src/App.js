@@ -15,8 +15,9 @@ import Blogs_detail from './Blogs/Blogs_detaill';
 import Services_detail from './Services/Services_detail';
 import Message from './ABOUT/Message';
 import Contact_detail from './Contact/Contact_detail';
-import Chat from './Services/Chat';
+
 import ScrollButton from './ScrollButton';
+import Chat from './Chat';
 
 
 
@@ -25,6 +26,7 @@ function App() {
     <div className="App">
     <BrowserRouter>
     <Nav/>
+<Chat/>
 <ScrollButton/>
       <Routes>
       <Route path="/" element={<Home/>}></Route>
