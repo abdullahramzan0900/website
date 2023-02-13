@@ -10,7 +10,7 @@ function CaseeStuide()
 
   const array1=[
     {   id: 1,
-      h1: "Digital transformation ",
+      h1: "Digital Transformation ",
       p: 'One of our clients was struggling with the limitations of a legacy system that truly relied on transactional services. Technologies used were CorePHP and MySQL database.',
       h2: "Read More",
     },
@@ -20,7 +20,7 @@ function CaseeStuide()
       h2:'Read More'
     },
     { id:3,
-      h1:'Customized reporting with SAP  ',
+      h1:'Customized Reporting With SAP  ',
       p:` A well-known company approached us for the integration of SAP into their system. However, initially, we developed the system for the management of attendance and other HR operations but later on... `,
       h2:'Read More'
     },
@@ -45,7 +45,7 @@ function CaseeStuide()
       h2:'Read More'
      },
      { id:8,
-       h1:'Customized reporting with SAP ',
+       h1:'Customized Reporting With SAP ',
        p:' There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. ',
        h2:'Read More'
      },
@@ -82,11 +82,11 @@ function CaseeStuide()
    
         fontFamily:'roboto'
         
-      }} >Examples of <span style={{
+      }} >Examples Of <span style={{
       color:'#229958',
  
      }}>Client Success</span> That 
-    Powered by<span style={{
+    Powered By<span style={{
         color:'#229958',
 
   

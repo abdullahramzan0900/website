@@ -25,19 +25,19 @@ import { useEffect } from "react";
 import axios from "axios";
 import logo from "../image/Logo.svg";
 import { GridColumnsPanel } from "@mui/x-data-grid";
-import Logo from "../image/Logo-icon.svg";
+
 
 let x = 0;
 
 
 function Home() {
   const [background, Setbackground] = useState("img");
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(false);
   const [visible, Setvisible] = useState(true);
-  const [visible1, Setvisible1] = useState(true);
+  const [visible1, Setvisible1] = useState(false);
   const [showchat, Setshowchat] = useState(false);
   const [disable, Setdisable] = useState(true);
   const [showname, Setshowname] = useState([]);// For name reponses
@@ -51,11 +51,21 @@ function Home() {
   const [data7, showData7] = useState(false);
   const [data8, showData8] = useState(false);
   const [data9, showData9] = useState(false);
+  
 
   const handleClick = () => {
     showData(!data);
+    showData1(false);
+    showData2(false);
+    showData3(false);
+    showData4(false);
+    showData5(false);
+    showData6(false);
+    showData7(false);
+    showData8(false);
+    showData9(false);
 
-    console.log("aaaa");
+
   };
 
 const navigate=useNavigate();
@@ -85,21 +95,77 @@ const navigate=useNavigate();
       nameId: "ababab",
     });
   }
+  const array = ["img", "img3", "img2", "img4"];
 useEffect(() => {
   setInterval(()=>{
+    console.log(x,"check x")
     Setbackground(array[x])
- 
-    if(x>=3){
+    if(x==0)
+    {     
+      setActive(true);
+      setActive1(false);
+      setActive2(false);
+      setActive3(false);
+      console.log("aaaaaa",active);
+     x++;
+      
+      
+      
+  
+    }
+    if(x==1)
+    {    
+      setActive1(true);
+      setActive(false);
+      setActive2(false);
+      setActive3(false);
+      console.log("aaaaaab1");
+      x++;
+    
+
+    }
+
+     if(x==2)
+    {   
+      setActive2(true)
+      setActive1(false);
+      setActive(false);
+      setActive3(false);
+      x++;
+      console.log("aaaaaab2");
+    
+    
+    }
+     if(x==3)
+    {  
+      setActive3(true);
+      setActive2(false)
+      setActive1(false);
+      setActive(false);
+      console.log("aaaaaab3");
+    }
+    if (x>=3){
       x=0;
     }
-    x++;
-  },5000)
+
+    else {
+      x++;
+    }
+
+  
+
+     
+  },5000);
+
+
+  
 },[])
-console.log(background,"bbbbbb")
+
+
   const location = useLocation();
   // console.log(location);
 
-  const array = ["img", "img2", "img4", "img3"];
+
   return (
     <>
       <div className="banner ">
@@ -121,7 +187,7 @@ console.log(background,"bbbbbb")
             >
               IT Solutions
             </span>{" "}
-            That Enable you to {""}
+            That Enable You To {""}
             <span
               style={{
                 color: "#229958",
@@ -170,7 +236,7 @@ console.log(background,"bbbbbb")
               //   x=0;
               // }}
               style={{
-                backgroundColor: active ? "black" : "rgb(34, 153, 88)",
+                backgroundColor: active ? "green" : "rgb(34, 153, 88)",
               }}
             ></button>
             <button
@@ -180,7 +246,7 @@ console.log(background,"bbbbbb")
               //   x=1;
               // }}
               style={{
-                backgroundColor: active1 ? "black" : "rgb(34, 153, 88)",
+                backgroundColor: active1 ? "green" : "rgb(34, 153, 88)",
               }}
             ></button>
             <button
@@ -191,7 +257,7 @@ console.log(background,"bbbbbb")
 
               // }}
               style={{
-                backgroundColor: active2 ? "black" : "rgb(34, 153, 88)",
+                backgroundColor: active2 ? "green" : "rgb(34, 153, 88)",
               }}
             ></button>
             <button
@@ -201,7 +267,7 @@ console.log(background,"bbbbbb")
               //   x=3;
               // }}
               style={{
-                backgroundColor: active3 ? "black" : "rgb(34, 153, 88)",
+                backgroundColor: active3 ? "green" : "rgb(34, 153, 88)",
               }}
             ></button>
           </div>
@@ -224,12 +290,12 @@ console.log(background,"bbbbbb")
                Setvisible(false);
                Setshowchat(true);
               }} >
-             Start chat
+              Start chat
               </button>
               <button 
-                onClick={() => {
-                  Setvisible(false);
-                  Setvisible1(true);
+              onClick={() => {
+                Setvisible(false);
+                Setvisible1(true);
 
                 }}
            
@@ -240,14 +306,9 @@ console.log(background,"bbbbbb")
             </div> */}
           </div>
 
-
-        
+          <About />
+          <Services />
         </div>
-
-
-        <About />
-        <Services />
-
         <div className="Services_detail">
         <div className="CloudServices">
           <div className="CloudServices_div2">
@@ -274,7 +335,7 @@ console.log(background,"bbbbbb")
                   />
                   <div
                     onClick={() => {
-                      showData1(!data1);
+                  
                     }}
                     className="search_div"
                   >
@@ -288,15 +349,26 @@ console.log(background,"bbbbbb")
                         src={search_upper}
                         alt=""
                       />
-                      <img className="search_icon" src={search} alt="" />
+                      <img  onClick={()=>{
+                            showData1(true);
+                            showData2(false);
+                            showData3(false);
+                            showData4(false);
+                            showData5(false);
+                            showData6(false);
+                            showData7(false);
+                            showData8(false);
+                            showData9(false);
+                            showData(false)
+                      }}   className="search_icon" src={search} alt="" />
                     </div>
                   </div>
                 </div>
               )}
               {data1 && (
-                <div
+                <div  
                   onClick={() => {
-                    showData1(!data1);
+                    showData1(false);
                   }}
                   style={{
                     backgroundColor: "rgb(34, 153, 88)",
@@ -305,7 +377,9 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData1(!data1);
+                      showData1(false);
+
+                    
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -354,6 +428,7 @@ console.log(background,"bbbbbb")
                       <img
                         onClick={() => {
                           handleClick();
+
                         }}
                         className="search_icon"
                         src={search}
@@ -366,7 +441,7 @@ console.log(background,"bbbbbb")
               {data && (
                 <div
                   onClick={() => {
-                    showData(!data);
+                    showData(false);
                   }}
                   style={{
                     backgroundColor: "rgb(34, 153, 88)",
@@ -375,7 +450,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData(!data);
+                      showData(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -460,7 +535,16 @@ console.log(background,"bbbbbb")
                       />
                       <img
                         onClick={() => {
-                          showData2(!data2);
+                          showData2(true);
+                          showData1(false);
+                        showData(false)
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -473,7 +557,7 @@ console.log(background,"bbbbbb")
               {data2 && (
                 <div
                   onClick={() => {
-                    showData2(!data2);
+                    showData2(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -483,7 +567,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData2(!data2);
+                      showData2(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -527,7 +611,16 @@ console.log(background,"bbbbbb")
                       />
                       <img
                         onClick={() => {
-                          showData3(!data3);
+                          showData3(true);
+                          showData1(false);
+                          showData2(false);
+                          showData(false)
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -540,7 +633,7 @@ console.log(background,"bbbbbb")
               {data3 && (
                 <div
                   onClick={() => {
-                    showData3(!data3);
+                    showData3(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -550,7 +643,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData3(!data3);
+                      showData3(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -594,7 +687,16 @@ console.log(background,"bbbbbb")
                       />
                       <img
                         onClick={() => {
-                          showData4(!data4);
+                          showData4(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -607,7 +709,8 @@ console.log(background,"bbbbbb")
               {data4 && (
                 <div
                   onClick={() => {
-                    showData4(!data4);
+                    showData4(false);
+                
                     console.log("aaa");
                   }}
                   style={{
@@ -617,7 +720,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData4(!data4);
+                      showData4(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -663,7 +766,16 @@ console.log(background,"bbbbbb")
                       />
                       <img
                         onClick={() => {
-                          showData5(!data5);
+                          showData5(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -676,7 +788,7 @@ console.log(background,"bbbbbb")
               {data5 && (
                 <div
                   onClick={() => {
-                    showData5(!data5);
+                    showData5(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -686,7 +798,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData5(!data5);
+                      showData5(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -756,7 +868,16 @@ console.log(background,"bbbbbb")
                       />
                       <img
                         onClick={() => {
-                          showData6(!data6);
+                          showData6(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -769,7 +890,7 @@ console.log(background,"bbbbbb")
               {data6 && (
                 <div
                   onClick={() => {
-                    showData6(!data6);
+                    showData6(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -779,7 +900,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData6(!data6);
+                      showData6(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -827,7 +948,17 @@ console.log(background,"bbbbbb")
                       />
                       <img
                         onClick={() => {
-                          showData7(!data7);
+                          showData7(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData(false);
+                          showData5(false);
+                          showData6(false);
+                      
+
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -840,7 +971,7 @@ console.log(background,"bbbbbb")
               {data7 && (
                 <div
                   onClick={() => {
-                    showData7(!data7);
+                    showData7(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -850,7 +981,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData7(!data7);
+                      showData7(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -919,7 +1050,16 @@ console.log(background,"bbbbbb")
                       />
                       <img
                         onClick={() => {
-                          showData8(!data8);
+                          showData8(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -932,7 +1072,7 @@ console.log(background,"bbbbbb")
               {data8 && (
                 <div
                   onClick={() => {
-                    showData8(!data8);
+                    showData8(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -942,7 +1082,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData8(!data8);
+                      showData8(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -987,7 +1127,16 @@ console.log(background,"bbbbbb")
                       />
                       <img
                         onClick={() => {
-                          showData9(!data9);
+                          showData9(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -1000,7 +1149,7 @@ console.log(background,"bbbbbb")
               {data9 && (
                 <div
                   onClick={() => {
-                    showData9(!data9);
+                    showData9(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -1010,7 +1159,7 @@ console.log(background,"bbbbbb")
                 >
                   <img
                     onClick={() => {
-                      showData9(!data9);
+                      showData9(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -1038,6 +1187,9 @@ console.log(background,"bbbbbb")
           </div>
         </div>
       </div>
+
+       
+
         <Blogs />
         <CaseStudies />
         <Contact />

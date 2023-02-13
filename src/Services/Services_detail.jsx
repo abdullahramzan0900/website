@@ -26,7 +26,16 @@ function Services_detail() {
   const [data9, showData9] = useState(false);
 
   const handleClick = () => {
-    showData(!data);
+    showData(true);
+    showData1(false);
+    showData2(false);
+    showData3(false);
+    showData4(false);
+    showData5(false);
+    showData6(false);
+    showData7(false);
+    showData8(false);
+    showData9(false);
 
     console.log("aaaa");
   };
@@ -75,7 +84,6 @@ function Services_detail() {
 
         <div style={{}}></div>
       </div>
-
       <div className="Services_detail">
         <div className="CloudServices">
           <div className="CloudServices_div2">
@@ -102,7 +110,15 @@ function Services_detail() {
                   />
                   <div
                     onClick={() => {
-                      showData1(!data1);
+                      showData1(true);
+                      showData2(false);
+                      showData3(false);
+                      showData4(false);
+                      showData5(false);
+                      showData6(false);
+                      showData7(false);
+                      showData8(false);
+                      showData9(false);
                     }}
                     className="search_div"
                   >
@@ -116,7 +132,23 @@ function Services_detail() {
                         src={search_upper}
                         alt=""
                       />
-                      <img className="search_icon" src={search} alt="" />
+                      <img
+                        onClick={() => {
+                          showData1(true);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
+                          showData(false);
+                        }}
+                        className="search_icon"
+                        src={search}
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -124,7 +156,7 @@ function Services_detail() {
               {data1 && (
                 <div
                   onClick={() => {
-                    showData1(!data1);
+                    showData1(false);
                   }}
                   style={{
                     backgroundColor: "rgb(34, 153, 88)",
@@ -133,7 +165,8 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData1(!data1);
+                      showData1(false);
+
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -194,7 +227,7 @@ function Services_detail() {
               {data && (
                 <div
                   onClick={() => {
-                    showData(!data);
+                    showData(false);
                   }}
                   style={{
                     backgroundColor: "rgb(34, 153, 88)",
@@ -203,7 +236,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData(!data);
+                      showData(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -288,7 +321,16 @@ function Services_detail() {
                       />
                       <img
                         onClick={() => {
-                          showData2(!data2);
+                          showData2(true);
+                          showData1(false);
+                          showData(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -301,7 +343,7 @@ function Services_detail() {
               {data2 && (
                 <div
                   onClick={() => {
-                    showData2(!data2);
+                    showData2(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -311,7 +353,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData2(!data2);
+                      showData2(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -355,7 +397,16 @@ function Services_detail() {
                       />
                       <img
                         onClick={() => {
-                          showData3(!data3);
+                          showData3(true);
+                          showData1(false);
+                          showData2(false);
+                          showData(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -368,7 +419,7 @@ function Services_detail() {
               {data3 && (
                 <div
                   onClick={() => {
-                    showData3(!data3);
+                    showData3(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -378,7 +429,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData3(!data3);
+                      showData3(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -422,7 +473,16 @@ function Services_detail() {
                       />
                       <img
                         onClick={() => {
-                          showData4(!data4);
+                          showData4(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -435,7 +495,8 @@ function Services_detail() {
               {data4 && (
                 <div
                   onClick={() => {
-                    showData4(!data4);
+                    showData4(false);
+
                     console.log("aaa");
                   }}
                   style={{
@@ -445,7 +506,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData4(!data4);
+                      showData4(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -491,7 +552,16 @@ function Services_detail() {
                       />
                       <img
                         onClick={() => {
-                          showData5(!data5);
+                          showData5(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -504,7 +574,7 @@ function Services_detail() {
               {data5 && (
                 <div
                   onClick={() => {
-                    showData5(!data5);
+                    showData5(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -514,7 +584,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData5(!data5);
+                      showData5(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -584,7 +654,16 @@ function Services_detail() {
                       />
                       <img
                         onClick={() => {
-                          showData6(!data6);
+                          showData6(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -597,7 +676,7 @@ function Services_detail() {
               {data6 && (
                 <div
                   onClick={() => {
-                    showData6(!data6);
+                    showData6(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -607,7 +686,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData6(!data6);
+                      showData6(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -655,7 +734,16 @@ function Services_detail() {
                       />
                       <img
                         onClick={() => {
-                          showData7(!data7);
+                          showData7(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData(false);
+                          showData5(false);
+                          showData6(false);
+
+                          showData8(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -668,7 +756,7 @@ function Services_detail() {
               {data7 && (
                 <div
                   onClick={() => {
-                    showData7(!data7);
+                    showData7(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -678,7 +766,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData7(!data7);
+                      showData7(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -747,7 +835,16 @@ function Services_detail() {
                       />
                       <img
                         onClick={() => {
-                          showData8(!data8);
+                          showData8(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData(false);
+                          showData9(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -760,7 +857,7 @@ function Services_detail() {
               {data8 && (
                 <div
                   onClick={() => {
-                    showData8(!data8);
+                    showData8(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -770,7 +867,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData8(!data8);
+                      showData8(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -815,7 +912,16 @@ function Services_detail() {
                       />
                       <img
                         onClick={() => {
-                          showData9(!data9);
+                          showData9(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData(false);
                         }}
                         className="search_icon"
                         src={search}
@@ -828,7 +934,7 @@ function Services_detail() {
               {data9 && (
                 <div
                   onClick={() => {
-                    showData9(!data9);
+                    showData9(false);
                     console.log("aaa");
                   }}
                   style={{
@@ -838,7 +944,7 @@ function Services_detail() {
                 >
                   <img
                     onClick={() => {
-                      showData9(!data9);
+                      showData9(false);
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -858,7 +964,6 @@ function Services_detail() {
                     plugins accessible for your needs in addition to being open
                     source, which enables the incremental extension and business
                     process automation.
-
                   </div>
                 </div>
               )}

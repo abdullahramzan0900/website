@@ -19,6 +19,7 @@ function Contact() {
   const { pathname } = location;
 
   const splitLocation = pathname.split("/");
+  
 
 
   return (

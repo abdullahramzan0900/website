@@ -1,6 +1,6 @@
 .rec.rec-arrow {
   border-radius: 0;
-  background-color: rgb(35, 165, 91);  
+  background-color: white
 }
 
 
@@ -24,22 +24,32 @@
 }
 .rec.rec-arrow.rec-arrow-right:hover{
   border-radius: 50%;
-  background-color: rgb(35, 165, 91);
+  background-color: white;
+  color: #229958;
+  border: none;
 
 }
 .rec.rec-arrow.rec-arrow-right{
   border-radius: 50%;
   background-color: none;
+  background-color: white;
+  color: #229958;
+  border: none;
+
 
 }
 .rec.rec-arrow.rec-arrow-left{
   border-radius: 50%;
-  background-color: rgb(35, 165, 91);
+  background-color: white;
+  color: #229958;
+  border: none;
 
 }
 .rec.rec-arrow.rec-arrow-left:hover{
-  /* border-radius: 50%; */
-  background-color: rgb(35, 165, 91);
+  border-radius: 50%;
+  background-color: white;
+  color: #229958;
+  border: none;
 }
 .background_casestudies{
 

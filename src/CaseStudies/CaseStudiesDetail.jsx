@@ -37,7 +37,7 @@ function CaseStudiesDetail()
     const array1=[
         { id:1,
       
-         h1:' Digital transformation',
+         h1:' Digital Transformation',
          p2:'One of our clients was struggling with the limitations of a legacy system that truly relied on transactional services. Technologies used were CorePHP and MySQL database, since it contained millions of records so the latency of retrieval/update of information around was 5 to 6 minutes. As well as there were several other reasons for that, like tables with hundreds of columns, unoptimized code, and poor relations and joins.   We advised them to utilize Angular as their front-end framework, PostgreSQL as their database, and NodeJS as their backend. They agreed because it was so convincing, and we then had to move the legacy system to the one with the newest technologies.    It was really difficult for us at first to fully comprehend the system and all of the requirements. The next problem was optimizing the database. Next, we converted the CorePHP functionality into NodeJS (ExpressJs) and entirely redrew the user interface in Angular. ',
           img:digitalTransform,
           img2:digitaltransform
@@ -53,7 +53,7 @@ function CaseStudiesDetail()
         },
           
         { id:3,     
-            h1:'Customized reporting with SAP',
+            h1:'Customized Reporting With SAP',
            p2:'A well-known company approached us for the integration of SAP into their system. However, initially, we developed the system for the management of attendance and other HR operations but later on, they wanted to implement the SAP into their organization. Therefore we took a deep understanding of the SAP developmental methodology first. We also interacted with their consultant to better understand and learn how we can improve the user experience. Other than this, we designed a system that was directly implementing the record into the database the company opted for the SAP S4HANA and we provided the customized reporting to the client.   ',
            img:SAP,
            img2:sapbackground

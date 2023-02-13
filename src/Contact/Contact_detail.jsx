@@ -9,39 +9,33 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import InputLabel from "@mui/material/InputLabel";
 import Button from "@mui/material/Button";
-import Textarea from '@mui/joy/Textarea';
+import Textarea from "@mui/joy/Textarea";
 import { ThemeProvider } from "@mui/material";
 import { createTheme } from "@mui/material";
 import axios from "axios";
+import validator from "validator";
 
-
-
-import TextareaAutosize from "@mui/base/TextareaAutosize";
-import { green } from "@mui/material/colors";
 import Contact from "./Contact";
-import { GridColumnsPanel } from "@mui/x-data-grid";
 
 function Contact_detail() {
   const [service, Setservice] = React.useState("");
-  const [name,Setname]=useState();
-  const [email,Setemail]=useState();
-  const [message,setMessage]=useState();
-  const [showmessage,Setshowmessage]=useState(false);
-  const [success,showsuccessmsg]=useState(false);
-  useEffect(()=>{
+  const [name, Setname] = useState();
+  const [email, Setemail] = useState();
+  const [message, setMessage] = useState();
+  const [showmessage, Setshowmessage] = useState(false);
+  const [success, showsuccessmsg] = useState(false);
+  const [emaivalid, setemailvalid] = useState(false);
+  useEffect(() => {
     axios.get("http://localhost:3000/contactUs").then(function (response) {
-      console.log(response,"aaaaaaaa");
-   
+      console.log(response, "aaaaaaaa");
     });
-  },[])
-  
-function handleChange(e){
-Setname(e.target.value);
+  }, []);
 
-}
-function handleChange2(e){
-  Setemail(e.target.value);
-
+  function handleChange(e) {
+    Setname(e.target.value);
+  }
+  function handleChange2(e) {
+    Setemail(e.target.value);
   }
   const theme = createTheme({
     breakpoints: {
@@ -51,46 +45,41 @@ function handleChange2(e){
         sm: 600, // tablets
         md: 900, // small laptop
         lg: 1200, // desktop
-        xl: 1536 // large screens
-      }
-    }
+        xl: 1536, // large screens
+      },
+    },
   });
-
-
 
   const handleChange3 = (event) => {
     Setservice(event.target.value);
-  
   };
   const handleChange4 = (event) => {
-    setMessage (event.target.value);
-
+    setMessage(event.target.value);
   };
-function PostData()
-{  if(email===''|| service==="" || name==="" )
-{
-  Setshowmessage(true)
-  showsuccessmsg(false)
-}
-else {
+  function PostData() {
+    if (email === "" || service === "" || name === "") {
+      Setshowmessage(true);
+      showsuccessmsg(false);
+      setemailvalid(false);
+    } else if (validator.isEmail(email)) {
+      setemailvalid(true);
+    } else {
+      Setshowmessage(false);
+      showsuccessmsg(true);
+      setemailvalid(false);
+      axios.post("http://localhost:3000/contactUs", {
+        name: name,
+        email: email,
+        service: service,
+        message: message,
+      });
 
-  Setshowmessage(false);
-  showsuccessmsg(true);
-  axios.post("http://localhost:3000/contactUs",{
-    "name":name,
-    "email":email,
-    "service":service,
-    "message":message
-
-  })
-
-  setMessage("");
-  Setname("");
-  Setemail("");
-  Setservice("");
-}
-}
-
+      setMessage("");
+      Setname("");
+      Setemail("");
+      Setservice("");
+    }
+  }
 
   return (
     <>
@@ -110,29 +99,40 @@ else {
             <p className="contact_detail_2_inner_p">
               kindly respond filling this form
             </p>
-         {
-          showmessage && (
-            <>
-            <p style={{
-              color:'red',
-              marginTop:'10px'
-            }}>please fill out all required fields</p>
-            </>
-          )
-         }
-         {
-          success && (
-            <>
-               <p style={{
-              color:'#229958',
-              marginTop:'10px'
-            }}>Your submission has been received.</p>
-            
-            
-            </>
-          )
-         }
-      
+            {showmessage && (
+              <>
+                <p
+                  style={{
+                    color: "red",
+                    marginTop: "10px",
+                  }}
+                >
+                  please fill out all required fields
+                </p>
+              </>
+            )}
+            {success && (
+              <>
+                <p
+                  style={{
+                    color: "red",
+                    marginTop: "10px",
+                  }}
+                >
+                  Enter valid Email!
+                </p>
+              </>
+            )}
+            {emaivalid && (
+              <>
+                <p
+                  style={{
+                    color: "red",
+                    marginTop: "10px",
+                  }}
+                ></p>
+              </>
+            )}
           </div>
           <Stack
             component="form"
@@ -142,12 +142,12 @@ else {
             noValidate
             autoComplete="off"
           >
-            <TextField 
-             type="text"
-             id="name"
-             name="name"
-             onChange={handleChange}
-             value={name}
+            <TextField
+              type="text"
+              id="name"
+              name="name"
+              onChange={handleChange}
+              value={name}
               sx={{
                 "& .MuiInputLabel-root": { color: "" }, //styles the label
                 "& .MuiOutlinedInput-root": {
@@ -157,16 +157,14 @@ else {
               label="Enter Your Name"
               variant="outlined"
               required
-         
             />
-             <ThemeProvider theme={theme}>
-
-            <TextField
-              sx={{
+            <ThemeProvider theme={theme}>
+              <TextField
+                sx={{
                   "& .MuiInputLabel-root": { color: "" }, //styles the label
                   "& .MuiOutlinedInput-root": {
-                      "& > fieldset": { borderColor: "#229958" },
-                    },
+                    "& > fieldset": { borderColor: "#229958" },
+                  },
                 }}
                 label="Enter Your Email"
                 variant="outlined"
@@ -175,8 +173,8 @@ else {
                 onChange={handleChange2}
                 value={email}
                 required
-                />
-                </ThemeProvider>
+              />
+            </ThemeProvider>
 
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">
@@ -206,7 +204,6 @@ else {
                 label="Select Services"
                 onChange={handleChange3}
                 required
-              
               >
                 <MenuItem value={"Cloud Services"}>Cloud Services</MenuItem>
                 <MenuItem value={"ERP Integration"}>ERP Integration</MenuItem>
@@ -217,35 +214,35 @@ else {
               </Select>
             </FormControl>
 
-            <textarea 
-             value={message}
-       
-             onChange={handleChange4}
-            
-            placeholder="Drop a Message" className="texttt" style={{
-             paddingLeft:'13px',
-             paddingTop:'10px',
-             fontSize:'16px',
-             fontFamily:'roboto',
-             background:'transparent'
-            }} >
-</textarea>
-        
+            <textarea
+              value={message}
+              onChange={handleChange4}
+              placeholder="Drop a Message"
+              className="texttt"
+              style={{
+                paddingLeft: "13px",
+                paddingTop: "10px",
+                fontSize: "16px",
+                fontFamily: "roboto",
+                background: "transparent",
+              }}
+            ></textarea>
 
-            <Button onClick={()=>{
-              PostData()
-            }}
+            <Button
+              onClick={() => {
+                PostData();
+              }}
               style={{
                 width: 100,
                 alignSelf: "center",
                 color: "white",
-               background:'rgb(34, 153, 88)',
-                fontFamily:'roboto',
-                textTransform:'none'
+                background: "rgb(34, 153, 88)",
+                fontFamily: "roboto",
+                textTransform: "none",
               }}
               variant="submit"
             >
-             Submit
+              Submit
             </Button>
           </Stack>
         </div>

@@ -107,7 +107,7 @@ section {
 }
 body {
   line-height: 1;
-  font-family: 'roboto';
+  font-family: "roboto";
   /* overflow-y: hidden; */
 }
 ol,
@@ -215,7 +215,7 @@ table {
   color: white;
   border: none;
   cursor: pointer;
-  font-family: 'roboto';
+  font-family: "roboto";
 }
 .btn_learn {
   margin-left: 13px;
@@ -228,49 +228,45 @@ table {
   background-color: transparent;
   color: white;
   cursor: pointer;
-  font-family: 'roboto';
+  font-family: "roboto";
 }
-.button1_home{
-      
-    margin-top: 50px;
-    width: 45px;
-    height: 10px;
-    border-radius: 22px;
-    border: none;
+.button1_home {
+  margin-top: 50px;
+  width: 45px;
+  height: 10px;
+  border-radius: 22px;
+  border: none;
 }
-.button2_home{
-     
-    width: 20px;
-    height: 10px;
-    border-radius: 22px;
-    border: none;
-    margin-left: 8px;
+.button2_home {
+  width: 20px;
+  height: 10px;
+  border-radius: 22px;
+  border: none;
+  margin-left: 8px;
 }
-.button3_home{
-
-    height: 10px;
-    width: 20px;
-    border-radius: 22px;
-    border: none;
-    margin-left: 8px;
+.button3_home {
+  height: 10px;
+  width: 20px;
+  border-radius: 22px;
+  border: none;
+  margin-left: 8px;
 }
-.button4_home{
-
-    height: 10px;
-    width: 20px;
-    border-radius: 22px;
-    border: none;
-    margin-left: 8px;
+.button4_home {
+  height: 10px;
+  width: 20px;
+  border-radius: 22px;
+  border: none;
+  margin-left: 8px;
 }
-.chat_upper_div{
+.chat_upper_div {
   background-color: #229958;
   /* position: absolute; */
   /* text-align: center; */
   /* top: 82%; */
   /* left: 80%; */
   /* background-color: rgb(255, 255, 255); */
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   text-align: center;
   border-radius: 100px;
   position: fixed;
@@ -283,27 +279,27 @@ table {
   border: none;
   cursor: pointer;
 }
-.chat_upper_div_1{
-align-items: center;
+.chat_upper_div_1 {
+  align-items: center;
   display: flex;
-  
+  width: 70px;
+  height: 50px;
 }
-.chaticon{
+.chaticon {
   width: 20px;
-  margin-left: 65%;
+  margin-top: 10%;
+  margin-left: 32%;
 }
-.chat_text{
+.chat_text {
   font-size: 14px;
   color: white;
   margin-left: 5px;
 }
-.cross{
+.cross {
   padding-right: 20px;
   padding-top: 14px;
-
 }
-.main_chat{
-
+.main_chat {
 }
 /* @media screen and (max-width: 1324px) {
   .chat_upper_div{
@@ -553,8 +549,8 @@ align-items: center;
   margin-top: 40px;
 }
 .height {
-  font-size: 74px;
-  
+  font-size: 71px;
+
   color: white;
 }
 .height2 {
@@ -621,33 +617,29 @@ align-items: center;
     width: 134px;
     color: white;
     border: none;
-}
-.btn_learn {
-  margin-top: 10px;
-  margin-left: 5px;
-  border-radius: 10px;
-  border: 1px solid #229958;
-  font-size: 14px;
-  padding: 15px;
-  background-color: #229958;
-  width: 133px;
-  background-color: transparent;
-  color: white;
-
-
-}
+  }
+  .btn_learn {
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    border: 1px solid #229958;
+    font-size: 14px;
+    padding: 15px;
+    background-color: #229958;
+    width: 133px;
+    background-color: transparent;
+    color: white;
+  }
 }
 @media screen and (max-width: 1457px) {
   .height {
     font-size: 50px;
   }
- 
 }
 @media screen and (max-width: 1457px) {
   .height {
     font-size: 50px;
   }
- 
 }
 @media screen and (max-width: 1220px) {
   .height {
@@ -713,7 +705,6 @@ align-items: center;
    }
   } */
 @media screen and (max-width: 480px) {
-
   .height2 {
     font-size: 15px;
   }
