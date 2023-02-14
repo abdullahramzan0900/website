@@ -126,8 +126,22 @@ function Services_detail() {
                       AZURE
                     </h1>
 
-                    <div className="search_upper_div">
-                      <img
+                    <div  className="search_upper_div">
+                      <img style={{
+                        cursor:'pointer'
+                      }} onClick={()=>{
+
+                            showData1(true);
+                            showData2(false);
+                            showData3(false);
+                            showData4(false);
+                            showData5(false);
+                            showData6(false);
+                            showData7(false);
+                            showData8(false);
+                            showData9(false);
+                            showData(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -207,7 +221,9 @@ function Services_detail() {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                                handleClick();
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -228,6 +244,7 @@ function Services_detail() {
                 <div
                   onClick={() => {
                     showData(false);
+  
                   }}
                   style={{
                     backgroundColor: "rgb(34, 153, 88)",
@@ -313,8 +330,21 @@ function Services_detail() {
                       Dynamics
                     </h1>
 
-                    <div className="search_upper_div">
-                      <img
+                    <div onClick={()=>{
+                       
+                    }} className="search_upper_div">
+                      <img onClick={()=>{
+                          showData2(true);
+                          showData1(false);
+                          showData(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -390,7 +420,18 @@ function Services_detail() {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                          showData3(true);
+                          showData1(false);
+                          showData2(false);
+                          showData(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -465,8 +506,21 @@ function Services_detail() {
                       SAP
                     </h1>
 
-                    <div className="search_upper_div">
-                      <img
+                    <div onClick={()=>{
+
+                    }} className="search_upper_div">
+                      <img onClick={()=>{
+                            showData4(true);
+                            showData1(false);
+                            showData2(false);
+                            showData3(false);
+                            showData(false);
+                            showData5(false);
+                            showData6(false);
+                            showData7(false);
+                            showData8(false);
+                            showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -539,13 +593,24 @@ function Services_detail() {
                     src={oracle2}
                     alt=""
                   />
-                  <div className="search_div">
+                  <div  className="search_div">
                     <h1 className="h1_search_div" style={{}}>
                       Oracle
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                          showData5(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -647,7 +712,18 @@ function Services_detail() {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                             showData6(true);
+                             showData1(false);
+                             showData2(false);
+                             showData3(false);
+                             showData4(false);
+                             showData5(false);
+                             showData(false);
+                             showData7(false);
+                             showData8(false);
+                             showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -727,7 +803,18 @@ function Services_detail() {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                            showData7(true);
+                            showData1(false);
+                            showData2(false);
+                            showData3(false);
+                            showData(false);
+                            showData5(false);
+                            showData6(false);
+  
+                            showData8(false);
+                            showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -828,7 +915,18 @@ function Services_detail() {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                          showData8(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData(false);
+                          showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -905,7 +1003,18 @@ function Services_detail() {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                            showData9(true);
+                            showData1(false);
+                            showData2(false);
+                            showData3(false);
+                            showData4(false);
+                            showData5(false);
+                            showData6(false);
+                            showData7(false);
+                            showData8(false);
+                            showData(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""

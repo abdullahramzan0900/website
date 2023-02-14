@@ -28,7 +28,7 @@ import { GridColumnsPanel } from "@mui/x-data-grid";
 
 
 let x = 0;
-
+const array = ["img", "img4", "img2", "img3"];
 
 function Home() {
   const [background, Setbackground] = useState("img");
@@ -68,6 +68,71 @@ function Home() {
 
   };
 
+
+  useEffect(() => {
+ setInterval(()=>{
+      console.log (typeof  x ,"check x")
+
+      Setbackground(array[x])
+      if(x===0)
+      {     
+        setActive(true);
+        setActive1(false);
+        setActive2(false);
+        setActive3(false);
+        console.log("aaaaaa",active);
+        x++;
+      }
+      else if(x===1)
+      {      
+        setActive1(true);
+        setActive(false);
+        setActive2(false);
+        setActive3(false);
+        console.log("aaaaaab1");
+        x++;
+        
+  
+      
+  
+      }
+  
+        else if(x===2)
+      { 
+        setActive2(true)
+        setActive1(false);
+        setActive(false);
+        setActive3(false); 
+        console.log("aaaaaab2");
+        x++;
+
+      
+      
+      }
+       else if(x===3)
+      {       
+        setActive3(true);
+        setActive2(false)
+        setActive1(false);
+        setActive(false);
+        console.log("aaaaaab3");
+        x++;
+
+
+      }
+    
+  
+ 
+    console.log(x,'dddd')
+
+      if(x>=4){
+        x=0;
+      }
+       
+    },4000);
+  
+  },[])
+  
 const navigate=useNavigate();
 
   const [name, Setname] = useState("");
@@ -95,71 +160,7 @@ const navigate=useNavigate();
       nameId: "ababab",
     });
   }
-  const array = ["img", "img3", "img2", "img4"];
-useEffect(() => {
-  setInterval(()=>{
-    console.log(x,"check x")
-    Setbackground(array[x])
-    if(x==0)
-    {     
-      setActive(true);
-      setActive1(false);
-      setActive2(false);
-      setActive3(false);
-      console.log("aaaaaa",active);
-     x++;
-      
-      
-      
-  
-    }
-    if(x==1)
-    {    
-      setActive1(true);
-      setActive(false);
-      setActive2(false);
-      setActive3(false);
-      console.log("aaaaaab1");
-      x++;
-    
 
-    }
-
-     if(x==2)
-    {   
-      setActive2(true)
-      setActive1(false);
-      setActive(false);
-      setActive3(false);
-      x++;
-      console.log("aaaaaab2");
-    
-    
-    }
-     if(x==3)
-    {  
-      setActive3(true);
-      setActive2(false)
-      setActive1(false);
-      setActive(false);
-      console.log("aaaaaab3");
-    }
-    if (x>=3){
-      x=0;
-    }
-
-    else {
-      x++;
-    }
-
-  
-
-     
-  },5000);
-
-
-  
-},[])
 
 
   const location = useLocation();
@@ -335,7 +336,15 @@ useEffect(() => {
                   />
                   <div
                     onClick={() => {
-                  
+                      showData1(true);
+                      showData2(false);
+                      showData3(false);
+                      showData4(false);
+                      showData5(false);
+                      showData6(false);
+                      showData7(false);
+                      showData8(false);
+                      showData9(false);
                     }}
                     className="search_div"
                   >
@@ -343,13 +352,11 @@ useEffect(() => {
                       AZURE
                     </h1>
 
-                    <div className="search_upper_div">
-                      <img
-                        className="search_upper_img"
-                        src={search_upper}
-                        alt=""
-                      />
-                      <img  onClick={()=>{
+                    <div  className="search_upper_div">
+                      <img style={{
+                        cursor:'pointer'
+                      }} onClick={()=>{
+
                             showData1(true);
                             showData2(false);
                             showData3(false);
@@ -359,14 +366,35 @@ useEffect(() => {
                             showData7(false);
                             showData8(false);
                             showData9(false);
-                            showData(false)
-                      }}   className="search_icon" src={search} alt="" />
+                            showData(false);
+                      }}
+                        className="search_upper_img"
+                        src={search_upper}
+                        alt=""
+                      />
+                      <img
+                        onClick={() => {
+                          showData1(true);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
+                          showData(false);
+                        }}
+                        className="search_icon"
+                        src={search}
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               )}
               {data1 && (
-                <div  
+                <div
                   onClick={() => {
                     showData1(false);
                   }}
@@ -379,7 +407,6 @@ useEffect(() => {
                     onClick={() => {
                       showData1(false);
 
-                    
                       console.log("aa");
                     }}
                     className="img_service_detail"
@@ -420,7 +447,9 @@ useEffect(() => {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                                handleClick();
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -428,7 +457,6 @@ useEffect(() => {
                       <img
                         onClick={() => {
                           handleClick();
-
                         }}
                         className="search_icon"
                         src={search}
@@ -442,6 +470,7 @@ useEffect(() => {
                 <div
                   onClick={() => {
                     showData(false);
+  
                   }}
                   style={{
                     backgroundColor: "rgb(34, 153, 88)",
@@ -527,8 +556,21 @@ useEffect(() => {
                       Dynamics
                     </h1>
 
-                    <div className="search_upper_div">
-                      <img
+                    <div onClick={()=>{
+                       
+                    }} className="search_upper_div">
+                      <img onClick={()=>{
+                          showData2(true);
+                          showData1(false);
+                          showData(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -537,7 +579,7 @@ useEffect(() => {
                         onClick={() => {
                           showData2(true);
                           showData1(false);
-                        showData(false)
+                          showData(false);
                           showData3(false);
                           showData4(false);
                           showData5(false);
@@ -604,7 +646,18 @@ useEffect(() => {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                          showData3(true);
+                          showData1(false);
+                          showData2(false);
+                          showData(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -614,7 +667,7 @@ useEffect(() => {
                           showData3(true);
                           showData1(false);
                           showData2(false);
-                          showData(false)
+                          showData(false);
                           showData4(false);
                           showData5(false);
                           showData6(false);
@@ -679,8 +732,21 @@ useEffect(() => {
                       SAP
                     </h1>
 
-                    <div className="search_upper_div">
-                      <img
+                    <div onClick={()=>{
+
+                    }} className="search_upper_div">
+                      <img onClick={()=>{
+                            showData4(true);
+                            showData1(false);
+                            showData2(false);
+                            showData3(false);
+                            showData(false);
+                            showData5(false);
+                            showData6(false);
+                            showData7(false);
+                            showData8(false);
+                            showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -710,7 +776,7 @@ useEffect(() => {
                 <div
                   onClick={() => {
                     showData4(false);
-                
+
                     console.log("aaa");
                   }}
                   style={{
@@ -753,13 +819,24 @@ useEffect(() => {
                     src={oracle2}
                     alt=""
                   />
-                  <div className="search_div">
+                  <div  className="search_div">
                     <h1 className="h1_search_div" style={{}}>
                       Oracle
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                          showData5(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData(false);
+                          showData6(false);
+                          showData7(false);
+                          showData8(false);
+                          showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -861,7 +938,18 @@ useEffect(() => {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                             showData6(true);
+                             showData1(false);
+                             showData2(false);
+                             showData3(false);
+                             showData4(false);
+                             showData5(false);
+                             showData(false);
+                             showData7(false);
+                             showData8(false);
+                             showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -941,7 +1029,18 @@ useEffect(() => {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                            showData7(true);
+                            showData1(false);
+                            showData2(false);
+                            showData3(false);
+                            showData(false);
+                            showData5(false);
+                            showData6(false);
+  
+                            showData8(false);
+                            showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -955,7 +1054,6 @@ useEffect(() => {
                           showData(false);
                           showData5(false);
                           showData6(false);
-                      
 
                           showData8(false);
                           showData9(false);
@@ -1043,7 +1141,18 @@ useEffect(() => {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                          showData8(true);
+                          showData1(false);
+                          showData2(false);
+                          showData3(false);
+                          showData4(false);
+                          showData5(false);
+                          showData6(false);
+                          showData7(false);
+                          showData(false);
+                          showData9(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -1120,7 +1229,18 @@ useEffect(() => {
                     </h1>
 
                     <div className="search_upper_div">
-                      <img
+                      <img onClick={()=>{
+                            showData9(true);
+                            showData1(false);
+                            showData2(false);
+                            showData3(false);
+                            showData4(false);
+                            showData5(false);
+                            showData6(false);
+                            showData7(false);
+                            showData8(false);
+                            showData(false);
+                      }}
                         className="search_upper_img"
                         src={search_upper}
                         alt=""
@@ -1179,7 +1299,6 @@ useEffect(() => {
                     plugins accessible for your needs in addition to being open
                     source, which enables the incremental extension and business
                     process automation.
-
                   </div>
                 </div>
               )}
