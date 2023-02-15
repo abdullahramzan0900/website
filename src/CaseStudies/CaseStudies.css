@@ -1,6 +1,7 @@
 .rec.rec-arrow {
   border-radius: 0;
-  background-color: white
+  background-color: white !important;
+  color: #229958 !important;
 }
 
 
@@ -31,10 +32,13 @@
 }
 .rec.rec-arrow.rec-arrow-right{
   border-radius: 50%;
+  padding-top: 2px;
   background-color: none;
   background-color: white;
   color: #229958;
   border: none;
+  padding-right: 2px;
+
 
 
 }
@@ -43,6 +47,13 @@
   background-color: white;
   color: #229958;
   border: none;
+  padding-top: 2px;
+  padding-right: 4px;
+  
+
+
+
+
 
 }
 .rec.rec-arrow.rec-arrow-left:hover{
@@ -76,6 +87,7 @@
   
   margin: 15px;
   background-color: #626363;
+  background-color:rgb(34, 153, 88);
   color: white;
   padding: 1rem;
   height: 365px;
@@ -87,7 +99,7 @@
   text-align: center; 
 }
 .card3:hover{
-  background-color: #229958;
+  background-color: #626363;
     transition: all 0.8s ease;
 }
 .card3:hover >.casestudies_readmore {
@@ -268,7 +280,8 @@ padding: 20px;
 align-items: center;
   height: 324px;
   width: 100%;
-  background-color: #626363;
+ 
+  background-color: #229958;
   color: #fff;
     margin: 0 10px;
     font-family: 'roboto';
@@ -282,7 +295,7 @@ align-items: center;
     
    }
    .itemm2:hover{
-    background-color: #229958;
+    background-color:#626363;
     transition: all 0.8s ease;
     
    }
@@ -887,9 +900,9 @@ font-size: 15px;
 }
 
 .p1_casestudies{
-  color:#72818b ;
+  color:#a3afb7 ;
   margin-top: 40px;
-  font-size: 20px;
+  font-size: 14px;
   font-family: 'roboto';
   line-height: 25px;
 }

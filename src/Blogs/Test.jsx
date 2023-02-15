@@ -8,8 +8,12 @@ import cloud from '../image/clouddetail_img.jpg'
 import path26 from "../image/Path26.png";
 import path27 from "../image/Path27.png";
 import line8 from "../image/Line8.png";
-import Carousel from "react-elastic-carousel";
+import Carousel ,{ consts }from "react-elastic-carousel";
 import { useNavigate } from "react-router-dom";
+import Blog5 from '../image/techno.jpg'
+import Blog6 from '../image/imageee.jpg'
+import Blog7 from '../image/image3.jpg'
+import Blog8 from '../image/images5.jpg'
 
 function Test() {
   const breakPoints = [
@@ -22,18 +26,19 @@ function Test() {
     { id: 2, img: Blog2, h1: "Utilize a user-friendly mobile app " },
     { id: 3, img: Blog1, h1: "Digital Transformation & IoT" },
     { id: 4, h1: "Technology in 2023", img: Blog4 },
-    { id: 6, h1: "Technology in 2023", img: Blog4 },
-    { id: 7, img: Blog3, h1: "Digital Transformation & IoT" },
-    { id: 8, img: Blog1, h1: "Cloud Computing & its Benefits" },
-    { id: 9, img: Blog2, h1: "Impact of ERP in SME" },
+    { id: 6, h1: "Technology in 2023", img: Blog5 },
+    { id: 7, img: Blog6, h1: "Digital Transformation & IoT" },
+    { id: 8, img: Blog7, h1: "Cloud Computing & its Benefits" },
+    { id: 9, img: Blog8, h1: "Impact of ERP in SME" },
     {
       id: 10, img: Blog3, h1: "Digital Transformation & IoT",
     },
-    { id:11, img: Blog2, h1: "Impact of ERP in SME" },
-    { id: 12, img: Blog1, h1: "Impact of ERP in SME" },
-    { id: 13, img: Blog4, h1: "Impact of ERP in SME" },
+    { id:11, img: Blog1, h1: "Impact of ERP in SME" },
+    { id: 12, img: Blog5, h1: "Impact of ERP in SME" },
+    { id: 13, img: Blog2, h1: "Impact of ERP in SME" },
   ];
   const navigate=useNavigate()
+
 
   return (
     <>

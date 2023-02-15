@@ -227,6 +227,7 @@ body{
     justify-content: space-evenly;
 }
 }
+
 @media only screen and (max-width: 930px) {
   .contact2{
     width: 100%;
@@ -456,8 +457,9 @@ text-align:center ;
   }
 }
 
+
   
-  
+
   
 
 @media only screen and (max-width:364px) {
@@ -486,6 +488,7 @@ text-align:center ;
     background-position: center;
     
   }
+
 
   
   
@@ -566,4 +569,30 @@ position: absolute;
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
+}
+@media only screen and (max-width:380px)
+{
+
+  .contact2 {
+    width: 100%;
+    height:118%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    background-color: black;
+}
+}
+@media only screen and (max-width:300px)
+{
+
+  .contact2 {
+    width: 100%;
+    height:128%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    background-color: black;
+}
 }

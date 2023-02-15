@@ -70,14 +70,14 @@ function Services_detail() {
           style={{
             color: "grey",
             marginTop: "40px",
-            fontSize: "13px",
+            fontSize: "14px",
             fontFamily: "roboto",
             lineHeight: "30px",
             width: "61%",
             marginLeft: "1%",
           }}
         >
-          Connecting industry needs wi th Innovation, Excellence, & IT .We
+          Connecting industry needs with Innovation, Excellence, & IT .We
           create IT solutions that are easy to use, easy to manage, and easy to
           trust.
         </p>

@@ -61,19 +61,21 @@ function Contact_detail() {
       Setshowmessage(true);
       showsuccessmsg(false);
       setemailvalid(false);
-    } else if (validator.isEmail(email)) {
-      setemailvalid(true);
-    } else {
-      Setshowmessage(false);
+    } else if (!(validator.isEmail(email))) {
+      console.log("Email valid")
       showsuccessmsg(true);
+      setemailvalid(true);
+    } else{
+      console.log("invalid")
+      Setshowmessage(false);
       setemailvalid(false);
+      showsuccessmsg(false);
       axios.post("http://localhost:3000/contactUs", {
         name: name,
         email: email,
         service: service,
         message: message,
       });
-
       setMessage("");
       Setname("");
       Setemail("");
@@ -97,7 +99,7 @@ function Contact_detail() {
           <div className="contact_detail_2_inner">
             <h1 className="contact_detail_2_inner_h1">Leave Us a Message</h1>
             <p className="contact_detail_2_inner_p">
-              kindly respond filling this form
+              Kindly Respond Filling This Form
             </p>
             {showmessage && (
               <>
@@ -107,7 +109,7 @@ function Contact_detail() {
                     marginTop: "10px",
                   }}
                 >
-                  please fill out all required fields
+                  Please Fill Out All Required Fields
                 </p>
               </>
             )}
@@ -119,7 +121,7 @@ function Contact_detail() {
                     marginTop: "10px",
                   }}
                 >
-                  Enter valid Email!
+                  Enter Valid Email!
                 </p>
               </>
             )}

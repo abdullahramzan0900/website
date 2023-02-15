@@ -100,7 +100,7 @@ function Nav() {
                  color: splitLocation[1] === "Blogs" ? "#23a55b" : "black",
                  cursor:'pointer'
       
-              }}>Blog</a>
+              }}>Blogs</a>
             </li>
             <li>
               <a  onClick={()=>{

@@ -31,8 +31,10 @@ let x = 0;
 const array = ["img", "img4", "img2", "img3"];
 
 function Home() {
+
   const [background, Setbackground] = useState("img");
   const [active, setActive] = useState(true);
+  const [counter,setCounter] = useState(0);
   const [active1, setActive1] = useState(false);
   const [active2, setActive2] = useState(false);
   const [active3, setActive3] = useState(false);
@@ -50,7 +52,8 @@ function Home() {
   const [data6, showData6] = useState(false);
   const [data7, showData7] = useState(false);
   const [data8, showData8] = useState(false);
-  const [data9, showData9] = useState(false);
+  const [data9, showData9] = useState(false);  
+  const [value, setValue] = React.useState(0);
   
 
   const handleClick = () => {
@@ -68,70 +71,25 @@ function Home() {
 
   };
 
+React.useEffect(() => {
+  const interval = setInterval(() => {
+    setValue((v) => {
+      return v === 3? 0 : v + 1;
+   
+    });
 
-  useEffect(() => {
- setInterval(()=>{
-      console.log (typeof  x ,"check x")
+  }, 3000);
+  return () => clearInterval(interval);
 
-      Setbackground(array[x])
-      if(x===0)
-      {     
-        setActive(true);
-        setActive1(false);
-        setActive2(false);
-        setActive3(false);
-        console.log("aaaaaa",active);
-        x++;
-      }
-      else if(x===1)
-      {      
-        setActive1(true);
-        setActive(false);
-        setActive2(false);
-        setActive3(false);
-        console.log("aaaaaab1");
-        x++;
-        
+
+
+}, []);
+
+
+
+
   
-      
-  
-      }
-  
-        else if(x===2)
-      { 
-        setActive2(true)
-        setActive1(false);
-        setActive(false);
-        setActive3(false); 
-        console.log("aaaaaab2");
-        x++;
 
-      
-      
-      }
-       else if(x===3)
-      {       
-        setActive3(true);
-        setActive2(false)
-        setActive1(false);
-        setActive(false);
-        console.log("aaaaaab3");
-        x++;
-
-
-      }
-    
-  
- 
-    console.log(x,'dddd')
-
-      if(x>=4){
-        x=0;
-      }
-       
-    },4000);
-  
-  },[])
   
 const navigate=useNavigate();
 
@@ -170,7 +128,7 @@ const navigate=useNavigate();
   return (
     <>
       <div className="banner ">
-        <div className={background}></div>
+        <div className={array[value]}></div>
         {/* <img src={banner} alt="loading"/> */}
 
         <div class="centered">
@@ -237,7 +195,7 @@ const navigate=useNavigate();
               //   x=0;
               // }}
               style={{
-                backgroundColor: active ? "green" : "rgb(34, 153, 88)",
+                backgroundColor: value===0 ? "green" : "rgb(34, 153, 88)",
               }}
             ></button>
             <button
@@ -247,7 +205,7 @@ const navigate=useNavigate();
               //   x=1;
               // }}
               style={{
-                backgroundColor: active1 ? "green" : "rgb(34, 153, 88)",
+                backgroundColor: value===1 ? "green" : "rgb(34, 153, 88)",
               }}
             ></button>
             <button
@@ -258,7 +216,7 @@ const navigate=useNavigate();
 
               // }}
               style={{
-                backgroundColor: active2 ? "green" : "rgb(34, 153, 88)",
+                backgroundColor: value===2 ? "green" : "rgb(34, 153, 88)",
               }}
             ></button>
             <button
@@ -268,7 +226,7 @@ const navigate=useNavigate();
               //   x=3;
               // }}
               style={{
-                backgroundColor: active3 ? "green" : "rgb(34, 153, 88)",
+                backgroundColor: value===3 ? "green" : "rgb(34, 153, 88)",
               }}
             ></button>
           </div>

@@ -7,6 +7,10 @@ import Blog2 from "../image/Blog2.png";
 import Blog3 from "../image/Blog3.png";
 import Blog4 from "../image/Blog4.png";
 import line8 from "../image/Line8.png";
+import Blog5 from '../image/techno.jpg'
+import Blog6 from '../image/imageee.jpg'
+import Blog7 from '../image/image3.jpg'
+import Blog8 from '../image/images5.jpg'
 import cloud from '../image/clouddetail_img.jpg'
 function MainBlog() {
   const navigate = useNavigate();
@@ -38,24 +42,24 @@ function MainBlog() {
     {
       id: 5,
       h1: "Technology in 2023",
-      img: Blog4,
+      img: Blog5,
       p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
     },
     {
       id: 6,
-      img: Blog3,
+      img: Blog6,
       h1: "Digital Transformation & IoT",
       p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
     },
     {
       id: 7,
-      img: Blog1,
+      img: Blog7,
       h1: "Cloud Computing & its Benefits",
       p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
     },
     {
       id: 8,
-      img: Blog3,
+      img: Blog8,
       h1: "Impact of ERP in SME",
       p: "If you’re still debating whether to adopt cloud migration, you’re already behind 90% of businesses.That indicates that enterprise workloads are largely already hosted on the cloud",
     },
