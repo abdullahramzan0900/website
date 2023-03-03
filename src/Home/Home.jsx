@@ -25,8 +25,6 @@ import { useEffect } from "react";
 import axios from "axios";
 import logo from "../image/Logo.svg";
 import { GridColumnsPanel } from "@mui/x-data-grid";
-
-
 let x = 0;
 const array = ["img", "img4", "img2", "img3"];
 
@@ -80,8 +78,6 @@ React.useEffect(() => {
 
   }, 3000);
   return () => clearInterval(interval);
-
-
 
 }, []);
 
@@ -264,7 +260,6 @@ const navigate=useNavigate();
               </button>
             </div> */}
           </div>
-
           <About />
           <Services />
         </div>

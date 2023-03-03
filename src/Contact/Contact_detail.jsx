@@ -230,12 +230,12 @@ function Contact_detail() {
               }}
             ></textarea>
 
-            <Button
+            <Button 
               onClick={() => {
                 PostData();
               }}
               style={{
-                width: 100,
+              
                 alignSelf: "center",
                 color: "white",
                 background: "rgb(34, 153, 88)",

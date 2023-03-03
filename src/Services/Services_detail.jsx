@@ -50,7 +50,7 @@ function Services_detail() {
         <h1
           className="height"
           style={{
-            fontSize: "70px",
+            fontSize: "48px",
             fontFamily: "roboto",
             color: "black",
           }}

@@ -18,7 +18,8 @@ import Blog8 from '../image/images5.jpg'
 function Test() {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2 },
+    { width:500 ,itemsToShow:2},
+    { width: 900, itemsToShow: 3 },
     { width: 1000, itemsToShow: 4 },
   ];
   const array1 = [
@@ -42,10 +43,10 @@ function Test() {
 
   return (
     <>
-      <div style={{
+      <div className="blog_carousel_upper" style={{
         fontFamily:'roboto'
       }}>
-        <Carousel breakPoints={breakPoints}>
+        <Carousel className="carousel" breakPoints={breakPoints}>
           {array1 &&
             array1?.map((item) => {
               return (
@@ -53,7 +54,7 @@ function Test() {
                   <img
                     className="Blog_img_style"
                     style={{}}
-                    src={item.img}
+                    src={item?.img}
                     alt=""
                   />
 
@@ -63,7 +64,7 @@ function Test() {
                   }}
                     style={{
                       padding: "20px",
-                      fontSize: "16px",
+                      fontSize: "14px",
                       fontWeight: "bold",
                       cursor: "pointer",
                     }}

@@ -15,6 +15,14 @@
   /* transform: translate3d(1000px, 0px, 0px);  */
   /* background-color: red; */
 }
+.blog_carousel_upper{
+  font-family: roboto;
+  display: flex;
+  justify-content: center;
+}
+.lguFiu{
+  width: 116% !important;
+}
 
 .itemm {
   display: flex;
@@ -133,7 +141,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 342px;
+    width:400px;
     height: 220px;
     border-radius: 22px;
   }
@@ -154,7 +162,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 285px;
+    width: 340px;
     height: 220px;
     /* border-radius: 22px; */
   }
@@ -175,7 +183,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 267px;
+    width: 320px;
     height: 220px;
     /* border-radius: 22px; */
   }
@@ -196,7 +204,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 248px;
+    width: 310px  ;
     height: 220px;
     /* border-radius: 22px; */
   }
@@ -217,7 +225,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 239px;
+    width: 282px;
     height: 220px;
     /* border-radius: 22px; */
   }
@@ -231,14 +239,14 @@
     height: auto;
     font-size: 16px;
 
-    width: 80%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 399px;
+    width: 280px;
     height: 220px;
     /* border-radius: 22px; */
   }
@@ -252,14 +260,14 @@
     height: auto;
     font-size: 16px;
 
-    width: 80%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width:395px;
+    width: 270px;
     height: 220px;
     border-radius: 22px;
   }
@@ -275,14 +283,14 @@
     height: auto;
     font-size: 16px;
 
-    width: 80%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 389px;
+    width: 270px;
     height: 220px;
     /* border-radius: 22px; */
   }
@@ -303,10 +311,11 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 457px;
+    width: 260px;
     height: 220px;
     /* border-radius: 22px; */
   }
+
 }
 @media (max-width: 1338px) {
   .itemm {
@@ -324,10 +333,13 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 460px;
+    width: 26 0px;
     height: 220px;
     /* border-radius: 22px; */
   }
+  /* .carousel{
+    width:130% !important;
+  } */
 }
 @media (max-width: 1310px) {
   .itemm {
@@ -345,7 +357,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 450px;
+    width: 250px;
     height: 220px;
     /* border-radius: 22px; */
   }
@@ -367,7 +379,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 440px;
+    width:250px;
     height: 220px;
     border-radius: 22px;
   }
@@ -388,7 +400,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 430px;
+    width: 240px;
     height: 220px;
     border-radius: 22px;
   }
@@ -409,7 +421,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 420px;
+    width: 240px;
     height: 220px;
     border-radius: 22px;
   }
@@ -430,7 +442,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 420px;
+    width: 320px;
     height: 220px;
     border-radius: 22px;  
   }
@@ -452,7 +464,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 407px;
+    width: 310px;
     height: 220px;
     border-radius: 22px;
   }
@@ -472,7 +484,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 390px;
+    width: 305px;
     height: 220px;
     border-radius: 22px;
   }
@@ -493,7 +505,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 390px;
+    width: 300px;
     height: 220px;
     border-radius: 22px;
   }
@@ -514,7 +526,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 380px;
+    width: 300px;
     height: 220px;
     border-radius: 22px;
   }
@@ -528,14 +540,14 @@
     height: auto;
     font-size: 19px;
 
-    width: 90%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 359px;
+    width: 300px;
     height: 220px;
     border-radius: 22px;
   }
@@ -549,14 +561,14 @@
     height: auto;
     font-size: 19px;
 
-    width: 90%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 352px;
+    width: 284px;
     height: 220px;
     border-radius: 22px;
   }
@@ -577,7 +589,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 370px;
+    width: 430px;
     height: 220px;
     border-radius: 22px;
   }
@@ -598,7 +610,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 360px;
+    width:420px;
     height: 220px;
     border-radius: 22px;
   }
@@ -612,14 +624,14 @@
     height: auto;
     font-size: 19px;
 
-    width: 80%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 286px;
+    width: 410px;
     height: 220px;
     border-radius: 22px;
   }
@@ -641,7 +653,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 340px;
+    width: 390px;
     height: 220px;
     border-radius: 22px;
   }
@@ -662,11 +674,33 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 340px;
+    width: 396px;
     height: 220px;
     border-radius: 22px;
   }
 }
+@media (max-width: 1014px) {
+  .itemm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-size: 19px;
+
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin: 0 10px;
+    border-radius: 22px;
+  }
+  .Blog_img_style {
+    width: 385px;
+    height: 220px;
+    border-radius: 22px;
+  }
+}
+
 @media (max-width: 978px) {
   .itemm {
     display: flex;
@@ -676,14 +710,14 @@
     height: auto;
     font-size: 19px;
 
-    width: 80%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 259px;
+    width: 370px;
     height: 220px;
     border-radius: 22px;
   }
@@ -705,7 +739,28 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 297px;
+    width: 360px;
+    height: 220px;
+    border-radius: 22px;
+  }
+}
+@media (max-width: 959px) {
+  .itemm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-size: 19px;
+
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin: 0 10px;
+    border-radius: 22px;
+  }
+  .Blog_img_style {
+    width: 354px;
     height: 220px;
     border-radius: 22px;
   }
@@ -726,7 +781,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 297px;
+    width: 354px;
     height: 220px;
     border-radius: 22px;
   }
@@ -740,14 +795,14 @@
     height: auto;
     font-size: 19px;
 
-    width: 80%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 245px;
+    width: 343px;
     height: 220px;
     border-radius: 22px;
   }
@@ -768,7 +823,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width:290px;
+    width:344px;
     height: 220px;
     border-radius: 22px;
   }
@@ -789,7 +844,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 273px;
+    width: 330px;
     height: 220px;
     border-radius: 22px;
   }
@@ -811,7 +866,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 260px;
+    width: 320px;
     height: 220px;
     border-radius: 22px;
   }
@@ -832,7 +887,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 270px;
+    width: 305px;
     height: 220px;
     border-radius: 22px;
   }
@@ -846,14 +901,14 @@
     height: auto;
     font-size: 20px;
 
-    width: 80%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 435px;
+    width: 300px;
     height: 220px;
     border-radius: 22px;
   }
@@ -874,7 +929,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 520px;
+    width: 302px;
     height: 220px;
     border-radius: 22px;
   }
@@ -895,7 +950,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 495px;
+    width: 290px;
     height: 220px;
     border-radius: 22px;
   }
@@ -910,17 +965,21 @@
     font-size: 17px;
     font-family: "roboto";
 
-    width: 100%;
+    width: 70%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 329px;
+    width: 200px;
     height: 220px;
     border-radius: 22px;
   }
+  .carousel{
+    width: 85% !important;
+  }
+
 }
 @media (max-width: 789px) {
   .itemm {
@@ -1065,14 +1124,14 @@
     font-size: 17px;
     font-family: "roboto";
 
-    width: 80%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 438px;
+    width: 245px;
     height: 220px;
     border-radius: 22px;
   }
@@ -1087,17 +1146,18 @@
     font-size: 17px;
     font-family: "roboto";
 
-    width: 60%;
+    width: 80%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 320px;
+    width: 300px;
     height: 220px;
     border-radius: 22px;
   }
+
 }
 @media (max-width: 641px) {
   .itemm {
@@ -1109,18 +1169,19 @@
     font-size: 17px;
     font-family: "roboto";
 
-    width:74%;
+    width:100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 373px;
+    width: 470px;
     height: 220px;
     border-radius: 22px;
   }
 }
+
 @media (max-width: 613px) {
   .itemm {
     display: flex;
@@ -1131,17 +1192,18 @@
     font-size: 17px;
     font-family: "roboto";
 
-    width:74%;
+    width:100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 354px;
+    width: 450px;
     height: 220px;
     border-radius: 22px;
   }
+
 }
 @media (max-width: 603px) {
   .itemm {
@@ -1153,17 +1215,18 @@
     font-size: 17px;
     font-family: "roboto";
 
-    width: 70%;
+    width: 100%;
     background-color: white;
     color: black;
     margin: 0 10px;
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 325px;
+    width: 315px;
     height: 220px;
     border-radius: 22px;
   }
+
 }
 @media (max-width: 600px) {
   .itemm {
@@ -1186,6 +1249,7 @@
     height: 220px;
     border-radius: 22px;
   }
+  
 }
 
 @media (max-width: 594px) {
@@ -1256,6 +1320,28 @@
   }
 
 }
+@media (max-width: 536px) {
+  .itemm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-size: 14px;
+    font-family: "roboto";
+
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin: 0 10px;
+    border-radius: 22px;
+  }
+  .Blog_img_style {
+    width: 288px;
+    height: 220px;
+    border-radius: 22px;
+  }
+}
 @media (max-width: 521px) {
   .itemm {
     display: flex;
@@ -1273,7 +1359,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 286px;
+    width: 280px;
     height: 220px;
     border-radius: 22px;
   }
@@ -1341,10 +1427,13 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 230px;
+    width: 290px;
     height: 210px;
     border-radius: 28px;
     
+  }
+  .carousel{
+    width: 110% !important;
   }
 }
 @media (max-width: 412px) {
@@ -1365,9 +1454,9 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 220px;
+    width: 280px;
     height: 210px;
-    border-radius: 28px;
+    border-radius: 23px;
   }
 }
 @media (max-width: 393px) {
@@ -1387,9 +1476,9 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 200px;
-    height: 180px;
-    border-radius: 22px;
+    width: 270px;
+    height: 210px;
+    border-radius: 23px;
   }
 }
 @media (max-width: 375px) {
@@ -1410,9 +1499,10 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 180px;
-    height: 180px;
-    border-radius: 22px;
+    width: 250px;
+    height: 210px;
+    border-radius: 18px;
+   
   }
 }
 @media (max-width: 360px) {
@@ -1433,7 +1523,7 @@
     border-radius: 22px;
   }
   .Blog_img_style {
-    width: 180px;
+    width: 230px;
     height: 180px;
     border-radius: 22px;
   

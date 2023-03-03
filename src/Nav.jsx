@@ -73,6 +73,7 @@ function Nav() {
             <li>
               <a onClick={()=>{
                 navigate('./')
+                setIsNavExpanded(!isNavExpanded)
               }}
                 style={{
                   color: splitLocation[1] === "" ? "#23a55b" : "black",
@@ -87,6 +88,7 @@ function Nav() {
             <li>
               <a  onClick={()=>{
                 navigate('/Services')
+                setIsNavExpanded(!isNavExpanded)
               }} style={{
                   color: splitLocation[1] === "Services" ? "#23a55b" : "black",
                   cursor:'pointer'
@@ -96,6 +98,7 @@ function Nav() {
             <li>
               <a  onClick={()=>{
                 navigate('/Blogs')
+                setIsNavExpanded(!isNavExpanded)
               }} style={{
                  color: splitLocation[1] === "Blogs" ? "#23a55b" : "black",
                  cursor:'pointer'
@@ -105,6 +108,7 @@ function Nav() {
             <li>
               <a  onClick={()=>{
                 navigate('/CaseStudies')
+                setIsNavExpanded(!isNavExpanded)
               }} style={{
                    color: splitLocation[1] === "CaseStudies" ? "#23a55b" : "black",
                    cursor:'pointer'
@@ -114,6 +118,7 @@ function Nav() {
             <li>
               <a  onClick={()=>{
                 navigate('/Contact')
+                setIsNavExpanded(!isNavExpanded)
               }} style={{
                color: splitLocation[1] === "contact" ? "#23a55b" : "black",
                cursor:'pointer'
